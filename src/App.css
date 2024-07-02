@@ -2,37 +2,81 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.diagramStyle{
+  padding: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gradient_background {
+  background: linear-gradient(180deg, #4BB4DE, #345DA7);
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Title {
+  padding-top: 5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 30%;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Text {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Box {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 20px;
+}
+
+.Button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.classicBtn{
+  color: white;
+  background-color: #4BB4DE;
+}
+
+.classicBtn:hover{
+  background-color: #345DA7;
+}
+
+.whiteBtn{
+  color: #283D5A;
+  background-color: #ffffff;
+}
+
+.whiteBtn:hover{
+  color: white;
+  background-color: #345DA7;
+}
+
+.First-Row{
+  padding: 2rem;
+}
+
+.Second-Row{
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
 }
