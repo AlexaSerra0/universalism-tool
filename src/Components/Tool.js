@@ -1,54 +1,61 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import "../App.css";
-import Diagram, { createSchema, useSchema } from 'beautiful-react-diagrams';
-import 'beautiful-react-diagrams/styles.css';
-import { Equality } from './Text';
+import ReactFlow, {
+  MiniMap,
+  Controls,
+  Background,
+  useNodesState,
+  useEdgesState,
+} from 'reactflow';
+import 'reactflow/dist/style.css';
+
+const initialNodes = [
+  { id: '1', position: { x: 0, y: 0 }, data: { label: '1' } },
+  { id: '2', position: { x: 0, y: 100 }, data: { label: '2' } },
+];
+const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
 
 function Tool() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [clickedNodeId, setClickedNodeId] = useState(null);
 
-  const [isOpen, setIsOpen ] = useState(false)
+  const handleClick = () => {
+    setIsOpen(true);
+    console.log("Diagram clicked!");
+  };
 
-  const CustomNode = ({content = 'Default Content'}) => (
-    <div style={{ background: 'lightBlue', borderRadius: '15px' }}>
-      <div role="button" style={{ padding: '15px' }} onClick={() => console.log("Hello")}>
-        {content}
+  const handleNodeClick = useCallback((event, node) => {
+    setClickedNodeId(node.id);
+    setIsOpen(true);
+    console.log("Node clicked:", node.id);
+  }, []);
+
+  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
+  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+
+  return (
+    <div className='App'>
+      <div className='diagramStyle'>
+        <div style={{ width: '90vw', height: '70vh', border: '5px solid #4BB4DE' }}>
+          <ReactFlow
+            nodes={nodes}
+            edges={edges}
+            onNodesChange={onNodesChange}
+            onEdgesChange={onEdgesChange}
+            onClick={handleClick}
+            onNodeClick={handleNodeClick}
+          >
+            <Controls />
+            <MiniMap />
+            <Background variant="cross" gap={12} size={1} />
+          </ReactFlow>
+        </div>
       </div>
+      {isOpen && clickedNodeId && (
+        <div>Clicked Node ID: {clickedNodeId}</div>
+      )}
     </div>
   );
-
-  
-  const initialSchema = createSchema({
-    nodes: [
-      { id: 'node-1', content: 'Node 1', coordinates: [500, 20], },
-      { id: 'node-2', content: 'Node 2', coordinates: [1000, 500], },
-      { id: 'node-3', content: 'Node 3', coordinates: [100, 220], },
-      { id: 'node-4', render: CustomNode, content: 'Node 4', coordinates: [1300, 200], },
-    ],
-    links: [
-      { input: 'node-1',  output: 'node-2' },
-      { input: 'node-1',  output: 'node-3' },
-      { input: 'node-1',  output: 'node-4' },
-    ]
-  });
-
-  
-  const UncontrolledDiagram = () => {
-    // create diagrams schema
-        const [schema, { onChange }] = useSchema(initialSchema);
-      
-        return (
-          <div style={{ height: '35rem'}} >
-            <Diagram schema={schema} onChange={onChange} />
-          </div>
-        );
-    };
-
-
-    return (
-      <div className='diagramStyle'>
-            <UncontrolledDiagram />  
-        {isOpen && ( <Equality></Equality> )}
-      </div> 
-    );
 }
-export default Tool
+
+export default Tool;
