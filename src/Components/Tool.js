@@ -8,26 +8,37 @@ import ReactFlow, {
   useEdgesState,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
+import DiagramNode from './DiagramNode.js';
+import './DiagramNode.css';
 
 const initialNodes = [
-  { id: '1', position: { x: 0, y: 0 }, data: { label: '1' } },
-  { id: '2', position: { x: 0, y: 100 }, data: { label: '2' } },
+  { id: 'Universalism', position: { x: 0, y: 0 }, data: { label: 'Universalism'}  },
+  { id: 'Social Justice', position: { x: 200, y: 0 }, data: { label: 'Social Justice'} },
+  { id: 'Equality', position: { x: -200, y: 0 }, data: { label: 'Equality'} },
+  { id: 'Wisdom', position: { x: -100, y: 100 }, data: { label: 'Wisdom'} },
+  { id: 'Broadminded', position: { x: 100, y: 100 }, data: { label: 'Broadminded' } },
+  { id: 'Universalism Requirement', position: { x: 0, y: 200 }, data: { label: 'Universalism Requirement' } },
+  { id: 'Social Sustainability', position: { x: 0, y: -200 }, data: { label: 'Social Sustainability' } },
 ];
-const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
+const initialEdges = [
+  { id: 'uni-sj', source: 'Universalism', target: 'Social Justice'},
+  { id: 'uni-eq', source: 'Universalism', target: 'Equality'},
+  { id: 'uni-wis', source: 'Universalism', target: 'Wisdom'},
+  { id: 'uni-broad', source: 'Universalism', target: 'Broadminded'},
+  { id: 'uni-unireq', source: 'Universalism', target: 'Universalism Requirement'},
+  { id: 'uni-socials', source: 'Universalism', target: 'Social Sustainability'},
+  { id: 'eq-sj', source: 'Social Justice', target: 'Equality'},
+];
+
+const nodeTypes = { diagramNode: DiagramNode };
 
 function Tool() {
   const [isOpen, setIsOpen] = useState(false);
   const [clickedNodeId, setClickedNodeId] = useState(null);
 
-  const handleClick = () => {
-    setIsOpen(true);
-    console.log("Diagram clicked!");
-  };
-
   const handleNodeClick = useCallback((event, node) => {
     setClickedNodeId(node.id);
     setIsOpen(true);
-    console.log("Node clicked:", node.id);
   }, []);
 
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
@@ -36,16 +47,14 @@ function Tool() {
   return (
     <div className='App'>
       <div className='diagramStyle'>
-        <div style={{ width: '90vw', height: '70vh', border: '5px solid #4BB4DE' }}>
+        <div style={{ width: '90vw', height: '70vh', border: '5px solid #4BB4DE', borderRadius: '10px' }}>
           <ReactFlow
             nodes={nodes}
             edges={edges}
-            onNodesChange={onNodesChange}
-            onEdgesChange={onEdgesChange}
-            onClick={handleClick}
+            nodeTypes={nodeTypes}
             onNodeClick={handleNodeClick}
           >
-            <Controls />
+            <Controls showInteractive={false} />
             <MiniMap />
             <Background variant="cross" gap={12} size={1} />
           </ReactFlow>
