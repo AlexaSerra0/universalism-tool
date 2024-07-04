@@ -82,3 +82,21 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.SelectBar{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.SelectText {
+  border-bottom: 3px solid #4BB4DE;
+  min-width: 4rem;
+  text-align: center;
+  margin: 0 2rem;
+  flex-grow: 1;
+}

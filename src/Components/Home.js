@@ -34,7 +34,6 @@ function Home() {
     );
 }
 
-
 const Button = ({ design, onClick, children }) => {
     return (
       <button className={design} type="button" onClick={onClick}>
@@ -42,14 +41,5 @@ const Button = ({ design, onClick, children }) => {
       </button>
     );
   };
-
-
-/*  const Button = ({ onClick, children }) => {
-    return (
-      <button type="button" onClick={onClick}>
-        {children}
-      </button>
-    );
-  };
- */
+  
 export default Home
