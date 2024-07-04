@@ -11,3 +11,15 @@
     color: #777;
     font-size: 12px;
   }
+
+  .floatingedges {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 0;
+    height: 100%;
+  }
+  
+  .floatingedges .react-flow__handle {
+    opacity: 0;
+  }
+  
