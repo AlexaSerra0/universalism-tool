@@ -75,7 +75,7 @@ export function getEdgeParams(source, target) {
 export function createNodesAndEdges() {
   const nodes = [];
   const edges = [];
-  const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  //const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
   nodes.push({ id: 'Universalism', data: { label: 'Universalism' }, position: { x: 0, y: 0 } });
   nodes.push({ id: 'Social Justice', data: { label: 'Social Justice' }, position: { x: 200, y: -60 } });

@@ -3,7 +3,6 @@ import "../App.css";
 import ReactFlow, {
   MiniMap,
   Controls,
-  addEdge,
   Background,
   useNodesState,
   useEdgesState,
@@ -36,8 +35,8 @@ function Tool() {
     setIsOpen(true);
   }, []);
 
-  const [nodes, , onNodesChange] = useNodesState(initialNodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+  const [nodes] = useNodesState(initialNodes);
+  const [edges, onEdgesChange] = useEdgesState(initialEdges);
 
   const { setCenter } = useReactFlow();
 
