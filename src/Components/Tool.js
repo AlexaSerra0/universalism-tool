@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import "../App.css";
+import "./Buttons.css";
+import "./Tool.css";
 import ReactFlow, {
   MiniMap,
   Controls,
@@ -17,10 +18,12 @@ import FloatingEdge from './DiagramComponents/FloatingEdge';
 import FloatingConnectionLine from './DiagramComponents/FloatingConnectionLine';
 import { createNodesAndEdges } from './DiagramComponents/utils';
 
-import { Table } from './DiagramComponents/Table.js';
-import ConceptsData from './DiagramComponents/ConceptsData.js';
+//import { Table } from './DiagramComponents/Table.js';
+//import ConceptsData from './DiagramComponents/ConceptsData.js';
+import { Link } from 'react-router-dom';
 
-const { nodes: initialNodes, edges: initialEdges } = createNodesAndEdges();
+import { Table } from './DiagramComponents/SecondTable.js';
+import ConceptsData from './DiagramComponents/SecondConceptsData.js';
 
 const nodeTypes = { diagramNode: DiagramNode };
 const edgeTypes = {
@@ -28,15 +31,19 @@ const edgeTypes = {
 };
 
 function Tool() {
+
   const [isOpen, setIsOpen] = useState(false);
   const [clickedNodeId, setClickedNodeId] = useState(null);
   const [currentNodeIndex, setCurrentNodeIndex] = useState(0); 
 
   const [dataConcept, setDataConcept] = useState(null);
-  const [dataGoals, setDataGoals] = useState(null);
+  //const [dataGoals, setDataGoals] = useState(null);
+  const [section, setSection] = useState('All');
+
+  const { nodes: initialNodes, edges: initialEdges } = createNodesAndEdges(section);
   
-  const [nodes] = useNodesState(initialNodes);
-  const [edges, onEdgesChange] = useEdgesState(initialEdges);
+  const [nodes, setNodes] = useNodesState(initialNodes);
+  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
   const handleNodeClick = useCallback((event, node) => {
     setClickedNodeId(node.id);
@@ -44,7 +51,7 @@ function Tool() {
     setCurrentNodeIndex(nodes.findIndex((n) => n.id === node.id));
 
     setDataConcept(ConceptsData[node.id]);
-    setDataGoals(ConceptsData[`${node.id}Goals`]);
+    //setDataGoals(ConceptsData[`${node.id}Goals`]);
   }, [nodes]);
 
   const { setCenter } = useReactFlow();
@@ -60,7 +67,7 @@ function Tool() {
       setCurrentNodeIndex(newIndex);
 
       setDataConcept(ConceptsData[nodes[newIndex].id]);
-      setDataGoals(ConceptsData[`${nodes[newIndex].id}Goals`]);
+      //setDataGoals(ConceptsData[`${nodes[newIndex].id}Goals`]);
     }
   };
 
@@ -71,15 +78,24 @@ function Tool() {
       setCurrentNodeIndex(newIndex);
 
       setDataConcept(ConceptsData[nodes[newIndex].id]);
-      setDataGoals(ConceptsData[`${nodes[newIndex].id}Goals`]);
+      //setDataGoals(ConceptsData[`${nodes[newIndex].id}Goals`]);
     }
   };
 
+  const handleSectionClick = (newSection) => {
+    setIsOpen(false);
+    setSection(newSection);
+    const { nodes: newNodes, edges: newEdges } = createNodesAndEdges(newSection);
+    setNodes(newNodes);
+    setEdges(newEdges);
+  };
+
   return (
-    <div className='App'>
-      <div style={{ paddingTop: '2rem' }}>
-        Horizontal process barrrrrr
+    <div className='Tool'>
+      <div className='FirstRow'>
+        <Link to={"/example"}>Case Example: ShareTheMeal</Link>
       </div>
+      <div style={{  paddingLeft: '5rem'}}>Horizontal process barrrrrr</div>
       <div className='SelectBar'>
         <Button design={'Button classicBtn'} onClick={handlePreviousClick} >Previous</Button>
         <div className='SelectText'>
@@ -90,6 +106,17 @@ function Tool() {
           )}
         </div>
         <Button design={'Button classicBtn'} onClick={handleNextClick} >Next</Button>
+      </div>
+      <div className='Subtitle'>Model Sections:</div>
+      <div style={{paddingBottom: '1rem'}}>
+      <Button design={'ButtonBar classicBtn startBtn'}  onClick={() => handleSectionClick('All')}>All</Button>
+      <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Modules')}>Modules</Button>
+      <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Universalism')}>Universalism</Button>
+      <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Equality')}>Equality</Button>
+      <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Accessibility')}>Accessibility</Button>
+      <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Security')}>Security</Button>
+      <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Gender')}>Gender</Button>
+      <Button design={'ButtonBar classicBtn endBtn'} onClick={() => handleSectionClick('Culture')}>Culture</Button>
       </div>
       <div className='diagramStyle'>
         <div className="floatingedges" style={{ width: '90vw', height: '80vh', border: '5px solid #4BB4DE', borderRadius: '10px' }}>
@@ -108,7 +135,8 @@ function Tool() {
           </ReactFlow>
         </div>
       </div>
-      {isOpen && (<Table dataConcept={dataConcept} dataGoals={dataGoals} /> )}
+      {/* {isOpen && (<Table dataConcept={dataConcept} dataGoals={dataGoals} /> )} */}
+      {isOpen && (<Table dataConcept={dataConcept}/> )}
     </div>
   );
 }

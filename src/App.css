@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.diagramStyle{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .gradient_background {
   background: linear-gradient(180deg, #4BB4DE, #345DA7);
   height: 100vh;
@@ -33,46 +27,6 @@
   color: white;
 }
 
-.Box {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 5rem;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-radius: 20px;
-}
-
-.Button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.classicBtn{
-  color: white;
-  background-color: #4BB4DE;
-}
-
-.classicBtn:hover{
-  background-color: #345DA7;
-}
-
-.whiteBtn{
-  color: #283D5A;
-  background-color: #ffffff;
-}
-
-.whiteBtn:hover{
-  color: white;
-  background-color: #345DA7;
-}
-
 .First-Row{
   padding: 2rem;
 }
@@ -83,20 +37,10 @@
   justify-content: space-evenly;
 }
 
-.SelectBar{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.SelectText {
-  border-bottom: 3px solid #4BB4DE;
-  min-width: 4rem;
-  text-align: center;
-  margin: 0 2rem;
-  flex-grow: 1;
+.Box {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 20px;
 }

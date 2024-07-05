@@ -1,0 +1,66 @@
+.Button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.classicBtn{
+    color: white;
+    background-color: #4BB4DE;
+}
+
+.classicBtn:hover{
+    background-color: #345DA7;
+}
+
+.whiteBtn{
+    color: #283D5A;
+    background-color: #ffffff;
+}
+
+.whiteBtn:hover{
+    color: white;
+    background-color: #345DA7;
+}
+
+.ButtonExample{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.ButtonBar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.startBtn {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.endBtn {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

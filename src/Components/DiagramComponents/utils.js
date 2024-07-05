@@ -72,28 +72,75 @@ export function getEdgeParams(source, target) {
   };
 }
 
-export function createNodesAndEdges() {
-  const nodes = [];
-  const edges = [];
-  //const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+const sectionsConfig = {
+  All: {
+    nodes:  [
+      { id: 'Universalism', data: { label: 'Universalism' }, position: { x: 0, y: 0 } },
+      { id: 'Social Justice', data: { label: 'Social Justice' }, position: { x: 200, y: -60 } },
+      { id: 'Equality', data: { label: 'Equality' }, position: { x: -200, y: -60 } },
+      { id: 'Wisdom', data: { label: 'Wisdom' }, position: { x: 200, y: 150 } },
+      { id: 'Broadminded', data: { label: 'Broadminded' }, position: { x: -200, y: 150 } },
+      { id: 'Universalism Requirement', data: { label: 'Universalism Requirement' }, position: { x: 0, y: 250 } },
+      { id: 'Social Sustainability', data: { label: 'Social Sustainability' }, position: { x: 0, y: -150 } },
+    ],
+    edges: [
+      { id: `uni-sj`, target: 'Universalism', source: `Social Justice`, type: 'floating' },
+      { id: `uni-eq`, target: 'Universalism', source: `Equality`, type: 'floating' },
+      { id: `uni-wis`, target: 'Universalism', source: `Wisdom`, type: 'floating' },
+      { id: `uni-broa`, target: 'Universalism', source: `Broadminded`, type: 'floating' },
+      { id: `uni-unireq`, target: 'Universalism', source: `Universalism Requirement`, type: 'floating' },
+      { id: `uni-socialsus`, target: 'Universalism', source: `Social Sustainability`, type: 'floating' },
+      { id: `sj-eq`, target: 'Social Justice', source: `Equality`, type: 'floating' },
+      { id: `socialsus-eq`, target: 'Social Sustainability', source: `Equality`, type: 'floating' },    
+    ],
+  },
+  Modules: {
+    nodes:  [
+      { id: 'Universalism', data: { label: 'Universalism' }, position: { x: 0, y: 0 } },
+      { id: 'Security', data: { label: 'Security' }, position: { x: 200, y: -60 } },
+      { id: 'Equality', data: { label: 'Equality' }, position: { x: -200, y: -60 } },
+      { id: 'Accessibility', data: { label: 'Accessibility' }, position: { x: 200, y: 150 } },
+      { id: 'Gender', data: { label: 'Gender' }, position: { x: -200, y: 150 } },
+      { id: 'Culture', data: { label: 'Culture' }, position: { x: 0, y: 250 } },
+    ],
+    edges: [
+      { id: `uni-sec`, target: 'Universalism', source: `Security`, type: 'floating' },
+      { id: `uni-eq`, target: 'Universalism', source: `Equality`, type: 'floating' },
+      { id: `uni-acc`, target: 'Universalism', source: `Accessibility`, type: 'floating' },
+      { id: `uni-gen`, target: 'Universalism', source: `Gender`, type: 'floating' },
+      { id: `uni-cul`, target: 'Universalism', source: `Culture`, type: 'floating' },
+    ],
+  },
+  Universalism: {
+    nodes: [
+      { id: 'Universalism', data: { label: 'Universalism' }, position: { x: 0, y: 0 } },
+      { id: 'Social Justice', data: { label: 'Social Justice' }, position: { x: 200, y: -60 } },
+      { id: 'Equality', data: { label: 'Equality' }, position: { x: -200, y: -60 } },
+      { id: 'Wisdom', data: { label: 'Wisdom' }, position: { x: 200, y: 150 } },
+      { id: 'Broadminded', data: { label: 'Broadminded' }, position: { x: -200, y: 150 } },
+      { id: 'Universalism Requirement', data: { label: 'Universalism Requirement' }, position: { x: 0, y: 250 } }
+    ],
+    edges: [
+      { id: `uni-sj`, target: 'Universalism', source: `Social Justice`, type: 'floating' },
+      { id: `uni-eq`, target: 'Universalism', source: `Equality`, type: 'floating' },
+      { id: `uni-wis`, target: 'Universalism', source: `Wisdom`, type: 'floating' },
+      { id: `uni-broa`, target: 'Universalism', source: `Broadminded`, type: 'floating' },
+      { id: `uni-unireq`, target: 'Universalism', source: `Universalism Requirement`, type: 'floating' },
+      { id: `uni-socialsus`, target: 'Universalism', source: `Social Sustainability`, type: 'floating' },
+      { id: `sj-eq`, target: 'Social Justice', source: `Equality`, type: 'floating' },
+    ],
+  },
+  Equality: {
+    nodes: [
+      { id: 'Equality', data: { label: 'Equality' }, position: { x: 0, y: 0 } },
+      { id: 'Social Sustainability', data: { label: 'Social Sustainability' }, position: { x: 0, y: -150 } },
+    ],
+    edges: [
+      { id: `socialsus-eq`, target: 'Social Sustainability', source: `Equality`, type: 'floating' }, 
+    ],
+  },
+};
 
-  nodes.push({ id: 'Universalism', data: { label: 'Universalism' }, position: { x: 0, y: 0 } });
-  nodes.push({ id: 'Social Justice', data: { label: 'Social Justice' }, position: { x: 200, y: -60 } });
-  nodes.push({ id: 'Equality', data: { label: 'Equality' }, position: { x: -200, y: -60 } });
-  nodes.push({ id: 'Wisdom', data: { label: 'Wisdom' }, position: { x: 200, y: 150 } });
-  nodes.push({ id: 'Broadminded', data: { label: 'Broadminded' }, position: { x: -200, y: 150 } });
-  nodes.push({ id: 'Universalism Requirement', data: { label: 'Universalism Requirement' }, position: { x: 0, y: 250 } });
-  nodes.push({ id: 'Social Sustainability', data: { label: 'Social Sustainability' }, position: { x: 0, y: -150 } });
-
-  edges.push({ id: `uni-sj`, target: 'Universalism', source: `Social Justice`, type: 'floating',});
-  edges.push({ id: `uni-eq`, target: 'Universalism', source: `Equality`, type: 'floating',});
-  edges.push({ id: `uni-wis`, target: 'Universalism', source: `Wisdom`, type: 'floating',});
-  edges.push({ id: `uni-broa`, target: 'Universalism', source: `Broadminded`, type: 'floating',});
-  edges.push({ id: `uni-unireq`, target: 'Universalism', source: `Universalism Requirement`, type: 'floating',});
-  edges.push({ id: `uni-socialsus`, target: 'Universalism', source: `Social Sustainability`, type: 'floating',});
-  edges.push({ id: `sj-eq`, target: 'Social Justice', source: `Equality`, type: 'floating',});
-  edges.push({ id: `socialsus-eq`, target: 'Social Sustainability', source: `Equality`, type: 'floating',});
-
-
-  return { nodes, edges };
+export function createNodesAndEdges(section) {
+  return sectionsConfig[section] || { nodes: [], edges: [] };
 }

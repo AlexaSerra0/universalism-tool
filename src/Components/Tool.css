@@ -1,0 +1,42 @@
+.Tool {
+    text-align: center;
+  }
+
+.diagramStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FirstRow {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.SelectBar{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.SelectText {
+    border-bottom: 3px solid #4BB4DE;
+    min-width: 4rem;
+    margin: 0 2rem;
+    flex-grow: 1;
+}
+
+.Subtitle{
+    padding-bottom: 1rem;
+    color: #283D5A;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 

@@ -10,6 +10,7 @@ import Information from "./Components/Information";
 import Instructions from "./Components/Instructions";
 import Navbar from "./Components/Navbar";
 import Tool from "./Components/Tool";
+import Example from "./Components/Example";
  
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/information" element={<Information />} />
               <Route path="/instructions" element={<Instructions />} />
               <Route path="/tool" element={<Tool />} />
+              <Route path="/example" element={<Example />} />
           </Routes>
         </main>
       </Router>
