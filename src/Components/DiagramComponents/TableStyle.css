@@ -1,52 +1,63 @@
 .visual-design-table {
-    width:90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-  }
+  width:90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.visual-design-table table {
+  width: 100%;
+  border: 1px solid #4BB4DE;
+  background-color: #b1e9ff;
+}
+
+.visual-design-table td {
+  border: 1px solid #4BB4DE;
+  padding: 8px;
+  text-align: left;
+  padding-left: 1rem;
+  background-color: white;
+}
   
-  .visual-design-table table {
-    width: 100%;
-    border: 1px solid #ddd;
-  }
+.visual-design-table th {
+  border: 1px solid #4BB4DE;
+  padding: 8px;
+  background-color: white;
+}
   
-  .visual-design-table th,
-  .visual-design-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
+.visual-design-table .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  .visual-design-table th {
-    background-color: #f2f2f2;
-    text-align: left;
-  }
+.visual-design-table .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
   
-  .visual-design-table .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .visual-design-table .title {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  .visual-design-table .add-to-document {
-    background-color: #8e44ad;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .visual-design-table .subtitle {
-    font-style: italic;
-    text-align: center;
-  }
-  
-  .visual-design-table tbody td:nth-child(1) {
-    font-weight: bold;
-    vertical-align: top;
-  }
+.visual-design-table .add-to-document {
+  background-color: #4BB4DE;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.visual-design-table .add-to-document:hover{
+  background-color: #345DA7;
+}
+
+.visual-design-table .subtitle {
+  font-style: italic;
+  text-align: center;
+}
+
+.visual-design-table tbody td:nth-child(1) {
+  font-weight: bold;
+  vertical-align: top;
+}
   

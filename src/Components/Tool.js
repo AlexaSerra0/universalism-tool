@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import "./Buttons.css";
 import "./Tool.css";
+import { useNavigate } from "react-router-dom";
 import ReactFlow, {
   MiniMap,
   Controls,
@@ -13,7 +14,6 @@ import ReactFlow, {
 import 'reactflow/dist/style.css';
 import DiagramNode from './DiagramComponents/DiagramNode.js';
 import './DiagramComponents/DiagramNode.css';
-
 import FloatingEdge from './DiagramComponents/FloatingEdge';
 import FloatingConnectionLine from './DiagramComponents/FloatingConnectionLine';
 import { createNodesAndEdges } from './DiagramComponents/utils';
@@ -21,7 +21,6 @@ import { createNodesAndEdges } from './DiagramComponents/utils';
 //import { Table } from './DiagramComponents/Table.js';
 //import ConceptsData from './DiagramComponents/ConceptsData.js';
 import { Link } from 'react-router-dom';
-
 import { Table } from './DiagramComponents/SecondTable.js';
 import ConceptsData from './DiagramComponents/SecondConceptsData.js';
 
@@ -34,7 +33,6 @@ function Tool() {
 
   const [isOpen, setIsOpen] = useState(false);
   const [clickedNodeId, setClickedNodeId] = useState(null);
-  const [currentNodeIndex, setCurrentNodeIndex] = useState(0); 
 
   const [dataConcept, setDataConcept] = useState(null);
   //const [dataGoals, setDataGoals] = useState(null);
@@ -45,14 +43,16 @@ function Tool() {
   const [nodes, setNodes] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
+
+  const navigate = useNavigate();
+
   const handleNodeClick = useCallback((event, node) => {
     setClickedNodeId(node.id);
     setIsOpen(true);
-    setCurrentNodeIndex(nodes.findIndex((n) => n.id === node.id));
 
     setDataConcept(ConceptsData[node.id]);
     //setDataGoals(ConceptsData[`${node.id}Goals`]);
-  }, [nodes]);
+  }, []);
 
   const { setCenter } = useReactFlow();
 
@@ -60,26 +60,8 @@ function Tool() {
     setCenter(0, 0, { zoom: 1, duration: 800 });
   }, [setCenter]);
 
-  const handlePreviousClick = () => {
-    if (currentNodeIndex > 0) {
-      const newIndex = currentNodeIndex - 1;
-      setClickedNodeId(nodes[newIndex].id);
-      setCurrentNodeIndex(newIndex);
-
-      setDataConcept(ConceptsData[nodes[newIndex].id]);
-      //setDataGoals(ConceptsData[`${nodes[newIndex].id}Goals`]);
-    }
-  };
-
   const handleNextClick = () => {
-    if (currentNodeIndex < nodes.length - 1) {
-      const newIndex = currentNodeIndex + 1;
-      setClickedNodeId(nodes[newIndex].id);
-      setCurrentNodeIndex(newIndex);
-
-      setDataConcept(ConceptsData[nodes[newIndex].id]);
-      //setDataGoals(ConceptsData[`${nodes[newIndex].id}Goals`]);
-    }
+    navigate("/questions");
   };
 
   const handleSectionClick = (newSection) => {
@@ -97,7 +79,7 @@ function Tool() {
       </div>
       <div style={{  paddingLeft: '5rem'}}>Horizontal process barrrrrr</div>
       <div className='SelectBar'>
-        <Button design={'Button classicBtn'} onClick={handlePreviousClick} >Previous</Button>
+        <Button disabled={true} design={'Button classicBtn'}>Previous</Button>
         <div className='SelectText'>
           {clickedNodeId == null ? (
             <div>Selected:</div>
@@ -135,15 +117,16 @@ function Tool() {
           </ReactFlow>
         </div>
       </div>
+      {isOpen && (<div className="BigTittle">Characteristics</div>)}
       {/* {isOpen && (<Table dataConcept={dataConcept} dataGoals={dataGoals} /> )} */}
-      {isOpen && (<Table dataConcept={dataConcept}/> )}
+      {isOpen && (<Table dataConcept={dataConcept}/>)}
     </div>
   );
 }
 
-const Button = ({ design, onClick, children }) => {
+const Button = ({ disabled = false, design, onClick, children }) => {
   return (
-    <button className={design} type="button" onClick={onClick}>
+    <button disabled={disabled} className={design} type="button" onClick={onClick}>
       {children}
     </button>
   );

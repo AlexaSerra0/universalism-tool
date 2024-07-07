@@ -20,6 +20,12 @@
     background-color: #345DA7;
 }
 
+.classicBtn:disabled {
+    cursor: default;
+    background-color: #a1cada;
+    opacity: 0.7;
+  }
+
 .whiteBtn{
     color: #283D5A;
     background-color: #ffffff;
@@ -63,4 +69,15 @@
 .endBtn {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.SubmitButton{
+    margin-top: 3rem;
+    background-color: #283D5A;
+    color: #fff;
+    cursor: pointer;
+}
+
+.SubmitButton:hover{
+    background-color: #345DA7;
 }

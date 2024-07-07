@@ -11,6 +11,8 @@ import Instructions from "./Components/Instructions";
 import Navbar from "./Components/Navbar";
 import Tool from "./Components/Tool";
 import Example from "./Components/Example";
+import Questions from "./Components/Questions";
+import Document from "./Components/Document";
  
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
               <Route path="/instructions" element={<Instructions />} />
               <Route path="/tool" element={<Tool />} />
               <Route path="/example" element={<Example />} />
+              <Route path="/questions" element={<Questions />} />
+              <Route path="/document" element={<Document />} />
           </Routes>
         </main>
       </Router>

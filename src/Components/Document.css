@@ -1,0 +1,36 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.Heading{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    color: #283D5A;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formGroup{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 60rem;
+}
+.label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 1px solid #283D5A;
+}
