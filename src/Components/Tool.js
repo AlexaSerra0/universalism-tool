@@ -66,6 +66,8 @@ function Tool() {
       setSelectedConcepts(newSelectedConcepts);
       localStorage.setItem('selectedConcepts', JSON.stringify(newSelectedConcepts));
       alert(`Concept ${concept.concept} saved!`);
+    } else {
+      alert(`Concept ${concept.concept} already saved!`);
     }
   };
 

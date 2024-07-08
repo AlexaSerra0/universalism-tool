@@ -1,22 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import "./Document.css";
 import { useNavigate } from "react-router-dom";
+import { exportToWord } from './ExportToWord';  // Assuming you saved the above function in a file named `exportToWord.js`
+import "./Document.css";
 
 const Document = () => {
-
+    const [documentName, setDocumentName] = useState('');
+    const [author, setAuthor] = useState('');
+    const [participants, setParticipants] = useState(['']);
     const [selectedConcepts, setSelectedConcepts] = useState([]);
     const [selectedQuestions, setSelectedQuestions] = useState([]);
 
     const navigate = useNavigate();
-
-    const [participants, setParticipants] = useState(['']);
 
     useEffect(() => {
         const concepts = JSON.parse(localStorage.getItem('selectedConcepts')) || [];
         setSelectedConcepts(concepts);
         const questions = JSON.parse(localStorage.getItem('selectedQuestions')) || [];
         setSelectedQuestions(questions);
-      }, []);
+
+        const documentName = JSON.parse(localStorage.getItem('documentName')) || [];
+        setDocumentName(documentName);
+        const author = JSON.parse(localStorage.getItem('author')) || [];
+        setAuthor(author);
+        const participants = JSON.parse(localStorage.getItem('participants')) || [''];
+        setParticipants(participants);
+    }, []);
 
     const handleParticipantChange = (index, event) => {
         const newParticipants = [...participants];
@@ -30,57 +38,71 @@ const Document = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
-        const data = {
-            documentName: formData.get('documentName'),
-            author: formData.get('author'),
-            participants: participants.filter((p) => p.trim() !== ''),
-        };
-        console.log(data);
-        //----------- export doc --------------------
+        exportToWord(documentName, author, participants, selectedConcepts, selectedQuestions);
     };
 
     const handlePreviousClick = () => {
-        navigate("/questions");
-      };
+      localStorage.setItem('documentName', JSON.stringify(documentName));
+      localStorage.setItem('author', JSON.stringify(author));
+      localStorage.setItem('participants', JSON.stringify(participants));
+      navigate("/questions");
+    };
 
     return (
-    <form onSubmit={handleSubmit}>
-        <div className='Container'>
-            <Button design={'Button classicBtn'} onClick={handlePreviousClick}>Previous</Button>
-            <h1 className='Heading'>Document Details</h1>
-            <div className='formGroup'>
-                <input className='input' type="text" id="documentName" name="documentName" placeholder="Document name *" required/>
+        <form onSubmit={handleSubmit}>
+            <div className='Container'>
+                <Button design={'Button classicBtn'} onClick={handlePreviousClick}>Previous</Button>
+                <h1 className='Heading'>Document Details</h1>
+                <div className='formGroup'>
+                    <input
+                        className='input'
+                        type="text"
+                        id="documentName"
+                        name="documentName"
+                        placeholder="Document name *"
+                        value={documentName}
+                        onChange={(e) => setDocumentName(e.target.value)}
+                        required
+                    />
+                </div>
+                <div className='formGroup'>
+                    <input
+                        className='input'
+                        type="text"
+                        id="author"
+                        name="author"
+                        placeholder='Author *'
+                        value={author}
+                        onChange={(e) => setAuthor(e.target.value)}
+                        required
+                    />
+                </div>
+                {participants.map((participant, index) => (
+                    <div key={index} className='formGroup'>
+                        <input
+                            className='input'
+                            type="text"
+                            id={`participant${index + 1}`}
+                            value={participant}
+                            placeholder={`Participant ${index + 1} *`}
+                            onChange={(event) => handleParticipantChange(index, event)}
+                            required
+                        />
+                    </div>
+                ))}
+                <button type="button" className='Button classicBtn' onClick={addParticipant}>ADD NEW PARTICIPANT +</button>
+                <button type="submit" className='Button SubmitButton'>CREATE DOCUMENT</button>
             </div>
-            <div className='formGroup'>
-                <input className='input' type="text" id="author" name="author" placeholder='Author *' required />
-            </div>
-            {participants.map((participant, index) => (
-            <div key={index} className='formGroup'>
-                <input
-                    className='input'
-                    type="text"
-                    id={`participant${index + 1}`}
-                    value={participant}
-                     placeholder={`Participant ${index + 1} *`}
-                    onChange={(event) => handleParticipantChange(index, event)}
-                    required
-                />
-            </div>
-            ))}
-            <button type="button" className='Button classicBtn' onClick={addParticipant}>ADD NEW PARTICIPANT +</button>
-            <button type="submit" className='Button SubmitButton'>CREATE DOCUMENT</button>
-        </div>
-    </form>
+        </form>
     );
-    };
+};
 
 const Button = ({ disabled = false, design, onClick, children }) => {
     return (
-      <button disabled={disabled} className={design} type="button" onClick={onClick}>
-        {children}
-      </button>
+        <button disabled={disabled} className={design} type="button" onClick={onClick}>
+            {children}
+        </button>
     );
-  };
+};
 
 export default Document;

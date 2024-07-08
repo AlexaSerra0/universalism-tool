@@ -7,6 +7,7 @@ const Questions = () => {
   const navigate = useNavigate();
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [availableConcepts, setAvailableConcepts] = useState([]);
+  const [selectedConcept, setSelectedConcept] = useState('');
 
   useEffect(() => {
     const storedSelectedQuestions = JSON.parse(localStorage.getItem('selectedQuestions')) || [];
@@ -20,14 +21,6 @@ const Questions = () => {
     }
   }, []);
 
-  const [selectedConcept, setSelectedConcept] = useState(() => {
-    if (availableConcepts.length > 0) {
-      return availableConcepts[0].concept;
-    } else {
-      return 'Equality'; 
-    }
-  });
-
   const handleRemoveConcept = (concept) => {
     const updatedQuestions = selectedQuestions.filter(q => q.concept !== concept.concept);
     setSelectedQuestions(updatedQuestions);
@@ -39,8 +32,12 @@ const Questions = () => {
 
     localStorage.setItem('selectedConcepts', JSON.stringify(updatedConcepts));
 
-    if (selectedConcept === concept.concept && updatedConcepts.length > 0) {
-      setSelectedConcept(updatedConcepts[0].concept);
+    if (selectedConcept === concept.concept) {
+      if (updatedConcepts.length > 0) {
+        setSelectedConcept(updatedConcepts[0].concept);
+      } else {
+        setSelectedConcept(''); // No concept available
+      }
     }
   };
 
@@ -77,9 +74,12 @@ const Questions = () => {
             className={`concept ${selectedConcept === concept.concept ? 'active' : ''}`}
             onClick={() => setSelectedConcept(concept.concept)}
           >
-            <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+            <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
               {concept.concept} {getSelectedCount(concept.concept)}/{QuestionsData[concept.concept].length}
-              <button className="removeConceptBtn" onClick={() => handleRemoveConcept(concept)}>X</button>
+              <button className="removeConceptBtn" onClick={(e) => { 
+                e.stopPropagation(); 
+                handleRemoveConcept(concept); 
+              }}>X</button>
             </div>
           </div>
         ))}
@@ -90,7 +90,7 @@ const Questions = () => {
           <Button design={'Button classicBtn'} onClick={handleNextClick} disabled={selectedQuestions.length === 0}>Next</Button>
         </div>
         <div className="questionsContainer">
-          {QuestionsData[selectedConcept].map((question, index) => (
+          {selectedConcept && QuestionsData[selectedConcept] && QuestionsData[selectedConcept].map((question, index) => (
             <div key={`question${index}`} className="question">
               <input
                 type="checkbox"

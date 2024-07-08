@@ -1,29 +1,29 @@
 export const Equality = [{
     concept: 'Equality',
-    question: 'Does the system deliver seamless UX to all individuals, especially people with certain physical or cognitive disabilities?',
+    question: 'Question Equality 1?',
   },
   {
     concept: 'Equality',
-    question: 'Can the system interact with exterior Accessibility APIs?',
+    question: 'Question Equality 2?',
   },
   {
     concept: 'Equality',
-    question: 'Are our testers aware of certain challenges some people might face while using the system? And how are they using that information?',
+    question: 'Question Equality 3?',
   },
 ];
 
 export const Wisdom = [
     {
       concept: 'Wisdom',
-      question: 'Does the system interact well with external APIs?',
+      question: 'Question Wisdom 1?',
     },
     {
       concept: 'Wisdom',
-      question: 'Is our system designed to handle unexpected data scenarios gracefully?',
+      question: 'Question Wisdom 2?',
     },
     {
       concept: 'Wisdom',
-      question: 'Are our developers incorporating best practices for data handling and security?',
+      question: 'Question Wisdom 3?',
     },
   ];
 
