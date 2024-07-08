@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 import "./Buttons.css"
@@ -16,6 +16,10 @@ function Home() {
       navigate("/tool");
     }
     
+    useEffect(() => {
+      localStorage.clear();
+      }, []);
+
     return (
         <div className="App gradient_background">
           <header className='Title'>

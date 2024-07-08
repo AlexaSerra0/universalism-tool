@@ -37,19 +37,17 @@ function Tool() {
   const [dataConcept, setDataConcept] = useState(null);
   //const [dataGoals, setDataGoals] = useState(null);
   const [section, setSection] = useState('All');
+  const [selectedConcepts, setSelectedConcepts] = useState([]);
 
   const { nodes: initialNodes, edges: initialEdges } = createNodesAndEdges(section);
-  
   const [nodes, setNodes] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
-
 
   const navigate = useNavigate();
 
   const handleNodeClick = useCallback((event, node) => {
     setClickedNodeId(node.id);
     setIsOpen(true);
-
     setDataConcept(ConceptsData[node.id]);
     //setDataGoals(ConceptsData[`${node.id}Goals`]);
   }, []);
@@ -58,10 +56,24 @@ function Tool() {
 
   useEffect(() => {
     setCenter(0, 0, { zoom: 1, duration: 800 });
+    const concepts = JSON.parse(localStorage.getItem('selectedConcepts')) || [];
+    setSelectedConcepts(concepts);
   }, [setCenter]);
 
+  const handleAddToDocument = (concept) => {
+    if (!selectedConcepts.find((c) => c.id === concept.id)) {
+      const newSelectedConcepts = [...selectedConcepts, concept];
+      setSelectedConcepts(newSelectedConcepts);
+      localStorage.setItem('selectedConcepts', JSON.stringify(newSelectedConcepts));
+      alert(`Concept ${concept.concept} saved!`);
+    }
+  };
+
   const handleNextClick = () => {
-    navigate("/questions");
+    if (selectedConcepts.length > 0) {
+      localStorage.setItem('selectedConcepts', JSON.stringify(selectedConcepts));
+      navigate("/questions");
+    }
   };
 
   const handleSectionClick = (newSection) => {
@@ -79,7 +91,6 @@ function Tool() {
       </div>
       <div style={{  paddingLeft: '5rem'}}>Horizontal process barrrrrr</div>
       <div className='SelectBar'>
-        <Button disabled={true} design={'Button classicBtn'}>Previous</Button>
         <div className='SelectText'>
           {clickedNodeId == null ? (
             <div>Selected:</div>
@@ -87,7 +98,7 @@ function Tool() {
             <div>{clickedNodeId}</div>
           )}
         </div>
-        <Button design={'Button classicBtn'} onClick={handleNextClick} >Next</Button>
+        <Button design={'Button classicBtn'} onClick={handleNextClick} disabled={selectedConcepts.length === 0}>Next</Button>
       </div>
       <div className='Subtitle'>Model Sections:</div>
       <div style={{paddingBottom: '1rem'}}>
@@ -119,7 +130,7 @@ function Tool() {
       </div>
       {isOpen && (<div className="BigTittle">Characteristics</div>)}
       {/* {isOpen && (<Table dataConcept={dataConcept} dataGoals={dataGoals} /> )} */}
-      {isOpen && (<Table dataConcept={dataConcept}/>)}
+      {isOpen && (<Table dataConcept={dataConcept} onAddToDocument={handleAddToDocument}/>)}
     </div>
   );
 }

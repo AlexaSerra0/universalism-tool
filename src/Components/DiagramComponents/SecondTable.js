@@ -1,10 +1,11 @@
 import React from "react";
 import './TableStyle.css';
 
-export const Table = ({ dataConcept}) => {
-  const handleButtonClick = (rowData) => {
-    
-    console.log('Button clicked for row:', rowData);
+export const Table = ({ dataConcept, onAddToDocument }) => {
+  const handleButtonClick = () => {
+    if (dataConcept) {
+      onAddToDocument(dataConcept);
+    }
   };
 
   return (

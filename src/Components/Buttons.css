@@ -81,3 +81,10 @@
 .SubmitButton:hover{
     background-color: #345DA7;
 }
+
+.removeConceptBtn{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
