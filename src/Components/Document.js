@@ -70,35 +70,6 @@ const Document = () => {
             ))}
             <button type="button" className='Button classicBtn' onClick={addParticipant}>ADD NEW PARTICIPANT +</button>
             <button type="submit" className='Button SubmitButton'>CREATE DOCUMENT</button>
-            <div className="Document">
-      <h1>Your Document</h1>
-      {selectedConcepts.length === 0 ? (
-        <p>No concepts added yet.</p>
-      ) : (
-        <ul>
-          {selectedConcepts.map((concept, index) => (
-            <li key={index}>
-              <h2>{concept.concept}</h2>
-              <p>{concept.description}</p>
-              <p>{concept.requirement}</p>
-            </li>
-          ))}
-        </ul>
-      )}
-      {selectedQuestions.length === 0 ? (
-        <p>No concepts added yet.</p>
-      ) : (
-        <ul>
-            {Array.isArray(selectedQuestions) && (
-             selectedQuestions.map((question, index) => (
-            <li key={index}>
-                <h2>{question.concept}</h2>
-              <h2>{question.question}</h2>
-            </li>
-        )))}
-        </ul>
-      )}
-    </div>
         </div>
     </form>
     );

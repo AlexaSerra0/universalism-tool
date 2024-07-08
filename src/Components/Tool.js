@@ -89,7 +89,6 @@ function Tool() {
       <div className='FirstRow'>
         <Link to={"/example"}>Case Example: ShareTheMeal</Link>
       </div>
-      <div style={{  paddingLeft: '5rem'}}>Horizontal process barrrrrr</div>
       <div className='SelectBar'>
         <div className='SelectText'>
           {clickedNodeId == null ? (
