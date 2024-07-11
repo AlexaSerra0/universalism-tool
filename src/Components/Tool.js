@@ -107,7 +107,6 @@ function Tool() {
       <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Modules')}>Modules</Button>
       <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Universalism')}>Universalism</Button>
       <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Equality')}>Equality</Button>
-      <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Accessibility')}>Accessibility</Button>
       <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Security')}>Security</Button>
       <Button design={'ButtonBar classicBtn'} onClick={() => handleSectionClick('Gender')}>Gender</Button>
       <Button design={'ButtonBar classicBtn endBtn'} onClick={() => handleSectionClick('Culture')}>Culture</Button>

@@ -62,8 +62,11 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                     new Paragraph({
                         children: [
                             new TextRun({
-                                text: `Author: ${author}`,
+                                text: `Author: `,
                                 bold: true,
+                            }),
+                            new TextRun({
+                                text: `${author}`,
                             })
                         ],
                         spacing: { before: 200, after: 200 },
@@ -71,7 +74,7 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                     new Paragraph({
                         children: [
                             new TextRun({
-                                text: `Participants:`,
+                                text: `Participants: `,
                                 bold: true,
                             })
                         ],
@@ -79,7 +82,7 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                     }),
                     ...participants.map((participant) => new Paragraph({ text: `- ${participant}` })),
                     new Paragraph({
-                        text: `Selected Concepts:`,
+                        text: `Selected Concepts: `,
                         heading: HeadingLevel.HEADING_1,
                         spacing: { before: 400, after: 200 },
                     }),
@@ -92,12 +95,28 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                         new Paragraph({
                             children: [
                                 new TextRun({
-                                    text: `Description: ${concept.description}`,
+                                    text: `Description: `,
                                     bold: true,
+                                }),
+                                new TextRun({
+                                    text: `${concept.description}`,
                                 })
                             ],
                             spacing: { before: 100, after: 100 },
                         }),
+                        new Paragraph({
+                            children: [
+                                new TextRun({
+                                    text: `Requirement Example: `,
+                                    bold: true,
+                                }),
+                                new TextRun({
+                                    text: `${concept.requirement}`,
+                                })
+                            ],
+                            spacing: { before: 100, after: 100 },
+                        }),
+                        new Paragraph({}),
                         createTable(
                             selectedQuestions.filter((q) => q.concept === concept.concept)
                         ),

@@ -97,18 +97,22 @@ const sectionsConfig = {
   Modules: {
     nodes:  [
       { id: 'Universalism', data: { label: 'Universalism' }, position: { x: 0, y: 0 } },
-      { id: 'Security', data: { label: 'Security' }, position: { x: 200, y: -60 } },
-      { id: 'Equality', data: { label: 'Equality' }, position: { x: -200, y: -60 } },
-      { id: 'Accessibility', data: { label: 'Accessibility' }, position: { x: 200, y: 150 } },
-      { id: 'Gender', data: { label: 'Gender' }, position: { x: -200, y: 150 } },
-      { id: 'Culture', data: { label: 'Culture' }, position: { x: 0, y: 250 } },
+      { id: 'Security', data: { label: 'Security' }, position: { x: 220, y: -80 } },
+      { id: 'Trust', data: { label: 'Trust' }, position: { x: 40, y: -170 } },
+      { id: 'Privacy', data: { label: 'Privacy' }, position: { x: 400, y: -170 } },
+      { id: 'Security Requirement', data: { label: 'Security Requirement' }, position: { x: 220, y: -170 } },
+      { id: 'Equality', data: { label: 'Equality' }, position: { x: -220, y: -80 } },
+      { id: 'Gender', data: { label: 'Gender' }, position: { x: 220, y: 80 } },
+      { id: 'Culture', data: { label: 'Culture' }, position: { x: -220, y: 80 } },
     ],
     edges: [
       { id: `uni-sec`, target: 'Universalism', source: `Security`, type: 'floating' },
       { id: `uni-eq`, target: 'Universalism', source: `Equality`, type: 'floating' },
-      { id: `uni-acc`, target: 'Universalism', source: `Accessibility`, type: 'floating' },
       { id: `uni-gen`, target: 'Universalism', source: `Gender`, type: 'floating' },
       { id: `uni-cul`, target: 'Universalism', source: `Culture`, type: 'floating' },
+      { id: `sec-tr`, target: 'Security', source: `Trust`, type: 'floating' },
+      { id: `sec-pri`, target: 'Security', source: `Privacy`, type: 'floating' },
+      { id: `sec-secReq`, target: 'Security', source: `Security Requirement`, type: 'floating' },
     ],
   },
   Universalism: {
@@ -137,6 +141,68 @@ const sectionsConfig = {
     ],
     edges: [
       { id: `socialsus-eq`, target: 'Social Sustainability', source: `Equality`, type: 'floating' }, 
+    ],
+  },
+  Security: {
+    nodes: [
+      { id: 'Equality', data: { label: 'Equality' }, position: { x: 0, y: 0 } },
+      { id: 'Social Sustainability', data: { label: 'Social Sustainability' }, position: { x: 0, y: -150 } },
+    ],
+    edges: [
+      { id: `socialsus-eq`, target: 'Social Sustainability', source: `Equality`, type: 'floating' }, 
+    ],
+  },
+  Gender: {
+    nodes: [
+      { id: 'Equality', data: { label: 'Equality' }, position: { x: 0, y: 0 } },
+      { id: 'Social Sustainability', data: { label: 'Social Sustainability' }, position: { x: 0, y: -150 } },
+    ],
+    edges: [
+      { id: `socialsus-eq`, target: 'Social Sustainability', source: `Equality`, type: 'floating' }, 
+    ],
+  },
+  Culture: {
+    nodes: [
+      { id: 'Culture', data: { label: 'Culture' }, position: { x: 0, y: 0 } },
+      { id: 'Norm', data: { label: 'Norm' }, position: { x: -250, y: -150 } },
+      { id: 'Value', data: { label: 'Value' }, position: { x: 0, y: -150 } },
+      { id: 'Action', data: { label: 'Action' }, position: { x: 80, y: 150 } },
+      { id: 'Ritual', data: { label: 'Ritual' }, position: { x: 330, y: 60 } },
+      { id: 'Custom', data: { label: 'Custom' }, position: { x: 330, y: 240 } },
+      { id: 'Social Environment', data: { label: 'Social Environment' }, position: { x: -250, y: 100 } },
+      { id: 'Social Interaction', data: { label: 'Social Interaction' }, position: { x: -250, y: 0 } },
+      { id: 'Universalism', data: { label: 'Universalism' }, position: { x: -200, y: -350 } },
+      { id: 'Human', data: { label: 'Human' }, position: { x: 200, y: -350 } },
+      { id: 'Beliefs', data: { label: 'Beliefs' }, position: { x: 400, y: -200 } },
+      { id: 'Human Right', data: { label: 'Human Right' }, position: { x: -550, y: -200 } },
+      { id: 'Fair Salary', data: { label: 'Fair Salary' }, position: { x: -550, y: -100 } },
+    ],
+    edges: [
+      { id: `cul-act`, source: 'Culture', target: `Action`, type: 'floating'},
+      { id: `cul-socInt`, source: 'Culture', target: `Social Interaction`, type: 'floating'}, 
+      { id: `nor-socInt`, source: 'Norm', target: `Value`, type: 'floating'},
+      { id: `nor-humRig`, source: 'Norm', target: `Human Right`, type: 'floating'}, 
+      { id: `nor-faiSal`, source: 'Norm', target: `Fair Salary`, type: 'floating'}, 
+      { id: `val-uni`, source: 'Value', target: `Universalism`, type: 'floating'},
+      { id: `val-rit`, source: 'Value', target: `Ritual`, type: 'floating'}, 
+      { id: `val-bel`, source: 'Value', target: `Beliefs`, type: 'floating'}, 
+      { id: `rit-act`, source: 'Ritual', target: `Action`, type: 'floating'}, 
+      { id: `cus-act`, source: 'Custom', target: `Action`, type: 'floating'}, 
+      { id: `socEnv-socInt`, source: 'Social Environment', target: `Social Interaction`, type: 'floating'}, 
+      { id: `socEnv-bel`, source: 'Social Environment', target: `Beliefs`, type: 'floating'}, 
+      { id: `socInt-socEnv`, source: 'Social Interaction', target: `Social Environment`, type: 'floating'}, 
+      { id: `socInt-act`, source: 'Social Interaction', target: `Action`, type: 'floating'}, 
+      { id: `socInt-bel`, source: 'Social Interaction', target: `Beliefs`, type: 'floating'}, 
+      
+      { id: `hum-nor`, source: 'Human', target: `Norm`, type: 'floating'}, 
+      { id: `hum-val`, source: 'Human', target: `Value`, type: 'floating'}, 
+      { id: `hum-socInt`, source: 'Human', target: `Social Interaction`, type: 'floating'}, 
+      { id: `hum-act`, source: 'Human', target: `Action`, type: 'floating'}, 
+
+      { id: `bel-hum`, source: 'Beliefs', target: `Human`, type: 'floating', label: 'influences'}, 
+      { id: `bel-val`, source: 'Beliefs', target: `Value`, type: 'floating', label: 'influences'}, 
+      { id: `bel-act`, source: 'Beliefs', target: `Action`, type: 'floating', label: 'influences'}, 
+      { id: `bel-cus`, source: 'Beliefs', target: `Custom`, type: 'floating', label: 'influences'}, 
     ],
   },
 };
