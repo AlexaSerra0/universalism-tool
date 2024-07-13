@@ -13,7 +13,6 @@ import ReactFlow, {
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 import DiagramNode from './DiagramComponents/DiagramNode.js';
-import './DiagramComponents/DiagramNode.css';
 import FloatingEdge from './DiagramComponents/FloatingEdge';
 import FloatingConnectionLine from './DiagramComponents/FloatingConnectionLine';
 import { createNodesAndEdges } from './DiagramComponents/utils';
@@ -96,7 +95,7 @@ function Tool() {
           {clickedNodeId == null ? (
             <div>Selected:</div>
           ) : (
-            <div>{clickedNodeId}</div>
+            <div>{dataConcept.concept}</div>
           )}
         </div>
         <Button design={'Button classicBtn'} onClick={handleNextClick} disabled={selectedConcepts.length === 0}>Next</Button>
@@ -112,7 +111,7 @@ function Tool() {
       <Button design={'ButtonBar classicBtn endBtn'} onClick={() => handleSectionClick('Culture')}>Culture</Button>
       </div>
       <div className='diagramStyle'>
-        <div className="floatingedges" style={{ width: '90vw', height: '80vh', border: '5px solid #4BB4DE', borderRadius: '10px' }}>
+        <div className="floatingedges">
           <ReactFlow
             nodes={nodes}
             edges={edges}

@@ -1,17 +1,17 @@
 export const Equality = {
-    concept: 'Equality',
-    conceptDescription: 'Equality description'
+  concept: 'Equality',
+  conceptDescription: 'Equality description'
 };
 
 export const EqualityGoals = [
-    { goal: 'Equality goal 1',
-      potentialIssue: 'Equality problem 1',
-      description: 'Equality Description 1' },
+  { goal: 'Equality goal 1',
+    potentialIssue: 'Equality problem 1',
+    description: 'Equality Description 1' },
 
-    { goal: 'Equality goal 2',
-      potentialIssue: 'Equality problem 2',
-      description: 'Equality Description 2' }
-    ];
+  { goal: 'Equality goal 2',
+    potentialIssue: 'Equality problem 2',
+    description: 'Equality Description 2' }
+];
 
     export const Wisdom = {
         concept: 'Wisdom',

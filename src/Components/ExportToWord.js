@@ -10,13 +10,16 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                     children: [
                         new TableCell({
                             children: [new Paragraph({
-                                children: [new TextRun({ text: "Questions", bold: true })],
+                                children: [new TextRun({ text: "Questions", size: 24, bold: true })],
+                                spacing: { before: 100, after: 100 },
                             })],
                             width: { size: 50, type: WidthType.PERCENTAGE },
+                            
                         }),
                         new TableCell({
                             children: [new Paragraph({
-                                children: [new TextRun({ text: "Remind Participants", bold: true })],
+                                children: [new TextRun({ text: "Remind Participants", size: 24, bold: true })],
+                                spacing: { before: 100, after: 100 },
                             })],
                             width: { size: 50, type: WidthType.PERCENTAGE },
                         }),
@@ -26,10 +29,14 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                     return new TableRow({
                         children: [
                             new TableCell({
-                                children: [new Paragraph({ text: q.question })],
+                                children: [new Paragraph({
+                                    children: [new TextRun({ text: q.question, size: 24})],
+                                    spacing: { before: 100, after: 100 },
+                                })],
                             }),
                             new TableCell({
-                                children: [new Paragraph({ text: "" })],
+                                children: [new Paragraph({ text: "", size: 24 })],
+                                spacing: { before: 100, after: 100 },
                             }),
                         ],
                     });
@@ -64,9 +71,11 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                             new TextRun({
                                 text: `Author: `,
                                 bold: true,
+                                size: 24,
                             }),
                             new TextRun({
                                 text: `${author}`,
+                                size: 24,
                             })
                         ],
                         spacing: { before: 200, after: 200 },
@@ -76,30 +85,46 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                             new TextRun({
                                 text: `Participants: `,
                                 bold: true,
+                                size: 24,
                             })
                         ],
                         spacing: { before: 200, after: 100 },
                     }),
-                    ...participants.map((participant) => new Paragraph({ text: `- ${participant}` })),
+                    ...participants.map((participant) => new Paragraph({
+                        children: [
+                            new TextRun({
+                                text: `- ${participant}`,
+                                size: 24,
+                            })
+                        ],
+                        spacing: { before: 200, after: 100 },
+                    })),
                     new Paragraph({
                         text: `Selected Concepts: `,
                         heading: HeadingLevel.HEADING_1,
                         spacing: { before: 400, after: 200 },
                     }),
                     ...selectedConcepts.map((concept) => [
-                        new Paragraph({
-                            text: `${concept.concept}:`,
+                         new Paragraph({
+                            children: [
+                                new TextRun({
+                                    text: `${concept.concept}:`,
+                                    size: 28,
+                                })
+                            ],
                             heading: HeadingLevel.HEADING_2,
-                            spacing: { before: 200, after: 200 },
+                            spacing: { before: 200, after: 100 },
                         }),
                         new Paragraph({
                             children: [
                                 new TextRun({
                                     text: `Description: `,
                                     bold: true,
+                                    size: 24,
                                 }),
                                 new TextRun({
                                     text: `${concept.description}`,
+                                    size: 24,
                                 })
                             ],
                             spacing: { before: 100, after: 100 },
@@ -109,9 +134,11 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                                 new TextRun({
                                     text: `Requirement Example: `,
                                     bold: true,
+                                    size: 24,
                                 }),
                                 new TextRun({
                                     text: `${concept.requirement}`,
+                                    size: 24,
                                 })
                             ],
                             spacing: { before: 100, after: 100 },
@@ -120,6 +147,7 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                         createTable(
                             selectedQuestions.filter((q) => q.concept === concept.concept)
                         ),
+                        new Paragraph({}),
                     ]).flat(),
                 ],
             },

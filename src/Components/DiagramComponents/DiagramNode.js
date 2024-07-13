@@ -1,6 +1,7 @@
 import { Handle, Position } from 'reactflow';
+import './DiagramNode.css';
 
-function DiagramNode({ data, isConnectable }) {
+function DiagramNode({ isConnectable }) {
   return (
     <div className="text-updater-node">
       <div>

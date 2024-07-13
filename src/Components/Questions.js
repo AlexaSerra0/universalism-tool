@@ -14,11 +14,12 @@ const Questions = () => {
     setSelectedQuestions(storedSelectedQuestions);
 
     const storedConcepts = JSON.parse(localStorage.getItem('selectedConcepts')) || [];
-    setAvailableConcepts(storedConcepts); 
+    setAvailableConcepts(storedConcepts);
 
     if (storedConcepts.length > 0) {
       setSelectedConcept(storedConcepts[0].concept);
     }
+
   }, []);
 
   const handleRemoveConcept = (concept) => {
@@ -40,6 +41,10 @@ const Questions = () => {
       }
     }
   };
+
+  function removeSpaces(inputString) {
+    return inputString.split(' ').join('');
+  }
 
   const handleQuestionChange = (question) => {
     setSelectedQuestions((prev) => {
@@ -75,7 +80,7 @@ const Questions = () => {
             onClick={() => setSelectedConcept(concept.concept)}
           >
             <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-              {concept.concept} {getSelectedCount(concept.concept)}/{QuestionsData[concept.concept].length}
+              {concept.concept} {getSelectedCount(concept.concept)}/{QuestionsData[removeSpaces(concept.concept)].length}
               <button className="removeConceptBtn" onClick={(e) => { 
                 e.stopPropagation(); 
                 handleRemoveConcept(concept); 
@@ -90,7 +95,7 @@ const Questions = () => {
           <Button design={'Button classicBtn'} onClick={handleNextClick} disabled={selectedQuestions.length === 0}>Next</Button>
         </div>
         <div className="questionsContainer">
-          {selectedConcept && QuestionsData[selectedConcept] && QuestionsData[selectedConcept].map((question, index) => (
+          {selectedConcept && QuestionsData[removeSpaces(selectedConcept)] && QuestionsData[removeSpaces(selectedConcept)].map((question, index) => (
             <div key={`question${index}`} className="question">
               <input
                 type="checkbox"
