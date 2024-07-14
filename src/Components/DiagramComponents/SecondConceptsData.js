@@ -2,7 +2,7 @@
 export const Culture  = {
   id: '1',
   concept: 'Culture',
-  description: 'Culture is “the customary beliefs, social forms, and material traits of a racial, religious, or social group”. It can also be “the integrated pattern of human knowledge, belief, and behavior that depends upon the capacity for learning and transmitting knowledge to succeeding generations”. In software systems, culture is the behaviors, beliefs, and values that define how users interact with the software. It includes user expectations, community norms, and the user experience influenced by these factors. Culture determines how software is designed and perceived by the users.',
+  description: 'Culture is the customary beliefs, social forms, and material traits of a racial, religious, or social group. It can also be the integrated pattern of human knowledge, belief, and behavior that depends upon the capacity for learning and transmitting knowledge to succeeding generations. In software systems, culture is the behaviors, beliefs, and values that define how users interact with the software. It includes user expectations, community norms, and the user experience influenced by these factors. Culture determines how software is designed and perceived by the users.',
   requirement: 'ShareTheMeal includes cultural values of compassion and empathy by highlighting the act of donating meals to those in need.',
 };
 
@@ -24,7 +24,7 @@ export const Action  = {
   id: '4',
   concept: 'Action',
   description: 'An Action consists of the process of doing something with the intention of achieving a desired goal. In software systems, an action refers to any user interaction or system process done to achieve a specific goal. This can be tasks like submitting a form, clicking a button, or running a program. Actions must be intuitive, helping users accomplish their goals effectively in the software.',
-  requirement: 'In the ShareTheMeal app, the action is the donation process to reduce global hunger. This process involves selecting the amount to donate and confirming the donation. Other actions can be sharing on social media to spread awareness.',
+  requirement: 'In ShareTheMeal app, the action is the donation process to reduce global hunger. This process involves selecting the amount to donate and confirming the donation. Other actions can be sharing on social media to spread awareness.',
 };
 
 export const Ritual  = {
@@ -38,7 +38,7 @@ export const Custom  = {
   id: '6',
   concept: 'Custom',
   description: "A custom is an established behavior expressed as actions, codes, or rules of behavior. Norms, values, and beliefs create and shape customs, which in turn affects behavior in the form of actions and events. In software systems, customs are established user behaviors and practices that develop over time.",
-  requirement: 'ShareTheMeal app users regularly sharing their meal donations on social media through the ShareTheMeal app could become a custom that promotes the app’s goal and increases its visibility.',
+  requirement: 'ShareTheMeal app users regularly sharing their meal donations on social media through the ShareTheMeal app could become a custom that promotes the app’s goal and increases its visibility. Subscribing to a monthly donation could also become a custom that aligns with the app’s goals of providing consistent support for reducing global hunger.',
 };
 
 export const SocialEnvironment  = {
@@ -55,6 +55,28 @@ export const SocialInteraction   = {
   requirement: 'In the app ShareTheMeal, users interact in the app by making donations and sharing in social media about the cause, encouraging others to join and donate.',
 };
 
+//Security
+export const Security   = {
+  id: '9',
+  concept: 'Security',
+  description: 'Security is considered the measures taken in order to prevent, minimize and correctly address threats towards valuable assets.  It corresponds to the level of defense that an asset possesses against malicious attackers. In software systems, it implies the implementation of protocols and technologies to protect data, ensure privacy, and maintain system integrity against cyber threats and unauthorized access.',
+  requirement: "ShareTheMeal app has an infrastructure based on security standards. To ensure that the payment information is safe and secure, everything is processed by Braintree/Paypal. Other than that, the app doesn’t have any additional data. Donations that were done by mistake will be returned immediately.",
+};
+
+export const SecurityRequirement   = {
+  id: '10',
+  concept: 'Security Requirement',
+  description: "A Security Requirement refers to a quality requirement that defines the level of security needed, concerning system specific criteria and minimum quality measures, and that a system must maintain to guarantee that it fulfills the security policies. It specifies the necessary security protocols that must be implemented to protect the system from threats.",
+  requirement: "The ShareTheMeal app should implement a secure authentication mechanism to ensure that user accounts are protected against unauthorized access. Only authorized users can access sensitive information and perform actions like donating meals.",
+};
+
+export const SecurityMechanism = {
+  id: '11',
+  concept: 'Security Mechanism',
+  description: "A Security Mechanism, also known as a countermeasure, is an architectural mechanism, that is, strategic decision, that addresses security requirements and/or minimizes vulnerabilities. These mechanisms can be hardware, software, manual procedures, or training, designed to improve security. Examples include user IDs, passwords, encryption, firewalls, and antivirus software.",
+  requirement: "ShareTheMeal app uses HTTPS to secure a channel from the app to the server. The payment information is secure because it’s processed by Braintree, a globally trusted PayPal payments company. Every communication is point-to-point encrypted, SHA-256 with RSA encryption.",
+};
+
 const ConceptsData = {
   //Culture
   Culture,
@@ -65,6 +87,10 @@ const ConceptsData = {
   Custom,
   SocialEnvironment,
   SocialInteraction,
+  //Security
+  Security,
+  SecurityRequirement,
+  SecurityMechanism,
 };
 
 export default ConceptsData;

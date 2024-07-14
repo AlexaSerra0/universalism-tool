@@ -82,7 +82,7 @@ export const Ritual = [
 },
 {
   concept: 'Ritual',
-  question: 'Are there mechanisms in place to motivate users to participate in these rituals regularly?',
+  question: 'Are there mechanisms in place to motivate users to participate in the rituals regularly?',
 },
 
 ];
@@ -136,6 +136,63 @@ export const SocialInteraction  = [
 },
 ];
 
+//Security
+export const Security = [
+{
+  concept: 'Security',
+  question: 'Are there protocols and technologies in place to protect data and ensure privacy?',
+},
+{
+  concept: 'Security',
+  question: 'Are there measures to minimize and correctly address any security attacks?',
+},
+{
+  concept: 'Security',
+  question: 'Are user transactions and data regularly monitored for security threats?',
+},
+];
+
+
+export const SecurityRequirement  = [
+{
+  concept: 'Security Requirement ',
+  question: 'Are there critical assets and data that need protection within the system?',
+},
+{
+  concept: 'Security Requirement ',
+  question: 'Are there specific security protocols that mitigate identified risks?',
+},
+{
+  concept: 'Security Requirement ',
+  question: 'Does the software ensure that it complies with relevant security standards and regulations?',
+},
+{
+  concept: 'Security Requirement ',
+  question: 'Are there defined procedures for regular security assessments?',
+},
+];
+export const SecurityMechanism = [
+{
+  concept: 'Security Mechanism',
+  question: 'Does the app ensure secure authentication and access control for users?',
+},
+{
+  concept: 'Security Mechanism',
+  question: 'Does the software enforce strong password policies, such as minimum length and complexity requirements?',
+},
+{
+  concept: 'Security Mechanism',
+  question: 'Can users customize their security settings to align with their individual risk tolerance and security preferences?',
+},
+{
+  concept: 'Security Mechanism',
+  question: 'Are security mechanisms tested and validated to ensure they meet their intended objectives?',
+},
+{
+  concept: 'Security Mechanism',
+  question: 'Are there mechanisms in place to monitor and register security-related events?',
+},
+];
 
 export const Value2 = [
   {
@@ -153,15 +210,19 @@ export const Value2 = [
   ];
 
 const QuestionsData = {
-    //Culture
-    Culture,
-    Norm,
-    Value,
-    Action,
-    Ritual,
-    Custom,
-    SocialEnvironment,
-    SocialInteraction,
+  //Culture
+  Culture,
+  Norm,
+  Value,
+  Action,
+  Ritual,
+  Custom,
+  SocialEnvironment,
+  SocialInteraction,
+  //Security
+  Security,
+  SecurityRequirement,
+  SecurityMechanism,
 };
 
 export default QuestionsData;
