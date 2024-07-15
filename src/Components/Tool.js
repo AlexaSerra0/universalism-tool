@@ -122,7 +122,7 @@ function Tool() {
             connectionLineComponent={FloatingConnectionLine}
           >
             <Controls showInteractive={false} />
-            <MiniMap />
+            <MiniMap zoomable pannable/>
             <Background variant="cross" gap={12} size={1} />
           </ReactFlow>
         </div>
