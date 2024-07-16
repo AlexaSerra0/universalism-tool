@@ -10,7 +10,7 @@ import Information from "./Components/Information";
 import Instructions from "./Components/Instructions";
 import Navbar from "./Components/Navbar";
 import Tool from "./Components/Tool";
-import Example from "./Components/Example";
+import Example from "./Components/ExampleShareTheMeal";
 import Questions from "./Components/Questions";
 import Document from "./Components/Document";
  

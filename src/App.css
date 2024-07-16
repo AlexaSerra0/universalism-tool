@@ -9,7 +9,6 @@
 }
 
 .Title {
-  padding-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +38,7 @@
 
 .Box {
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 5rem;
+  padding: 4rem;
   margin-left: 20%;
   margin-right: 20%;
   border-radius: 20px;
