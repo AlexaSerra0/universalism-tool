@@ -43,6 +43,8 @@ const Questions = () => {
   };
 
   function removeSpaces(inputString) {
+    if(inputString === 'Socio-cultural Equity')
+      return 'SocioculturalEquity';
     return inputString.split(' ').join('');
   }
 

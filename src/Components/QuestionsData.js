@@ -1,3 +1,493 @@
+//Universalism Section
+export const Universalism = [
+{
+  concept: 'Universalism',
+  question: "Does the system’s goal align with social justice and equality principles?",
+},
+{
+  concept: 'Universalism',
+  question: "Are the system’s features designed to promote inclusivity and accessibility for all users?",
+},
+{
+  concept: 'Universalism',
+  question: "Does the system consider environmental protection and sustainability in its operations?",
+},
+];
+
+export const UniversalismRequirement = [
+{
+  concept: 'Universalism Requirement',
+  question: "Are there requirements to improve the system's accessibility to users with disabilities?",
+},
+{
+  concept: 'Universalism Requirement',
+  question: "Does the system include requirements for supporting multiple languages and cultural contexts?",
+},
+{
+  concept: 'Universalism Requirement',
+  question: "Does the system provide educational resources to promote understanding of different cultures and global issues?",
+},
+{
+  concept: 'Universalism Requirement',
+  question: "Are there feedback mechanisms for users to suggest improvements related to inclusivity and social justice?",
+},
+];
+
+export const Equality = [
+{
+  concept: 'Equality',
+  question: "Does the system provide equal access to all features and resources for every type of user?",
+},
+{
+  concept: 'Equality',
+  question: "Does the system ensure that all users are treated fairly and without discrimination?",
+},
+{
+  concept: 'Equality',
+  question: "Can all users operate the system functionalities regardless of their diverse needs and circumstances?",
+},
+{
+  concept: 'Equality',
+  question: "Are there measures that prevent discrimination or bias based on certain factors, such as gender, race, ethnicity, or other characteristics?",
+},
+  ];
+
+  export const SocialJustice = [
+{
+  concept: 'Social Justice',
+  question: "Does the system ensure that all users, regardless of background or circumstances, have equal access to its benefits and resources?",
+},
+{
+  concept: 'Social Justice',
+  question: "Are there functionalities in the system that promote fairness and inclusivity, specifically for disregarded communities?",
+},
+{
+  concept: 'Social Justice',
+  question: "Are there specific procedures in the system that aim for an equitable environment for all users?",
+},
+];
+
+export const Broadminded = [
+{
+  concept: 'Broadminded',
+  question: "Does the system design accommodate a wide range of user behaviors and preferences?",
+},
+{
+  concept: 'Broadminded',
+  question: "Does the system promote openness and acceptance among users?",
+},
+{
+  concept: 'Broadminded',
+  question: "Are there features in place to support diverse beliefs and choices within the user community?",
+},
+];
+
+export const Wisdom = [
+{
+  concept: 'Wisdom',
+  question: "Does the system use user feedback and external data sources to improve decision-making processes?",
+},
+{
+  concept: 'Wisdom',
+  question: "Are automated decisions supervised and validated by individuals?",
+},
+];
+
+//Software System Section
+export const SoftwareSystem = [
+{
+  concept: 'Software System',
+  question: "Can the system handle peak loads and maintain responsiveness during high-traffic periods?",
+},
+{
+  concept: 'Software System',
+  question: "Are there performance benchmarks and metrics used to evaluate system efficiency?",
+},
+{
+  concept: 'Software System',
+  question: "What strategies are used to maintain compatibility and interoperability with external systems?",
+},
+{
+  concept: 'Software System',
+  question: "In case of network failure, does the system provide offline capabilities or alternative modes of operation to ensure continued functionality and user accessibility?",
+},
+];
+
+//Human Section
+export const Human = [
+{
+  concept: 'Human',
+  question: "Does the system ensure that user interactions are intuitive and user-friendly?",
+},
+{
+  concept: 'Human',
+  question: "Are there features to assist users who may find it difficult to use the system?",
+},
+{
+  concept: 'Human',
+  question: "Are there mechanisms to gather user feedback and incorporate it into improving the system's functionalities?",
+},
+];
+
+//Equality Section
+export const SocialSustainability = [
+{
+  concept: 'Social Sustainability',
+  question: "Does the system address the needs of disadvantaged communities?",
+},
+{
+  concept: 'Social Sustainability',
+  question: "Does the system support initiatives or features that promote long-term social well-being and resource accessibility?",
+},
+{
+  concept: 'Social Sustainability',
+  question: "Are there regular evaluations to ensure that the system continues to align with social sustainability principles?",
+},
+];
+  
+export const SocialCohesion = [
+{
+  concept: 'Social Cohesion',
+  question: "Does the system promote cooperative and inclusive behavior among users?",
+},
+{
+  concept: 'Social Cohesion',
+  question: "Are there features that encourage users to engage with and support each other?",
+},
+{
+  concept: 'Social Cohesion',
+  question: "Does the system have mechanisms to prevent and address conflicts or discriminatory behavior?",
+},
+{
+  concept: 'Social Cohesion',
+  question: "Are there initiatives or features that build a sense of community and shared purpose among users?",
+},
+];
+  
+export const NeedsSatisfaction = [
+{
+  concept: 'Needs Satisfaction',
+  question: "Does the system provide resources and opportunities that address the basic needs of its users and the communities it serves?",
+},
+{
+  concept: 'Needs Satisfaction',
+  question: "Are there mechanisms that evaluate and improve the satisfaction of users' basic needs over time?",
+},
+{
+  concept: 'Needs Satisfaction',
+  question: "Does the system facilitate access to essential services for its users?",
+},
+];
+
+export const Community = [
+{
+  concept: 'Community',
+  question: "Does the system facilitate the interactions between the users in the community?",
+},
+{
+  concept: 'Community',
+  question: "Are there features that encourage collaboration and communication of users?",
+},
+{
+  concept: 'Community',
+  question: "Does the system provide opportunities for users to participate in the achievement of shared goals?",
+},
+];
+ 
+export const SocialEquality = [
+{
+  concept: 'Social Equality',
+  question: "Does the system ensure the equitable distribution of its resources and opportunities among all users?",
+},
+{
+  concept: 'Social Equality',
+  question: "Does the system promote equal participation from all users in its activities or services?",
+},
+{
+  concept: 'Social Equality',
+  question: "Are there mechanisms to measure and report on the equality of resource distribution and opportunity access within the system?",
+},
+];
+
+export const Fairness = [
+{
+  concept: 'Fairness',
+  question: "Are the algorithms used in the system designed and tested to ensure they are free from bias?",
+},
+{
+  concept: 'Fairness',
+  question: "Does the system provide equal access to all features and resources for every user?",
+},
+{
+  concept: 'Fairness',
+  question: "Are there measures to ensure that all users are treated fairly and without discrimination within the system?",
+},
+{
+  concept: 'Fairness',
+  question: "Is there a mechanism for users to report and address instances of unfair treatment or bias in the system?",
+},
+];
+
+export const HumanRight = [
+{
+  concept: 'Human Right',
+  question: "Does the system protect employees' personal data and privacy?",
+},
+{
+  concept: 'Human Right',
+  question: "Are there measures to prevent unfair monitoring and micromanagement?",
+},
+{
+  concept: 'Human Right',
+  question: "Does the system ensure conformity with workplace safety and labor regulations?",
+},
+];
+
+export const FairSalary = [
+{
+  concept: 'Fair Salary',
+  question: "Are salary determination processes transparent and based on objective criteria?",
+},
+{
+  concept: 'Fair Salary',
+  question: "Does the system ensure that there are no unfair salary discrepancies?",
+},
+{
+  concept: 'Fair Salary',
+  question: "Are there mechanisms to review and adjust salaries to maintain fairness?",
+},
+];
+
+export const Discrimination = [
+{
+  concept: 'Discrimination',
+  question: "Do the algorithms avoid biases that could lead to discrimination based on race, gender, religion, or other characteristics?",
+},
+{
+  concept: 'Discrimination',
+  question: "Are there measures implemented in the system to promote an inclusive environment and prevent discrimination against users in any form, be it through design, functionality, or user interactions?",
+},
+{
+  concept: 'Discrimination',
+  question: "Are there measures to monitor and address any instances of discriminatory behavior or biases that may arise in the system?",
+},
+];
+
+export const FairTreatment = [
+{
+  concept: 'Fair Treatment',
+  question: "Are evaluation and feedback processes fair and unbiased?",
+},
+{
+  concept: 'Fair Treatment',
+  question: "Does the system ensure equal opportunities for all users and employees?",
+},
+{
+  concept: 'Fair Treatment',
+  question: "Are there features to reduce personal liability and promote safety?",
+},
+];
+
+export const SocioculturalEquity = [
+{
+  concept: 'Socio-cultural Equity',
+  question: "Does the system accommodate users with different technological abilities to ensure inclusivity?",
+},
+{
+  concept: 'Socio-cultural Equity',
+  question: "Does the system support multiple languages or localization to support users from different backgrounds?",
+},
+{
+  concept: 'Socio-cultural Equity',
+  question: "Are there accessibility features integrated into the system to assist users with disabilities?",
+},
+];
+
+export const Compatibility = [
+{
+  concept: 'Compatibility',
+  question: "Does the software ensure compatibility across different devices (e.g., smartphones, tablets, desktops)?",
+},
+{
+  concept: 'Compatibility',
+  question: "Are there specific strategies or frameworks used to maintain compatibility across different operating systems (e.g., iOS, Android, Windows, macOS)?",
+},
+{
+  concept: 'Compatibility',
+  question: "Are there strategies to handle compatibility issues that may arise with different hardware configurations (e.g., processors, memory, graphics cards)?",
+},
+{
+  concept: 'Compatibility',
+  question: "Are there measures to ensure the software functions reliably across different network environments (e.g., Wi-Fi, cellular networks, LANs, WANs)?",
+},
+];
+
+export const Device = [
+{
+  concept: 'Device',
+  question: "Can the system adapt its user interface to different screen sizes and device types?",
+},
+{
+  concept: 'Device',
+  question: "Are there specific features or optimizations designed for different device categories (e.g., mobile vs. desktop)?",
+},
+{
+  concept: 'Device',
+  question: "Are user interactions on different devices considered to ensure a smooth experience?",
+},
+];
+
+export const OperatingSystem = [
+{
+  concept: 'Operating System',
+  question: "Does the system handle update and compatibility issues with various operating system versions?",
+},
+{
+  concept: 'Operating System',
+  question: "Are strategies used to ensure the system works perfectly across different operating systems?",
+},
+{
+  concept: 'Operating System',
+  question: "Are there plans to expand compatibility to include other operating systems in the future?",
+},
+];
+
+export const Hardware = [
+{
+  concept: 'Hardware',
+  question: "Do strategies exist to accommodate users with varying hardware capabilities?",
+},
+{
+  concept: 'Hardware',
+  question: "Does the system optimize performance across different hardware configurations?",
+},
+{
+  concept: 'Hardware',
+  question: "Are there specific hardware requirements or recommendations for best system performance?",
+},
+];
+
+export const Network = [
+{
+  concept: 'Network',
+  question: "Does the system handle network-related challenges such as latency, bandwidth limitations, and intermittent connectivity?",
+},
+{
+  concept: 'Network',
+  question: "Are there features or optimizations to enhance performance over different network types?",
+},
+{
+  concept: 'Network',
+  question: "What measures are taken to ensure data integrity and security across diverse network environments?",
+},
+];
+
+export const Education = [
+{
+  concept: 'Education',
+  question: "Does the educational system provide a diverse range of learning materials (e.g. text, audio, interactive exercises) to accommodate different learning preferences?",
+},
+{
+  concept: 'Education',
+  question: "Are there features in the system that support interactive learning experiences, such as simulations or real-time feedback?",
+},
+{
+  concept: 'Education',
+  question: "Does the system allow users to track their progress and provide personalized recommendations for further learning?",
+},
+{
+  concept: 'Education',
+  question: "Is the educational content accessible in multiple languages to accommodate a diverse user base?",
+},
+{
+  concept: 'Education',
+  question: "Are there mechanisms in place to ensure the accuracy and reliability of educational content provided through the system?",
+},
+];
+
+export const Knowledge = [
+{
+  concept: 'Knowledge',
+  question: "Does the system provide clear and comprehensive explanations about its purpose and functionalities?",
+},
+{
+  concept: 'Knowledge',
+  question: "Are users properly informed about the issues or objectives the system addresses?",
+},
+{
+  concept: 'Knowledge',
+  question: "Is there documentation or help resources available to enhance users' understanding of how to use the system effectively?",
+},
+];
+
+export const GenderEquity = [
+{
+  concept: 'Gender Equity',
+  question: "Does the system ensure equal access and opportunities for all users, regardless of their gender identity?",
+},
+{
+  concept: 'Gender Equity',
+  question: "Are there measures in place to prevent discrimination based on gender in the system’s functionalities or user interactions?",
+},
+{
+  concept: 'Gender Equity',
+  question: "Does the system allow the user the option not to disclose their gender identity?",
+},
+{
+  concept: 'Gender Equity',
+  question: "Does the system collect gender data only when necessary and ensure that it is handled confidentially and securely?",
+},
+];
+
+export const Accessibility = [
+  {
+    concept: 'Accessibility',
+    question: "Is the usability of the software system evaluated to ensure inclusivity and accessibility for people with various disabilities?",
+  },
+  {
+    concept: 'Accessibility',
+    question: "Are there measures to address any usability challenges identified through user feedback?",
+  },
+  {
+    concept: 'Accessibility',
+    question: "Is the software compliant with recognized accessibility standards and guidelines (e.g., WCAG)?",
+  },
+  {
+    concept: 'Accessibility',
+    question: "Does the system provide alternative ways to interact with the content for users who rely on assistive technologies?",
+  },
+];
+
+export const AssistiveTechnology = [
+{
+  concept: 'Assistive Technology',
+  question: "Does the system support standard assistive technologies such as screen readers and voice recognition software?",
+},
+{
+  concept: 'Assistive Technology',
+  question: "Are there precautions to ensure that updates to the system maintain compatibility with assistive technologies?",
+},
+{
+  concept: 'Assistive Technology',
+  question: "Can users navigate and operate all functionalities of the system using only a keyboard?",
+},
+];
+
+export const Disability = [
+{
+  concept: 'Disability',
+  question: "Does the system accommodate users with a wide range of disabilities (physical, neurological, cognitive, auditory, visual, and speech)?",
+},
+{
+  concept: 'Disability',
+  question: "Are there customizable settings within the system to address the specific needs of users with disabilities?",
+},
+{
+  concept: 'Disability',
+  question: "Are users with disabilities involved in the testing and feedback process for the system?",
+},
+];
+  
 //Culture
 export const Culture = [
 {
@@ -194,22 +684,41 @@ export const SecurityMechanism = [
 },
 ];
 
-export const Value2 = [
-  {
-    concept: 'Value',
-    question: '',
-  },
-  {
-    concept: 'Value',
-    question: '',
-  },
-  {
-    concept: 'Value',
-    question: '',
-  },
-  ];
-
 const QuestionsData = {
+  //Universalism Section
+  Universalism,
+  UniversalismRequirement,
+  Equality,
+  SocialJustice,
+  Broadminded,
+  Wisdom,
+  //Software System Section
+  SoftwareSystem,
+  //Human Section
+  Human,
+  //Equality Section
+  SocialSustainability,
+  SocialCohesion,
+  NeedsSatisfaction,
+  Community,
+  SocialEquality,
+  Fairness,
+  HumanRight,
+  FairSalary,
+  Discrimination,
+  FairTreatment,
+  SocioculturalEquity,
+  Compatibility,
+  Device,
+  OperatingSystem,
+  Hardware,
+  Network,
+  Education,
+  Knowledge,
+  GenderEquity,
+  Accessibility,
+  AssistiveTechnology,
+  Disability,
   //Culture
   Culture,
   Norm,

@@ -25,20 +25,30 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
           {/* Description */}
           <tr>
             <td>Description</td>
-              { dataConcept ? (
-                <td>{dataConcept.description}</td>
-              ) : (
-                <td>No description available</td>
-              )}
+              <td>
+                {Array.isArray(dataConcept.description) && dataConcept.description.length > 0 ? (
+                  dataConcept.description.map((description, index) => (
+                    index === 0 ? <div>{description.text}</div> : 
+                    <div style={{paddingTop: "0.5rem"}}>{description.text}</div>
+                  ))
+                ) : (
+                  <td>No goals available</td>
+                )}
+              </td>
           </tr>
-          {/* Requirement Example */}
+          {/* Requirement Examples */}
           <tr>
-            <td>Requirement Example</td>
-              { dataConcept ? (
-                <td>{dataConcept.requirement}</td>
-              ) : (
-                <td>No requirement available</td>
-              )}
+            <td>Requirement Examples</td>
+              <td>
+                {Array.isArray(dataConcept.requirement) && dataConcept.requirement.length > 0 ? (
+                  dataConcept.requirement.map((requirement, index) => (
+                    index === 0 ? <div>{requirement.text}</div> : 
+                    <div style={{paddingTop: "0.5rem"}}>{requirement.text}</div>
+                  ))
+                ) : (
+                  <td>No requirement examples available</td>
+                )}
+              </td>
           </tr>
         </tbody>
       </table>
