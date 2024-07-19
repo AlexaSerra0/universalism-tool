@@ -45,6 +45,8 @@ const Questions = () => {
   function removeSpaces(inputString) {
     if(inputString === 'Socio-cultural Equity')
       return 'SocioculturalEquity';
+    if(inputString === "Owner | Controller")
+      return 'OwnerController';
     return inputString.split(' ').join('');
   }
 

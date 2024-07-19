@@ -549,85 +549,348 @@ export const Disability = {
 };
 
 //Culture
-export const Culture  = {
-  id: '1',
+export const Culture = {
+  id: '31',
   concept: 'Culture',
-  description: 'Culture is the customary beliefs, social forms, and material traits of a racial, religious, or social group. It can also be the integrated pattern of human knowledge, belief, and behavior that depends upon the capacity for learning and transmitting knowledge to succeeding generations. In software systems, culture is the behaviors, beliefs, and values that define how users interact with the software. It includes user expectations, community norms, and the user experience influenced by these factors. Culture determines how software is designed and perceived by the users.',
-  requirement: 'ShareTheMeal includes cultural values of compassion and empathy by highlighting the act of donating meals to those in need.',
+  description: [
+    {
+      text: "Culture is the customary beliefs, social forms, and material traits of a racial, religious, or social group. It can also be the integrated pattern of human knowledge, belief, and behavior that depends upon the capacity for learning and transmitting knowledge to succeeding generations."
+    },
+    {
+      text: "In software systems, culture is the behaviors, beliefs, and values that define how users interact with the software. It includes user expectations, community norms, and the user experience influenced by these factors. Culture determines how software is designed and perceived by the users."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app includes cultural values of compassion and empathy by highlighting the act of donating meals to those in need."
+    },
+  ],
 };
 
-export const Norm  = {
-  id: '2',
+export const Norm = {
+  id: '32',
   concept: 'Norm',
-  description: 'In a social group G, a norm is a kind of behavior A that all members of G do in a certain context C. Furthermore, it is also mutually believed that all members of G should do A in C. That is to say, a norm is an expected behavior from a certain group of people in a certain context, for example, it is expected of people who find a lost item to return it to the police. In an online environment, most people possess the norm to be respectful while communicating. In software systems, it includes the creation of clear expectations for behavior that the users must follow. The norms must be transmitted to the users, and they must be respected in the community.',
-  requirement: 'ShareTheMeal app users are expected to contribute to meal donations and spread awareness about hunger.',
+  description: [
+    {
+      text: "In a social group G, a norm is a kind of behavior A that all members of G do in a certain context C. Furthermore, it is also mutually believed that all members of G should do A in C. That is to say, a norm is an expected behavior from a certain group of people in a certain context, for example, it is expected of people who find a lost item to return it to the police. In an online environment, most people possess the norm to be respectful while communicating."
+    },
+    {
+      text: "In software systems, it includes the creation of clear expectations for behavior that the users must follow. The norms must be transmitted to the users, and they must be respected in the community."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app users are expected to contribute to meal donations and spread awareness about hunger."
+    },
+  ],
 };
 
-export const Value  = {
-  id: '3',
+export const Value = {
+  id: '33',
   concept: 'Value',
-  description: 'Values are beliefs, connected to emotions, and they are ordered in terms of importance. Values are abstract goals, this differentiates them from norms and attitudes, and they serve as standards of criteria. In software systems, values are the main goals that the design and functionality of the software is based on. These values impact the features and user interface to ensure they align with the users needs and values. For example, a software system may prioritize user privacy, accessibility, or transparency based on its values.',
-  requirement: 'ShareTheMeal app users should value values that prioritize compassion, empathy, and the importance of helping those in need.',
+  description: [
+    {
+      text: "Values are beliefs, connected to emotions, and they are ordered in terms of importance. Values are abstract goals, this differentiates them from norms and attitudes, and they serve as standards of criteria."
+    },
+    {
+      text: "In software systems, values are the main goals on which the design and functionality of the software are based. These values impact the features and user interface to ensure they align with the users' needs and values. For example, a software system may prioritize user privacy, accessibility, or transparency based on its values."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app users should value values that prioritize compassion, empathy, and the importance of helping those in need."
+    },
+  ],
 };
 
-export const Action  = {
-  id: '4',
+export const Action = {
+  id: '34',
   concept: 'Action',
-  description: 'An Action consists of the process of doing something with the intention of achieving a desired goal. In software systems, an action refers to any user interaction or system process done to achieve a specific goal. This can be tasks like submitting a form, clicking a button, or running a program. Actions must be intuitive, helping users accomplish their goals effectively in the software.',
-  requirement: 'In ShareTheMeal app, the action is the donation process to reduce global hunger. This process involves selecting the amount to donate and confirming the donation. Other actions can be sharing on social media to spread awareness.',
+  description: [
+    {
+      text: "An Action consists of the process of doing something with the intention of achieving a desired goal."
+    },
+    {
+      text: "In software systems, an action refers to any user interaction or system process done to achieve a specific goal. This can be tasks like submitting a form, clicking a button, or running a program. Actions must be intuitive, helping users accomplish their goals effectively in the software."
+    },
+  ],
+  requirement: [
+    {
+      text: "In the ShareTheMeal app, one action is the donation process to reduce global hunger. This process involves selecting the amount to donate and confirming the donation. Other actions can be sharing on social media to spread awareness."
+    },
+  ],
 };
 
-export const Ritual  = {
-  id: '5',
+export const Ritual = {
+  id: '35',
   concept: 'Ritual',
-  description: "Rituals are a group of activities that are technically superfluous to reach desired ends but that, within a culture, are considered to be socially essential; they are therefore carried out for their own sake. In software systems, rituals could be routine user activities that, while not essential for the app's primary function, enhance the user experience and engagement.",
-  requirement: 'A fitness app that has daily check-ins or streaks encourages consistent usage and user retention.',
+  description: [
+    {
+      text: "Rituals are a group of activities that are technically superfluous to reach desired ends but that, within a culture, are considered to be socially essential; they are therefore carried out for their own sake."
+    },
+    {
+      text: "In software systems, rituals could be routine user activities that, while not essential for the app's primary function, enhance the user experience and engagement."
+    },
+  ],
+  requirement: [
+    {
+      text: "A fitness app that has daily check-ins or streaks encourages consistent usage and user retention."
+    },
+  ],
 };
 
-export const Custom  = {
-  id: '6',
+export const Custom = {
+  id: '36',
   concept: 'Custom',
-  description: "A custom is an established behavior expressed as actions, codes, or rules of behavior. Norms, values, and beliefs create and shape customs, which in turn affects behavior in the form of actions and events. In software systems, customs are established user behaviors and practices that develop over time.",
-  requirement: 'ShareTheMeal app users regularly sharing their meal donations on social media through the ShareTheMeal app could become a custom that promotes the app’s goal and increases its visibility. Subscribing to a monthly donation could also become a custom that aligns with the app’s goals of providing consistent support for reducing global hunger.',
+  description: [
+    {
+      text: "A custom is an established behavior expressed as actions, codes, or rules of behavior. Norms, values, and beliefs create and shape customs, which in turn affect behavior in the form of actions and events."
+    },
+    {
+      text: "In software systems, customs are established user behaviors and practices that develop over time."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app users regularly sharing their meal donations on social media through the app could become a custom that promotes the app’s goal and increases its visibility. Subscribing to a monthly donation could also become a custom that aligns with the app’s goals of providing consistent support for reducing global hunger."
+    },
+  ],
 };
 
-export const SocialEnvironment  = {
-  id: '7',
+export const SocialEnvironment = {
+  id: '37',
   concept: 'Social Environment',
-  description: 'Social environment refers to the immediate physical and social setting in which people live or in which something happens or develops. It includes the culture that the individual was educated or lives in, and the people and institutions with whom they interact. In software systems, social environment is the digital context where users interact with the platform.',
-  requirement: 'The app ShareTheMeal creates an online environment where users can interact with the cause and see their impact on the world.',
+  description: [
+    {
+      text: "Social environment refers to the immediate physical and social setting in which people live or in which something happens or develops. It includes the culture that the individual was educated or lives in, and the people and institutions with whom they interact."
+    },
+    {
+      text: "In software systems, the social environment is the digital context where users interact with the platform."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app creates an online environment where users can interact with the cause and see their impact on the world."
+    },
+  ],
 };
 
-export const SocialInteraction   = {
-  id: '8',
+export const SocialInteraction = {
+  id: '38',
   concept: 'Social Interaction',
-  description: 'Social Interaction defines an interaction between individuals. It is a specialization of an action. Social interaction can influence individuals and their beliefs. In software systems, social interaction refers to how users engage with each other using digital platforms. This can be done through activities like messaging, sharing content, and participating in discussions.',
-  requirement: 'In the app ShareTheMeal, users interact in the app by making donations and sharing in social media about the cause, encouraging others to join and donate.',
+  description: [
+    {
+      text: "Social Interaction defines an interaction between individuals. It is a specialization of an action. Social interaction can influence individuals and their beliefs."
+    },
+    {
+      text: "In software systems, social interaction refers to how users engage with each other using digital platforms. This can be done through activities like messaging, sharing content, and participating in discussions."
+    },
+  ],
+  requirement: [
+    {
+      text: "In the ShareTheMeal app, users interact in the app by making donations and sharing on social media about the cause, encouraging others to join and donate."
+    },
+  ],
 };
 
 //Security
-export const Security   = {
-  id: '9',
+export const Security = {
+  id: '39',
   concept: 'Security',
-  description: 'Security is considered the measures taken in order to prevent, minimize and correctly address threats towards valuable assets.  It corresponds to the level of defense that an asset possesses against malicious attackers. In software systems, it implies the implementation of protocols and technologies to protect data, ensure privacy, and maintain system integrity against cyber threats and unauthorized access.',
-  requirement: "ShareTheMeal app has an infrastructure based on security standards. To ensure that the payment information is safe and secure, everything is processed by Braintree/Paypal. Other than that, the app doesn’t have any additional data. Donations that were done by mistake will be returned immediately.",
+  description: [
+    {
+      text: "Security is considered the measures taken to prevent, minimize, and correctly address threats towards valuable assets.  It corresponds to the level of defense that an asset possesses against malicious attackers."
+    },
+    {
+      text: "In software systems, it implies the implementation of protocols and technologies to protect data, ensure privacy, and maintain system integrity against cyber threats and unauthorized access."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app has an infrastructure based on security standards. To ensure that the payment information is safe and secure, everything is processed by Braintree/Paypal. Other than that, the app doesn’t have any additional data. Donations that were made by mistake will be returned immediately."
+    },
+  ],
 };
 
-export const SecurityRequirement   = {
-  id: '10',
+export const SecurityRequirement = {
+  id: '40',
   concept: 'Security Requirement',
-  description: "A Security Requirement refers to a quality requirement that defines the level of security needed, concerning system specific criteria and minimum quality measures, and that a system must maintain to guarantee that it fulfills the security policies. It specifies the necessary security protocols that must be implemented to protect the system from threats.",
-  requirement: "The ShareTheMeal app should implement a secure authentication mechanism to ensure that user accounts are protected against unauthorized access. Only authorized users can access sensitive information and perform actions like donating meals.",
+  description: [
+    {
+      text: "A Security Requirement refers to a quality requirement that defines the level of security needed, concerning system-specific criteria and minimum quality measures, and that a system must maintain to guarantee that it fulfills the security policies."
+    },
+    {
+      text: "It specifies the necessary security protocols that must be implemented to protect the system from threats."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app should implement a secure authentication mechanism to ensure that user accounts are protected against unauthorized access. Only authorized users can access sensitive information and perform actions like donating meals."
+    },
+  ],
 };
 
 export const SecurityMechanism = {
-  id: '11',
+  id: '41',
   concept: 'Security Mechanism',
-  description: "A Security Mechanism, also known as a countermeasure, is an architectural mechanism, that is, strategic decision, that addresses security requirements and/or minimizes vulnerabilities. These mechanisms can be hardware, software, manual procedures, or training, designed to improve security. Examples include user IDs, passwords, encryption, firewalls, and antivirus software.",
-  requirement: "ShareTheMeal app uses HTTPS to secure a channel from the app to the server. The payment information is secure because it’s processed by Braintree, a globally trusted PayPal payments company. Every communication is point-to-point encrypted, SHA-256 with RSA encryption.",
+  description: [
+    {
+      text: "A Security Mechanism, also known as a countermeasure, is an architectural mechanism, that is, a strategic decision, that addresses security requirements and/or minimizes vulnerabilities. These mechanisms can be hardware, software, manual procedures, or training, designed to improve security."
+    },
+    {
+      text: "Examples include user IDs, passwords, encryption, firewalls, and antivirus software."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app uses HTTPS to secure a channel from the app to the server. The payment information is secure because it’s processed by Braintree, a globally trusted PayPal payments company. Every communication is point-to-point encrypted, SHA-256 with RSA encryption."
+    },
+  ],
 };
 
+export const SecurityRisk = {
+  id: '42',
+  concept: 'Security Risk',
+  description: [
+    {
+      text: "A Risk is the chance that an action will have an undesirable but known outcome. It occurs when a vulnerability exists in a system that can be exploited."
+    },
+    {
+      text: "A security risk is the possible damage to an asset, calculated as the “sum (over all relevant threats) of the negative impact of the harm to the asset (i.e., its criticality) multiplied by the likelihood of the harm occurring."
+    },
+  ],
+  requirement: [
+    {
+      text: "A ShareTheMeal app's potential security risk is the possibility of unauthorized access to user accounts. This risk is evaluated based on the importance of user data (personal and payment information) and the likelihood of unauthorized access occurring. One solution that would help mitigate the risk is the implementation of multi-factor authentication (MFA) and monitor login attempts for suspicious activities."
+    },
+  ],
+};
 
+export const Threat = {
+  id: '43',
+  concept: 'Threat',
+  description: [
+    {
+      text: "A Threat refers to a general condition, situation, or state (typically corresponding to the motivation of potential attackers) that may result in one or more related attacks."
+    },
+    {
+      text: "In software systems, a threat is any potential danger that could exploit a vulnerability to harm the system or its users. Threat examples include malware and phishing attacks."
+    },
+  ],
+  requirement: [
+    {
+      text: "A potential threat to the ShareTheMeal app is data breaches due to insecure APIs. If the app APIs are not secured, attackers could exploit vulnerabilities to gain unauthorized access to sensitive user data, including personal and payment information. To prevent this, the app should employ API security measures such as API keys, OAuth, and HTTPS."
+    },
+  ],
+};
+
+export const Attack = {
+  id: '44',
+  concept: 'Attack',
+  description: [
+    {
+      text: "An Attack is an unauthorized action performed by individuals who seek to cause damage to an asset. This may occur by violating the security of a system or bypassing security mechanisms. The attack can be a success or failure."
+    },
+  ],
+  requirement: [
+    {
+      text: "Man-in-the-Middle (MitM) is a known attack that occurs when an attacker intercepts communication between the app and the user, capturing sensitive information, like login credentials or payment details. The ShareTheMeal app is protected against this attack because it uses HTTPS to secure a channel from the app to the server and point-to-point encryption."
+    },
+  ],
+};
+
+export const Harm = {
+  id: '45',
+  concept: 'Harm',
+  description: [
+    {
+      text: "Harm relates to a negative impact associated with an asset due to an attack.  It occurs when there is a security violation to an asset and a privacy violation to a user."
+    },
+  ],
+  requirement: [
+    {
+      text: "In the ShareTheMeal app, harm could be done regarding the money donated and the user’s personal and payment information."
+    },
+  ],
+};
+
+export const Vulnerability = {
+  id: '46',
+  concept: 'Vulnerability',
+  description: [
+    {
+      text: "A Vulnerability is a weak point in the system that attackers may use to attack and get access to the system, causing harm if successful."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app could have vulnerabilities if it uses outdated software components. Older versions of libraries or frameworks have known vulnerabilities and attackers could exploit these weaknesses to compromise the app's security."
+    },
+  ],
+};
+
+export const Asset = {
+  id: '47',
+  concept: 'Asset',
+  description: [
+    {
+      text: "An Asset is something valuable, be it humans or resources (such as hardware or software) and should be protected from possible attacks."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app assets are the user’s personal and payment information."
+    },
+  ],
+};
+
+export const Resource = {
+  id: '48',
+  concept: 'Resource',
+  description: [
+    {
+      text: "Resources refer to the many services, facilities, and opportunities available within a community that contribute to social equality."
+    },
+    {
+      text: "In software systems, resources involve not only the hardware and software but also the functionalities and services provided by the software that permit stakeholders to access and make use of these services."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app has many resources in the form of functionalities that enable the donors to donate the money quantity they want. This app allows donors to choose from various initiatives or countries to donate to, helping alleviate the hunger of the people who need it the most, depending on their needs these receive food or money (if the market has lots of food), this way improving their circumstances and quality of life."
+    },
+  ],
+};
+
+export const OwnerController = {
+  id: '54',
+  concept: 'Owner | Controller',
+  description: [
+    {
+      text: "An Owner or Controller is the entity that holds and has authority over the information."
+    },
+  ],
+  requirement: [
+    {
+      text: "In the ShareTheMeal app, the World Food Programme (WFP) is the owner/controller of the user data."
+    },
+  ],
+};
+
+export const ThirdParty = {
+  id: '55',
+  concept: 'Third Party',
+  description: [
+    {
+      text: "A Third Party is an entity separate from the Owner/Controller that has an interest or influence in the information."
+    },
+  ],
+  requirement: [
+    {
+      text: "In the ShareTheMeal app, a third party is the payment service provider, Braintree/Paypal, that processes donations."
+    },
+  ],
+};
 
 const ConceptsData = {
   //Universalism Section
@@ -664,7 +927,7 @@ const ConceptsData = {
   Accessibility,
   AssistiveTechnology,
   Disability,
-  //Culture
+  //Culture Section
   Culture,
   Norm,
   Value,
@@ -673,10 +936,19 @@ const ConceptsData = {
   Custom,
   SocialEnvironment,
   SocialInteraction,
-  //Security
+  //Security Section
   Security,
   SecurityRequirement,
   SecurityMechanism,
+  SecurityRisk,
+  Threat,
+  Attack,
+  Harm,
+  Vulnerability,
+  Asset,
+  Resource,
+  OwnerController,
+  ThirdParty,
 };
 
 export default ConceptsData;

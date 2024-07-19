@@ -47,7 +47,11 @@ function Tool() {
   const handleNodeClick = useCallback((event, node) => {
     setClickedNodeId(node.id);
     setIsOpen(true);
-    setDataConcept(ConceptsData[node.id]);
+    if(!ConceptsData[node.id]){
+      setDataConcept([]);
+    } else {
+      setDataConcept(ConceptsData[node.id]);
+    }
     //setDataGoals(ConceptsData[`${node.id}Goals`]);
   }, []);
 

@@ -32,7 +32,7 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
                     <div style={{paddingTop: "0.5rem"}}>{description.text}</div>
                   ))
                 ) : (
-                  <td>No goals available</td>
+                  <td>No description available</td>
                 )}
               </td>
           </tr>

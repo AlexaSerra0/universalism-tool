@@ -492,87 +492,87 @@ export const Disability = [
 export const Culture = [
 {
   concept: 'Culture',
-  question: 'Does the software integrate cultural behaviors, beliefs, and values into its design to ensure a meaningful user experience?',
+  question: "Does the system integrate cultural behaviors, beliefs, and values into its design to ensure a meaningful user experience?",
 },
 {
   concept: 'Culture',
-  question: 'Are there strategies in place to accommodate diverse user expectations and community norms in the software?',
+  question: "Are there strategies to accommodate diverse user expectations and community norms in the system?",
 },
 ];
 
 export const Norm = [
 {
   concept: 'Norm',
-  question: 'Are the norms clearly communicated to users within the system?',
+  question: "Are the norms clearly communicated to users within the system?",
 },
 {
   concept: 'Norm',
-  question: 'Do mechanisms exist that ensure that the norms are being followed?',
+  question: "Do mechanisms exist that ensure that the norms are being followed?",
 },
 {
   concept: 'Norm',
-  question: 'Do measures exist to address actions that go against the norms?',
+  question: "Do measures exist to address actions that go against the norms?",
 },
 {
   concept: 'Norm',
-  question: 'Are the expected behaviors clearly defined and understood by all users?',
+  question: "Are the expected behaviors clearly defined and understood by all users?",
 },
 {
   concept: 'Norm',
-  question: 'Does the software adapt to evolving community norms throughout time?',
+  question: "Does the system adapt to evolving community norms throughout time?",
 },
 ];  
 
 export const Value = [
 {
   concept: 'Value',
-  question: 'Does the software reflect the main values that are important to its users?',
+  question: "Does the system reflect the main values that are important to its users?",
 },
 {
   concept: 'Value',
-  question: 'Are there mechanisms in place to ensure that the software aligns with the main values?',
+  question: "Are there mechanisms in place to ensure that the system aligns with the main values?",
 },
 {
   concept: 'Value',
-  question: 'Does the software promote its main values to users when they interact with the application?',
+  question: "Does the system promote its main values to users when they interact with the application?",
 },
 {
   concept: 'Value',
-  question: 'Are there conflicts between different values, and are they managed?',
+  question: "Are there conflicts between different values, and are they managed?",
 },
 ];
 
 export const Action = [
 {
   concept: 'Action',
-  question: 'Are the actions in the software intuitive to help users achieve their goals?',
+  question: "Are the actions in the system intuitive to help users achieve their goals?",
 },
 {
   concept: 'Action',
-  question: 'Are there feedback mechanisms in place to confirm successful conclusion of actions to users?',
+  question: "Are there feedback mechanisms to confirm the successful conclusion of actions to users?",
 },
 {
   concept: 'Action',
-  question: 'Are there mechanisms in place to prevent or recover from errors during action execution, as well as inform users of these errors, ensuring a smooth user experience?',
+  question: "Are there mechanisms to prevent or recover from errors during action execution, as well as inform users of these errors, ensuring a smooth user experience?",
 },
 {
   concept: 'Action',
-  question: 'How does the software adapt to user preferences or behaviors over time, personalizing the action experience? ',
+  question: "How does the system adapt to user preferences or behaviors over time, personalizing the action experience?",
 },
 ];
 
 export const Ritual = [
 {
   concept: 'Ritual',
-  question: 'Does the system include routine activities that enhance user engagement and experience?',
+  question: "Does the system include routine activities that enhance user engagement and experience?",
 },
 {
   concept: 'Ritual',
-  question: 'Do the rituals align with and reinforce the main goals and values of the system?',
+  question: "Do the rituals align with and reinforce the main goals and values of the system?",
 },
 {
   concept: 'Ritual',
-  question: 'Are there mechanisms in place to motivate users to participate in the rituals regularly?',
+  question: "Are there mechanisms to motivate users to participate in the rituals regularly?",
 },
 
 ];
@@ -580,49 +580,49 @@ export const Ritual = [
 export const Custom = [
 {
   concept: 'Custom',
-  question: 'Do the customs align with and reinforce the norms, values, and goals of the system?',
+  question: "Do the customs align with and reinforce the norms, values, and goals of the system?",
 },
 {
   concept: 'Custom',
-  question: 'Are there features in place to support and facilitate the development of the customs?',
+  question: "Are there features in place to support and facilitate the development of the customs?",
 },
 {
   concept: 'Custom',
-  question: 'Does the system track and analyze the development of customs among its users to enhance the platform?',
+  question: "Does the system track and analyze the development of customs among its users to enhance the platform?",
 },
 ];
 
 export const SocialEnvironment = [
 {
   concept: 'Social Environment',
-  question: 'Does the software ease interactions between users in the digital social environment?',
+  question: "Does the system ease interactions between users in the digital social environment?",
 },
 {
   concept: 'Social Environment',
-  question: 'Are there measures in place to ensure that the digital social environment is inclusive and respectful of diverse user backgrounds?',
+  question: "Are there measures in place to ensure that the digital social environment is inclusive and respectful of diverse user backgrounds?",
 },
 {
   concept: 'Social Environment',
-  question: 'Does the software adapt to changes in user behaviors and social trends to improve the digital social environment?',
+  question: "Does the system adapt to changes in user behaviors and social trends to improve the digital social environment?",
 },
 ];
 
-export const SocialInteraction  = [
+export const SocialInteraction = [
 {
   concept: 'Social Interaction',
-  question: 'Does the software ease social interactions between users, such as messaging and content sharing?',
+  question: "Does the system ease social interactions between users (e.g., messaging, content sharing)?",
 },
 {
   concept: 'Social Interaction',
-  question: 'Are there mechanisms in place to encourage and reward positive social interactions among users within the platform?',
+  question: "Are there mechanisms to encourage and reward positive social interactions among users within the platform?",
 },
 {
   concept: 'Social Interaction',
-  question: "Does the software ensure that social interactions align with the app's goals and values?",
+  question: "Does the system ensure that social interactions align with the app's goals and values?",
 },
 {
   concept: 'Social Interaction',
-  question: 'Are there mechanisms that mitigate negative interactions in the app?',
+  question: "Are there mechanisms that mitigate negative interactions in the system?",
 },
 ];
 
@@ -630,57 +630,188 @@ export const SocialInteraction  = [
 export const Security = [
 {
   concept: 'Security',
-  question: 'Are there protocols and technologies in place to protect data and ensure privacy?',
+  question: "Are there protocols and technologies to protect data and ensure privacy?",
 },
 {
   concept: 'Security',
-  question: 'Are there measures to minimize and correctly address any security attacks?',
+  question: "Are there measures to minimize and correctly address any security attacks?",
 },
 {
   concept: 'Security',
-  question: 'Are user transactions and data regularly monitored for security threats?',
+  question: "Are user transactions and data regularly monitored for security threats?",
 },
 ];
 
-
-export const SecurityRequirement  = [
+export const SecurityRequirement = [
 {
-  concept: 'Security Requirement ',
-  question: 'Are there critical assets and data that need protection within the system?',
+  concept: 'Security Requirement',
+  question: "Are there specific security protocols that mitigate identified risks?",
 },
 {
-  concept: 'Security Requirement ',
-  question: 'Are there specific security protocols that mitigate identified risks?',
+  concept: 'Security Requirement',
+  question: "Does the system ensure that it complies with relevant security standards and regulations?",
 },
 {
-  concept: 'Security Requirement ',
-  question: 'Does the software ensure that it complies with relevant security standards and regulations?',
-},
-{
-  concept: 'Security Requirement ',
-  question: 'Are there defined procedures for regular security assessments?',
+  concept: 'Security Requirement',
+  question: "Are there defined procedures for regular security assessments?",
 },
 ];
+
 export const SecurityMechanism = [
 {
   concept: 'Security Mechanism',
-  question: 'Does the app ensure secure authentication and access control for users?',
+  question: "Does the system ensure secure authentication and access control for users?",
 },
 {
   concept: 'Security Mechanism',
-  question: 'Does the software enforce strong password policies, such as minimum length and complexity requirements?',
+  question: "Does the system enforce strong password policies (e.g., minimum length, complexity requirements)?",
 },
 {
   concept: 'Security Mechanism',
-  question: 'Can users customize their security settings to align with their individual risk tolerance and security preferences?',
+  question: "Can users customize their security settings to align with their individual risk tolerance and security preferences?",
 },
 {
   concept: 'Security Mechanism',
-  question: 'Are security mechanisms tested and validated to ensure they meet their intended objectives?',
+  question: "Are security mechanisms tested and validated to ensure they meet their intended objectives?",
 },
 {
   concept: 'Security Mechanism',
-  question: 'Are there mechanisms in place to monitor and register security-related events?',
+  question: "Are there mechanisms to monitor and register security-related events?",
+},
+];
+
+export const SecurityRisk = [
+{
+  concept: 'Security Risk',
+  question: "Does the system contain critical data that could be used maliciously or sold by a third party?",
+},
+{
+  concept: 'Security Risk',
+  question: "Are there potential security risks associated with the critical assets and data?",
+},
+{
+  concept: 'Security Risk',
+  question: "Are security risks identified, assessed, and documented within the system?",
+},
+];
+
+export const Threat = [
+{
+  concept: 'Threat',
+  question: "Are users informed about common threats and how to avoid them?",
+},
+{
+  concept: 'Threat',
+  question: "Are there protocols for regularly updating threat intelligence and adapting to new threats?",
+},
+{
+  concept: 'Threat',
+  question: "Are there preventive measures to reduce the likelihood of threats being realized?",
+},
+];
+
+export const Attack = [
+{
+  concept: 'Attack',
+  question: "Can the system detect and prevent potential attacks before they can cause harm?",
+},
+{
+  concept: 'Attack',
+  question: "Are there contingency plans in place to mitigate the outcomes of successful attacks?",
+},
+{
+  concept: 'Attack',
+  question: "Are the system’s protocols and mechanisms updated regularly?",
+},
+];
+ 
+export const Harm = [
+{
+  concept: 'Harm',
+  question: "Are there procedures to notify users in case of a security breach to mitigate potential harm?",
+},
+{
+  concept: 'Harm',
+  question: "Are there protocols to ensure compensation to the users if harm occurs?",
+},
+];
+
+export const Vulnerability = [
+{
+  concept: 'Vulnerability',
+  question: "Does the system development process identify vulnerabilities during development phases?",
+},
+{
+  concept: 'Vulnerability',
+  question: "Are there protocols to analyze third-party dependencies and ensure they do not have vulnerabilities?",
+},
+{
+  concept: 'Vulnerability',
+  question: "Does the system use security best practices and coding standards to mitigate common vulnerabilities?",
+},
+{
+  concept: 'Vulnerability',
+  question: "Does the development team prioritize vulnerabilities based on risk assessment?",
+},
+];
+  
+export const Asset = [
+{
+  concept: 'Asset',
+  question: "Are there protocols that prioritize assets based on their importance?",
+},
+{
+  concept: 'Asset',
+  question: "Are assets being monitored to ensure no attack occurs?",
+},
+];
+
+export const Resource = [
+{
+  concept: 'Resource',
+  question: "Are all main hardware and software resources easily available and reliable?",
+},
+{
+  concept: 'Resource',
+  question: "Are the resources being used monitored to ensure the best performance and availability?",
+},
+{
+  concept: 'Resource',
+  question: "Are the functionalities and services aligned with the users' needs and system goals?",
+},
+{
+  concept: 'Resource',
+  question: "Are there protocols to update and improve the resources based on user feedback and changing needs?",
+},
+];
+
+export const OwnerController = [
+{
+  concept: 'Owner | Controller',
+  question: "Are there policies to ensure the owner/controller manages data responsibly?",
+},
+{
+  concept: 'Owner | Controller',
+  question: "Are there measures to ensure the owner/controller's accountability for data protection and privacy?",
+},
+{
+  concept: 'Owner | Controller',
+  question: "Does the system allow for users to contact the owner/controller regarding their data privacy concerns or requests?",
+},
+];
+
+export const ThirdParty = [
+{
+  concept: 'Third Party',
+  question: "Is there a process to evaluate and select third parties based on their data protection measures?",
+},
+{
+  concept: 'Third Party',
+  question: "Are there agreements in place that define how third parties handle and protect user data?",
+},
+{
+  concept: 'Third Party',
+  question: "Are there regular analyses of third-party practices regarding data handling and security?",
 },
 ];
 
@@ -719,7 +850,7 @@ const QuestionsData = {
   Accessibility,
   AssistiveTechnology,
   Disability,
-  //Culture
+  //Culture Section
   Culture,
   Norm,
   Value,
@@ -728,10 +859,19 @@ const QuestionsData = {
   Custom,
   SocialEnvironment,
   SocialInteraction,
-  //Security
+  //Security Section
   Security,
   SecurityRequirement,
   SecurityMechanism,
+  SecurityRisk,
+  Threat,
+  Attack,
+  Harm,
+  Vulnerability,
+  Asset,
+  Resource,
+  OwnerController,
+  ThirdParty,
 };
 
 export default QuestionsData;
