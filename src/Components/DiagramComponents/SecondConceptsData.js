@@ -862,6 +862,81 @@ export const Resource = {
   ],
 };
 
+export const Privacy = {
+  id: '49',
+  concept: 'Privacy',
+  description: [
+    {
+      text: "Privacy relates to the degree to which unauthorized parties are prevented from obtaining sensitive information."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app must ensure that user data, including personal and payment information, is kept confidential and protected from unauthorized access."
+    },
+  ],
+};
+
+export const PrivacyMechanism = {
+  id: '50',
+  concept: 'Privacy Mechanism',
+  description: [
+    {
+      text: "Privacy Mechanism is a concrete technique to be implemented for helping towards the satisfaction of privacy goal. Some mechanisms can be applied to personal information directly. Some examples are anonymity, unlinkability, and authentication."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app allows the user to choose who can see his profile, when he donated, and how much was donated. Additionally, the user can choose how their data is handled and who can track the data. This privacy mechanism gives users control over their personal information. The app should also implement a two-factor authentication to add another layer of security."
+    },
+  ],
+};
+
+export const Constraint = {
+  id: '51',
+  concept: 'Constraint',
+  description: [
+    {
+      text: "A privacy Constraint is a design restriction that is used to realize/satisfy a privacy goal, constraints can be either a privacy policy or privacy mechanism."
+    },
+  ],
+  requirement: [
+    {
+      text: "In the ShareTheMeal app, a privacy constraint could be the requirement that all user data must be encrypted to ensure compliance with privacy policies and to protect user confidentiality."
+    },
+  ],
+};
+
+export const Context = {
+  id: '52',
+  concept: 'Context',
+  description: [
+    {
+      text: "The Context refers to the environment, the software system, where the privacy mechanisms are being implemented."
+    },
+  ],
+  requirement: [
+    {
+      text: "In the ShareTheMeal app, the context is the app that allows donations. Includes all the features and functionalities within the app that handle user data, financial transactions, and personal information."
+    },
+  ],
+};
+
+export const PersonalInformation = {
+  id: '53',
+  concept: 'Personal Information',
+  description: [
+    {
+      text: "Personal Information refers to data that identifies or can be used to identify an individual, such as their name, address, phone number, email, or financial details. Personal Information can be Public, Semi-Public, and Private."
+    },
+  ],
+  requirement: [
+    {
+      text: "In the ShareTheMeal app, the personal information relates to a user’s name, address, credit card information, email, and donation amounts."
+    },
+  ],
+};
+
 export const OwnerController = {
   id: '54',
   concept: 'Owner | Controller',
@@ -888,6 +963,73 @@ export const ThirdParty = {
   requirement: [
     {
       text: "In the ShareTheMeal app, a third party is the payment service provider, Braintree/Paypal, that processes donations."
+    },
+  ],
+};
+
+
+export const Trust = {
+  id: '56',
+  concept: 'Trust',
+  description: [
+    {
+      text: "Trust occurs when an individual believes that the system will do what it is supposed to do and won't misuse the information that it is given."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal is WFP’s fundraising app, the world's largest humanitarian agency. That alone makes people trust the app. The existing protections to guarantee security when using the app also help to build trust."
+    },
+  ],
+};
+
+export const Accountability = {
+  id: '57',
+  concept: 'Accountability',
+  description: [
+    {
+      text: "Accountability involves giving information owners the power to hold users responsible for their actions with the information. Accountability is assessed using the principle of non-repudiation, the ability of not being able to deny the authorship of an action. This analysis depends on the adoption relationship, in other words, if someone is assigned a task and doesn’t accept it, it could cause a situation where they deny participation, which would raise a non-repudiation violation."
+    },
+    {
+      text: "In software systems, accountability ensures that all actions and transactions can be traced back to the initiators. This means monitoring user activities, keeping records of all interactions with the system, and thus ensuring that users cannot deny their actions. Furthermore, it involves making sure the system does its duties correctly and registers its actions to prevent and resolve issues."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app users are responsible for the information they provide regarding payment. There are also features in place that shows users information about their donations, tracking contributions. On the other hand, the app must donate where the user wants to, any deviance from that will break the user’s intentions and the app could be held accountable for their action of taking advantage of the user’s money."
+    },
+  ],
+};
+
+export const Transparency = {
+  id: '58',
+  concept: 'Transparency',
+  description: [
+    {
+      text: "Transparency can be defined as the availability of information about an actor allowing other actors to monitor the workings or performance of this actor. In other words, it’s clear visibility of system operations and knowledge of who and why an owner’s personal information is being used."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app provides clear visibility of their data so that donors know that their money is being spent where they claim."
+    },
+  ],
+};
+
+export const Honesty = {
+  id: '59',
+  concept: 'Honesty',
+  description: [
+    {
+      text: "Honesty is an essential component of trust. A computing professional should be transparent and provide full disclosure of all pertinent system limitations and potential problems. Making deliberately false or misleading claims, fabricating, or falsifying data, and other dishonest conduct are violations of the Code."
+    },
+    {
+      text: "Honesty is when there is a truthful representation of software, particularly about the software’s capabilities, limitations, and any possible problems."
+    },
+  ],
+  requirement: [
+    {
+      text: "The ShareTheMeal app promotes honesty and builds credibility by showing a truthful representation of the results of the operation to users."
     },
   ],
 };
@@ -947,8 +1089,17 @@ const ConceptsData = {
   Vulnerability,
   Asset,
   Resource,
+  Privacy,
+  PrivacyMechanism,
+  Constraint,
+  Context,
+  PersonalInformation,
   OwnerController,
   ThirdParty,
+  Trust,
+  Accountability,
+  Transparency,
+  Honesty,
 };
 
 export default ConceptsData;

@@ -785,6 +785,81 @@ export const Resource = [
 },
 ];
 
+export const Privacy = [
+{
+  concept: 'Privacy',
+  question: "Are there protocols to notify users in case of a privacy breach to mitigate potential harm?",
+},
+{
+  concept: 'Privacy',
+  question: "Are privacy policies clearly communicated to users, including data collection, usage, and sharing practices?",
+},
+{
+  concept: 'Privacy',
+  question: "Are there protocols in place to delete user data that isn’t needed anymore?",
+},
+{
+  concept: 'Privacy',
+  question: "Does the system adhere to relevant privacy regulations and standards (e.g., GDPR, CCPA)?",
+},
+];
+
+export const PrivacyMechanism = [
+{
+  concept: 'Privacy Mechanism',
+  question: "Does the system have user-friendly interfaces to help users better understand and use the privacy mechanisms effectively?",
+},
+{
+  concept: 'Privacy Mechanism',
+  question: "Does the system allow users to manage their privacy settings, thus controlling the information they share with other users?",
+},
+{
+  concept: 'Privacy Mechanism',
+  question: "Does the system allow users to control and manage the data they share with third-party applications or services?",
+},
+{
+  concept: 'Privacy Mechanism',
+  question: "Are privacy mechanisms updated regularly to address evolving privacy concerns?",
+},
+];
+
+export const Constraint = [
+{
+  concept: 'Constraint',
+  question: "Are there policies that define how privacy constraints are implemented in the system?",
+},
+{
+  concept: 'Constraint',
+  question: "Are there regular evaluations done to verify compliance with privacy constraints?",
+},
+];
+
+export const Context = [
+{
+  concept: 'Context',
+  question: "Are there specific features or functionalities within the app's context that require certain privacy considerations?",
+},
+{
+  concept: 'Context',
+  question: "Are there certain regulatory requirements specific to the context of the app that need to be addressed regarding privacy?",
+},
+];
+
+export const PersonalInformation = [
+{
+  concept: 'Personal Information',
+  question: "Are there mechanisms to securely store and encrypt sensitive personal information?",
+},
+{
+  concept: 'Personal Information',
+  question: "Does the system ensure that only authorized personnel have access to personal information?",
+},
+{
+  concept: 'Personal Information',
+  question: "Are there policies and procedures to handle the collection, use, and sharing of personal information?",
+},
+];
+
 export const OwnerController = [
 {
   concept: 'Owner | Controller',
@@ -812,6 +887,66 @@ export const ThirdParty = [
 {
   concept: 'Third Party',
   question: "Are there regular analyses of third-party practices regarding data handling and security?",
+},
+];
+
+export const Trust = [
+{
+  concept: 'Trust',
+  question: "Does the system ensure that user data is treated in the best way to build and maintain trust?",
+},
+{
+  concept: 'Trust',
+  question: "Are there user reviews or rating systems in place to improve trust?",
+},
+{
+  concept: 'Trust',
+  question: "Does the system handle complaints regarding trust issues effectively?",
+},
+{
+  concept: 'Trust',
+  question: "Does the system encourage users to report suspicious activity?",
+},
+];
+
+export const Accountability = [
+{
+  concept: 'Accountability',
+  question: "Does the system ensure that users know their responsibilities and actions in the application?",
+},
+{
+  concept: 'Accountability',
+  question: "Does the system maintain logs to track user actions and ensure accountability?",
+},
+{
+  concept: 'Accountability',
+  question: "Are there controls in place to prevent unauthorized modifications to user data or system settings?",
+},
+];
+
+export const Transparency = [
+{
+  concept: 'Transparency',
+  question: "Does the system provide clear visibility of its operations?",
+},
+{
+  concept: 'Transparency',
+  question: "Are system updates and changes communicated clearly to users, including their impact on data handling?",
+},
+{
+  concept: 'Transparency',
+  question: "Does the system provide channels for users to ask for information regarding their data? ",
+},
+];
+
+export const Honesty = [
+{
+  concept: 'Honesty',
+  question: "Does the application treat errors or limitations transparently to maintain honesty?",
+},
+{
+  concept: 'Honesty',
+  question: "Are users informed of any limitations that may affect the system's performance?",
 },
 ];
 
@@ -870,8 +1005,17 @@ const QuestionsData = {
   Vulnerability,
   Asset,
   Resource,
+  Privacy,
+  PrivacyMechanism,
+  Constraint,
+  Context,
+  PersonalInformation,
   OwnerController,
   ThirdParty,
+  Trust,
+  Accountability,
+  Transparency,
+  Honesty,
 };
 
 export default QuestionsData;
