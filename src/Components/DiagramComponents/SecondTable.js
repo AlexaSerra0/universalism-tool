@@ -8,6 +8,13 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
     }
   };
 
+  const hasValidData = (dataConcept) => {
+    return dataConcept && (
+      (Array.isArray(dataConcept.description) && dataConcept.description.length > 0) ||
+      (Array.isArray(dataConcept.requirement) && dataConcept.requirement.length > 0)
+    );
+  };
+
   return (
     <div className="visual-design-table">
       <table>
@@ -15,8 +22,8 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
           <tr>
             <th colSpan="4">
               <div className="header">
-                {!dataConcept ? (<div>No content</div>) : <div className="title">{dataConcept.concept}</div>}
-                {!dataConcept ? (<div>No content</div>) : <button className="add-to-document" onClick={handleButtonClick}>ADD TO DOCUMENT</button>}  
+                {!hasValidData(dataConcept) ? (<div>No content</div>) : <div className="title">{dataConcept.concept}</div>}
+                {!hasValidData(dataConcept) ? (<div>No content</div>) : <button className="add-to-document" onClick={handleButtonClick}>ADD TO DOCUMENT</button>}  
               </div>
             </th>
           </tr>
@@ -26,13 +33,13 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
           <tr>
             <td>Description</td>
               <td>
-                {Array.isArray(dataConcept.description) && dataConcept.description.length > 0 ? (
+                {hasValidData(dataConcept) ? (
                   dataConcept.description.map((description, index) => (
                     index === 0 ? <div>{description.text}</div> : 
                     <div style={{paddingTop: "0.5rem"}}>{description.text}</div>
                   ))
                 ) : (
-                  <td>No description available</td>
+                  <div>No description available</div>
                 )}
               </td>
           </tr>
@@ -40,13 +47,13 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
           <tr>
             <td>Requirement Examples</td>
               <td>
-                {Array.isArray(dataConcept.requirement) && dataConcept.requirement.length > 0 ? (
+                {hasValidData(dataConcept) ? (
                   dataConcept.requirement.map((requirement, index) => (
                     index === 0 ? <div>{requirement.text}</div> : 
                     <div style={{paddingTop: "0.5rem"}}>{requirement.text}</div>
                   ))
                 ) : (
-                  <td>No requirement examples available</td>
+                  <div>No requirement examples available</div>
                 )}
               </td>
           </tr>

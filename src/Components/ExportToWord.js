@@ -1,4 +1,4 @@
-import {Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType, AlignmentType, HeadingLevel} 
+import {Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType, AlignmentType, HeadingLevel, PageBreak} 
 from 'docx';
 import { saveAs } from 'file-saver';
 
@@ -104,7 +104,7 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                         heading: HeadingLevel.HEADING_1,
                         spacing: { before: 400, after: 200 },
                     }),
-                    ...selectedConcepts.map((concept) => [
+                    ...selectedConcepts.map((concept, index) => [
                          new Paragraph({
                             children: [
                                 new TextRun({
@@ -115,6 +115,7 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                             heading: HeadingLevel.HEADING_2,
                             spacing: { before: 200, after: 100 },
                         }),
+                        new Paragraph({}),
                         new Paragraph({
                             children: [
                                 new TextRun({
@@ -122,13 +123,21 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                                     bold: true,
                                     size: 24,
                                 }),
-                                new TextRun({
-                                    text: `${concept.description}`,
-                                    size: 24,
-                                })
                             ],
                             spacing: { before: 100, after: 100 },
                         }),
+                        ...concept.description.map((description) => 
+                            new Paragraph({
+                                children: [
+                                        new TextRun({
+                                        text: description.text,
+                                        size: 24,
+                                    })
+                                ],
+                                spacing: { before: 100, after: 100 },
+                            }),
+                        ),
+                        new Paragraph({}),
                         new Paragraph({
                             children: [
                                 new TextRun({
@@ -136,18 +145,29 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                                     bold: true,
                                     size: 24,
                                 }),
-                                new TextRun({
-                                    text: `${concept.requirement}`,
-                                    size: 24,
-                                })
                             ],
                             spacing: { before: 100, after: 100 },
                         }),
+                        ...concept.requirement.map((requirement) => 
+                            new Paragraph({
+                                children: [
+                                        new TextRun({
+                                        text: requirement.text,
+                                        size: 24,
+                                    })
+                                ],
+                                spacing: { before: 100, after: 100 },
+                            }),
+                        ),
                         new Paragraph({}),
                         createTable(
                             selectedQuestions.filter((q) => q.concept === concept.concept)
                         ),
                         new Paragraph({}),
+                        ...(index < selectedConcepts.length - 1 ? [
+                            new Paragraph({ 
+                                children: [new PageBreak()] 
+                            })] : []),
                     ]).flat(),
                 ],
             },
