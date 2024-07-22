@@ -52,7 +52,7 @@ export const Equality = [
 },
   ];
 
-  export const SocialJustice = [
+export const SocialJustice = [
 {
   concept: 'Social Justice',
   question: "Does the system ensure that all users, regardless of background or circumstances, have equal access to its benefits and resources?",
@@ -78,7 +78,7 @@ export const Broadminded = [
 },
 {
   concept: 'Broadminded',
-  question: "Are there features in place to support diverse beliefs and choices within the user community?",
+  question: "Are there features to support diverse beliefs and choices within the user community?",
 },
 ];
 
@@ -121,7 +121,7 @@ export const Human = [
 },
 {
   concept: 'Human',
-  question: "Are there features to assist users who may find it difficult to use the system?",
+  question: "Are there features that help users who have difficulties in using the system?",
 },
 {
   concept: 'Human',
@@ -167,7 +167,7 @@ export const SocialCohesion = [
 export const NeedsSatisfaction = [
 {
   concept: 'Needs Satisfaction',
-  question: "Does the system provide resources and opportunities that address the basic needs of its users and the communities it serves?",
+  question: "Does the system provide resources and opportunities that address the basic needs of its users?",
 },
 {
   concept: 'Needs Satisfaction',
@@ -190,7 +190,7 @@ export const Community = [
 },
 {
   concept: 'Community',
-  question: "Does the system provide opportunities for users to participate in the achievement of shared goals?",
+  question: "Does the system provide opportunities for all users to work towards the same goals??",
 },
 ];
  

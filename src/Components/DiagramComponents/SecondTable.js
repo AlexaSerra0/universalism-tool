@@ -46,16 +46,15 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
           {/* Requirement Examples */}
           <tr>
             <td>Requirement Examples</td>
-              <td>
-                {hasValidData(dataConcept) ? (
-                  dataConcept.requirement.map((requirement, index) => (
-                    index === 0 ? <div>{requirement.text}</div> : 
-                    <div style={{paddingTop: "0.5rem"}}>{requirement.text}</div>
-                  ))
-                ) : (
-                  <div>No requirement examples available</div>
-                )}
-              </td>
+            <td>
+              {hasValidData(dataConcept) ? (
+                dataConcept.requirement.map((requirement, index) => (
+                  <div key={index} className="requirement-text">{requirement.text}</div>
+                ))
+              ) : (
+                <div>No requirement examples available</div>
+              )}
+            </td>
           </tr>
         </tbody>
       </table>

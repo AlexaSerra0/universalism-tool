@@ -60,4 +60,13 @@
   font-weight: bold;
   vertical-align: middle;
 }
+
+.requirement-text {
+  padding: 0.5rem;
+  border-bottom: 2px solid #4BB4DE;
+}
+
+.requirement-text:last-child {
+  border-bottom: none;
+}
   

@@ -76,7 +76,7 @@ const Questions = () => {
 
   return (
     <div className="Questions">
-      <div className="sidebar">
+      <div className="sidebar scrollable">
         {availableConcepts.map((concept) => (
           <div 
             key={concept.id}

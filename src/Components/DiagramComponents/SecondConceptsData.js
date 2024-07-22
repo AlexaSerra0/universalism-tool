@@ -12,10 +12,10 @@ export const Universalism = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, universalism is present because the app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. Furthermore, the app is accessible to people with disabilities and provides multilingual support."
+      text: "ShareTheMeal App - The app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. The app is accessible to people with disabilities and provides multilingual support."
     },
     {
-      text: ""
+      text: "Bright Sky App - The app's goal is to give support and information to people who experience domestic abuse or those who are concerned about someone else, this goal aligns with the value of social justice. The app provides multilingual support to some languages and is accessible to people with disabilities."
     }
   ],
 };
@@ -30,10 +30,10 @@ export const UniversalismRequirement = {
   ],
   requirement: [
     {
-      text: "In the app ShareTheMeal, the requirements could include support for multiple languages to promote inclusivity and accessibility features for users with disabilities."
+      text: "ShareTheMeal App - The requirements could include support for multiple languages to promote inclusivity and accessibility features for users with disabilities."
     },
     {
-      text: ""
+      text: "Bright Sky App - A requirement could be the educational resources about the different domestic abuse."
     }
   ],
 };
@@ -51,17 +51,17 @@ export const Equality = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, the people who benefit from the app all receive equal treatment: “Unless otherwise stated, funds raised will be divided equally and allocated to the countries mentioned in the fundraising goal (e.g. 200,000 meals for Kenya and 200,000 meals for Ethiopia).” Not only that, but the app does not consider the user’s personal characteristics or circumstances, it allows equal access to the features. Anyone able can donate. The process of donating is simple, facilitating the process and avoiding stress."
+      text: "ShareTheMeal App - The people who benefit from the app all receive equal treatment: “Unless otherwise stated, funds raised will be divided equally and allocated to the countries mentioned in the fundraising goal (e.g. 200,000 meals for Kenya and 200,000 meals for Ethiopia)”. The app does not consider the user’s personal characteristics or circumstances, it allows equal access to the features. Anyone able can donate. The process of donating is simple, facilitating the process and avoiding stress."
     },
     {
-      text: ""
+      text: "Bright Sky App - Ensures that every user has access to all features (e.g., emergency contact tools, legal advice resources, mental health support services) without restrictions."
     }
   ],
 };
 
 export const SocialJustice = {
   id: '4',
-  concept: 'Social Justice ',
+  concept: 'Social Justice',
   description: [
     {
       text: "Social Justice is one of the sub-values of Universalism. It’s defined as the idea that all people should have the same rights and opportunities and that a country's wealth and resources should benefit everyone in that country."
@@ -72,10 +72,10 @@ export const SocialJustice = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, social justice could be demonstrated through an equitable distribution of donated funds to various communities in need. For example, the funds donated could be distributed proportionately based on the needs of each region, instead of equally."
+      text: "ShareTheMeal App - Social justice could be demonstrated through an equitable distribution of donated funds to various communities in need. For example, the funds donated could be distributed proportionately based on the needs of each region, instead of equally."
     },
     {
-      text: ""
+      text: "Bright Sky App - Supports social justice through its features that provide users with comprehensive information on different types of domestic abuse, including practical examples. The app has interactive elements (e.g., risk assessment questionnaires) to help users evaluate the dangers in their relationships. It presents digital safety tips to protect users from online vulnerabilities and provides informative content on topics such as violence, consent, harassment, and how to leave an abusive relationship. The app also connects users with national support services."
     }
   ],
 };
@@ -93,10 +93,10 @@ export const Broadminded = {
   ],
   requirement: [
     {
-      text: "In a social media platform, broadmindedness could be implemented by allowing users to customize their news feeds based on their interests and preferences, like languages, cultural topics, or hobbies."
+      text: "Example of a Social Media Platform - Broadmindedness could be implemented by allowing users to customize their news feeds based on their interests and preferences, like languages, cultural topics, or hobbies."
     },
     {
-      text: ""
+      text: "Bright Sky App - Allows users to select the type of support they need (e.g., assistance with abusive relationships, sexual assault, stalking)."
     }
   ],
 };
@@ -114,10 +114,10 @@ export const Wisdom = {
   ],
   requirement: [
     {
-      text: "In an e-commerce platform, wisdom can be implemented by using machine learning algorithms to analyze user preferences and behaviors to personalize product recommendations."
+      text: "Example of an E-Commerce Platform - Wisdom can be implemented by using machine learning algorithms to analyze user preferences and behaviors to personalize product recommendations."
     },
     {
-      text: ""
+      text: "Bright Sky App - Has a feedback mechanism where users can submit their opinions and also provide an email for the user to contact to give a more detailed opinion. This feedback should be considered to improve the app’s features."
     }
   ],
 };
@@ -133,10 +133,10 @@ export const SoftwareSystem = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app is the software system. It includes the mobile application, backend servers, databases, and any other components necessary for the running of the app. The software system's purpose is to facilitate the donation process and manage the distribution of food aid."
+      text: "ShareTheMeal App - Is the software system. It includes the components necessary for running the app. The software system's purpose is to facilitate the donation process and manage the distribution of food aid. The app must maintain compatibility and interoperability with external systems (e.g., payment gateways). If the network fails, the user should still be able to use the app in some way, so there should be offline features so that users can, for example, view their donation history."
     },
     {
-      text: ""
+      text: "Bright Sky App - Should be capable of handling peak loads during high-traffic periods when many users seek help simultaneously. In case of network failures, the app should offer offline alternative modes so that users can still access essential features (e.g., information about abuse)."
     }
   ],
 };
@@ -152,14 +152,11 @@ export const Human = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, the human refers to the users who interact with the app. These users download the app, navigate its interface, and make donations to contribute to the fight against global hunger. They are the ones directly engaging with the software system to achieve the app's goal of providing food assistance to those in need."
+      text: "ShareTheMeal App - Is open to every user who wants to donate. The app is intuitive, users only need to download the app, navigate its interface, and make donations to contribute to the fight against global hunger. The app receives feedback from users by Google Play or email."
     },
     {
-      text: "Other people who interact with the app are developers, who created and maintained the app, and administrators, people involved in managing the app initiative and overseeing the donation operation."
+      text: "Bright Sky App - Is open to every user who needs help, providing a simple interface that is intuitive and user-friendly. The hidden mode feature could confuse users, but when first using the app, it gives a tutorial to help users understand how to use the hidden mode."
     },
-    {
-      text: "While people who receive the donation do not interact with the app directly, they are affected by the app, since they benefit from the donations."
-    }
   ],
 };
 
@@ -180,7 +177,10 @@ export const SocialSustainability = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app involves ensuring equitable access to food resources for current and future generations. The app's goal of fighting hunger aligns with this by promoting equality in accessing essential resources such as food and money."
+      text: "ShareTheMeal App - Ensures equal access to food resources for current and future generations. The app's goal of fighting hunger aligns with social sustainability when accessing essential resources (e.g., food, and money) is equal for everyone."
+    },
+    {
+      text: "Bright Sky App - Gives equal access to support services to users who are involved or are aware of cases of domestic abuse. Every user has access to its resources regardless of their background or personal characteristics. These actions promote social sustainability."
     },
   ],
 };
@@ -201,7 +201,10 @@ export const SocialCohesion = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, users unite to fight global hunger, cooperating towards a common goal, and promoting empathy in users."
+      text: "ShareTheMeal App - Users unite to fight global hunger, cooperating towards a common goal, and promoting empathy in users."
+    },
+    {
+      text: "Bright Sky App - Creates an environment that is supportive and inclusive, encouraging users to connect with national support lines in order to get help. The hope is to reduce social conflicts related to domestic abuse with the app's use."
     },
   ],
 };
@@ -219,7 +222,10 @@ export const NeedsSatisfaction = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app helps basic human needs by addressing hunger, ensuring that essential needs are met in different communities. It does this by allowing users to donate so that the necessary resources reach those in need."
+      text: "ShareTheMeal App - Addresses the starvation existing in different communities so that their essential needs are met. This happens when giving users a way to donate so that the necessary resources reach those in need."
+    },
+    {
+      text: "Bright Sky App - Advocates for individuals' safety needs. The app was created to combat domestic abuse, employing functionalities to further the cause (e.g., questionnaires, and practical examples)."
     },
   ],
 };
@@ -237,7 +243,10 @@ export const Community = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, the community includes the users of the app and the global community affected by hunger. The app is a platform that connects individuals worldwide to address food issues."
+      text: "ShareTheMeal App - The community includes the users of the app and the global community affected by hunger. The app connects individuals worldwide to address food issues."
+    },
+    {
+      text: "Bright Sky App - The community is created by the users of the app and the support services that the app helps users connect with. Informing the users of all types of domestic abuse makes it easier for the user to know the support he needs."
     },
   ],
 };
@@ -258,7 +267,10 @@ export const SocialEquality = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app ensures that all individuals, regardless of their background or circumstances, have equal access to food and money assistance provided by the app. It also allows everyone who wants to permission to access and use the app."
+      text: "ShareTheMeal App - Ensures that all individuals, regardless of their background or circumstances, have equal access to food and money assistance provided by the app. It also allows everyone who wants, to have permission to access and use the app."
+    },
+    {
+      text: "Bright Sky App - Supports all users regardless of their personal characteristics. Everyone seeking help with domestic abuse receives the same support."
     },
   ],
 };
@@ -271,12 +283,15 @@ export const Fairness = {
       text: "Fairness relates to how organizations should enable fairness between their employees, making sure that every employee receives equal treatment and opportunities. An example of this is employees with the same job description having the same vacation days and salary."
     },
     {
-      text: "In software systems, fairness involves designing systems that ensure equitable access and opportunities for all users, regardless of their background or personal characteristics. This includes ensuring that algorithms are free from bias, providing equal access to features and resources, and implementing policies that promote equitable treatment for all users."
+      text: "In software systems, fairness involves designing systems that ensure equal access and opportunities for all users, regardless of their background or personal characteristics. This includes ensuring that algorithms are free from bias, providing equal access to features and resources, and implementing policies that promote equitable treatment for all users."
     },
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app should make sure that all employees are treated fairly, providing equal opportunities for advancement and fair compensation for their work. The donations collected should also be distributed equally to support programs in various communities based on need, with no favoritism. The people should be selected to receive money fairly, without considering race or gender. All these factors promote fairness in the distribution of resources."
+      text: "ShareTheMeal App - Should make sure that all employees are treated fairly, providing equal opportunities for advancement and fair compensation for their work. The donations collected should also be distributed equally to support programs in various communities based on need, with no favoritism. The people should be selected to receive money fairly, without considering race or gender. All these factors promote fairness in the distribution of resources."
+    },
+    {
+      text: "Bright Sky App - There shouldn't be any bias in the resources available.  For example, the questionnaires and practical examples must be fair for every type of user."
     },
   ],
 };
@@ -294,7 +309,10 @@ export const HumanRight = {
   ],
   requirement: [
     {
-      text: "In a workplace management system, ensuring human rights could involve features that guarantee employees' rest days are respected and that personal data is secure. The system should avoid invasive monitoring practices and support employees' rights to a safe and respectful working environment."
+      text: "Example of a Workplace Management System - Ensuring human rights involves features that guarantee employees' rest days are respected and that personal data is secure. The system should avoid invasive monitoring practices and support employees' rights to a safe and respectful working environment."
+    },
+    {
+      text: "ShareTheMeal & Bright Sky Apps - Both defend human rights by protecting the users' data."
     },
   ],
 };
@@ -312,7 +330,7 @@ export const FairSalary  = {
   ],
   requirement: [
     {
-      text: "In an employee management system, fair salary practices could be implemented by using algorithms that ensure employees with the same job role, experience, and performance receive the same pay, irrespective of gender or race. The system should flag inconsistencies for review and adjustment."
+      text: "Example of an Employee Management System - Fair salary practices could be implemented by using algorithms that ensure employees with the same job role, experience, and performance receive the same pay, irrespective of gender or race. The system should flag inconsistencies for review and adjustment."
     },
   ],
 };
@@ -330,7 +348,10 @@ export const Discrimination = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, neither donors nor beneficiaries suffer discrimination, since everyone can use the app and individual characteristics have no impact on who and how much they receive."
+      text: "ShareTheMeal App - Neither donors nor beneficiaries suffer discrimination, since everyone can use the app and individual characteristics have no impact on who and how much they receive."
+    },
+    {
+      text: "Bright Sky App - Does not discriminate based on any user characteristics and even provides additional support and information for the LGBTQ+ community that is more vulnerable to domestic abuse."
     },
   ],
 };
@@ -351,7 +372,7 @@ export const FairTreatment = {
   ],
   requirement: [
     {
-      text: "In an employee management system, fair treatment can be promoted by ensuring that performance evaluations are based on objective criteria and that feedback is consistent and unbiased. Features like anonymous reporting of unfair treatment and stress-relief support tools can help maintain a fair and respectful workplace."
+      text: "Example of an Employee Management System - Fair treatment can be promoted by ensuring that performance evaluations are based on objective criteria and that feedback is consistent and unbiased. Features like anonymous reporting of unfair treatment and stress-relief support tools can help maintain a fair and respectful workplace."
     },
   ],
 };
@@ -366,7 +387,10 @@ export const SocioculturalEquity = {
   ],
   requirement: [
     {
-      text: "The development and implementation of the ShareTheMeal app should consider the different possible users of the app, so that everyone can access it. This way, the app is more user-friendly and has a bigger impact. By reaching a bigger pool of users, more donations can be made, and more people can receive the help they need."
+      text: "ShareTheMeal App - Development and implementation should consider the different possible users of the app so that everyone can access it. This way, the app is more user-friendly and has a bigger impact. By reaching a bigger pool of users, more donations can be made, and more people can receive the help they need."
+    },
+    {
+      text: "Bright Sky App - Design must consider different technologies and multiple languages. This is important to ensure that all users can use the app."
     },
   ],
 };
@@ -381,7 +405,10 @@ export const Compatibility = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app needs an internet connection to work, without it, it’s not possible to view information or make donations. It can be used on an internet browser or by downloading the app from Google Play or App Store. This means that the operation systems available is iOS and Android."
+      text: "ShareTheMeal App - Needs an internet connection to work, without it, it’s not possible to view information or make donations. It can be used on an internet browser or by downloading the app from Google Play or App Store. This means that the operation systems available is iOS and Android."
+    },
+    {
+      text: "Bright Sky App - Needs internet connection to work. It’s also compatible with Android and iOS and reaches users through different platforms (e.g., tablets, smartphones)."
     },
   ],
 };
@@ -396,7 +423,7 @@ export const Device = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app should be designed to provide a consistent and user-friendly experience across different devices, including smartphones, tablets, and desktops, ensuring functionality and usability on all platforms."
+      text: "ShareTheMeal & Bright Sky Apps - Should be designed to provide a consistent and user-friendly experience across different devices, including smartphones, tablets, and desktops, ensuring functionality and usability on all platforms."
     },
   ],
 };
@@ -411,7 +438,7 @@ export const OperatingSystem = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app must be compatible with the latest versions of Android and iOS operating systems, as well as provide support for several previous versions to ensure broader accessibility."
+      text: "ShareTheMeal & Bright Sky Apps - Must be compatible with the latest versions of Android and iOS operating systems, as well as provide support for several previous versions to ensure broader accessibility."
     },
   ],
 };
@@ -426,7 +453,7 @@ export const Hardware = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app should be optimized to run efficiently on devices with varying hardware capabilities, from high-end smartphones with powerful processors to budget devices with limited memory and processing power."
+      text: "ShareTheMeal & Bright Sky Apps - should be optimized to run efficiently on devices with varying hardware capabilities, from high-end smartphones with powerful processors to budget devices with limited memory and processing power."
     },
   ],
 };
@@ -441,7 +468,7 @@ export const Network = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app must function properly over both Wi-Fi and cellular networks to ensure users can donate and access information regardless of their connection type."
+      text: "ShareTheMeal & Bright Sky Apps - Must function properly over both Wi-Fi and cellular networks to ensure users can donate, in the case of the ShareTheMeal app, and access information regardless of their connection type."
     },
   ],
 };
@@ -459,8 +486,12 @@ export const Education = {
   ],
   requirement: [
     {
-      text: "In a language learning app, users must have access to diverse learning materials, including text, audio, and interactive exercises. The app should support multiple languages and provide features for pronunciation practice and vocabulary building."
+      text: "Example of a Language Learning App - Users must have access to diverse learning materials, including text, audio, and interactive exercises. The app should support multiple languages and provide features for pronunciation practice and vocabulary building."
     },
+    {
+      text: "Bright Sky App - Educates the user on the different domestic abuse, giving practical examples to understand the information better. The app is accessible since it supports multiple languages."
+    },
+    
   ],
 };
 
@@ -477,7 +508,10 @@ export const Knowledge = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app users who don’t have much knowledge on where exactly food problems exist can be informed on the app, since it explains clearly everything a person needs to know: the cause a user can donate to, the goal of the app, how the app works, etc."
+      text: "ShareTheMeal App - Users who don’t have much knowledge on where exactly food problems exist can be informed on the app, since it explains clearly everything a person needs to know: the cause a user can donate to, the goal of the app, how the app works, etc."
+    },
+    {
+      text: "Bright Sky App - Is well structured to provide clear and comprehensive information about domestic abuse. At the beginning of the app, a short tutorial is presented to best introduce the user to the app, in particular the hidden mode."
     },
   ],
 };

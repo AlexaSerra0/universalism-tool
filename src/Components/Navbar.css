@@ -1,31 +1,31 @@
-   .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    height: var(--header-height);
-    padding: 2rem;
-    background: linear-gradient(180deg, #345DA7, #4BB4DE);
-   }
-   
-   .nav-text{
-      color: #ffffff;
-      transition: color 0.4s;
-      font-weight: bold;
-   }
+.nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   height: var(--header-height);
+   padding: 2rem;
+   background: linear-gradient(180deg, #345DA7, #4BB4DE);
+}
 
-   .nav-home {
-    font-size: var(--h2-font-size);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   }
+.nav-text{
+   color: #ffffff;
+   transition: color 0.4s;
+   font-weight: bold;
+}
 
-   .nav-home:hover {
-      color: #345DA7;
-   }
-   
-   .nav-logo {
-      font-size: 1.3rem;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-style: italic;
-      text-decoration: none;
-   }
+.nav-home {
+   font-size: var(--h2-font-size);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-home:hover {
+   color: #345DA7;
+}
+
+.nav-logo {
+   font-size: 1.3rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-style: italic;
+   text-decoration: none;
+}

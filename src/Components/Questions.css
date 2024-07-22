@@ -20,7 +20,12 @@
   background-color: #f5f5f5;
   border-right: 1px solid #ddd;
 }
-  
+
+.scrollable {
+  max-height: 81.5vh; /* Adjust this value as needed */
+  overflow-y: auto;
+}
+
 .concept {
   margin-bottom: 10px;
   cursor: pointer;

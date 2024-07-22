@@ -92,7 +92,10 @@ function Tool() {
   return (
     <div className='Tool'>
       <div className='FirstRow'>
-        <Link to={"/example"}>Case Example: ShareTheMeal</Link>
+        <Link to={"/example_ShareTheMeal"}>Case Example: ShareTheMeal</Link>
+      </div>
+      <div className='SecondRow'>
+        <Link to={"/example_BrightSky"}>Case Example: Bright Sky</Link>
       </div>
       <div className='SelectBar'>
         <div className='SelectText'>
