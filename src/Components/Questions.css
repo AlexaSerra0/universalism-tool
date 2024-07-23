@@ -22,7 +22,7 @@
 }
 
 .scrollable {
-  max-height: 81.5vh; /* Adjust this value as needed */
+  max-height: 81.5vh;
   overflow-y: auto;
 }
 

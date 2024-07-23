@@ -532,7 +532,10 @@ export const GenderEquity = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app does not differentiate the donor’s gender, there is no differentiation in how the application works. Beneficiaries' gender also has no impact when receiving donations."
+      text: "ShareTheMeal App - Does not differentiate the donor’s gender, there is no differentiation in how the application works. Beneficiaries' gender also has no impact when receiving donations."
+    },
+    {
+      text: "Bright Sky App - Does not distinguish users' gender identities, everyone is free to receive the support needed since domestic abuse can happen to anyone."
     },
   ],
 };
@@ -547,7 +550,10 @@ export const Accessibility = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app should be designed to be usable by people with various abilities. The app’s interface and features should consider accessibility principles. One of them is having alternative text for images, the app does not need the images to function, and each has a title. Another is color contrast for readability, the app has a good pallet with sufficient contrast."
+      text: "ShareTheMeal App - Should be designed to be usable by people with various abilities. The app’s interface and features should consider accessibility principles. One of them is having alternative text for images, the app does not need the images to function, and each has a title. Another is color contrast for readability, the app has a good pallet with sufficient contrast."
+    },
+    {
+      text: "Bright Sky App - Must be designed with users with various abilities in mind. It means implementing features such as high color contrast for readability, and compatibility with assistive technologies to ensure inclusivity."
     },
   ],
 };
@@ -562,7 +568,7 @@ export const AssistiveTechnology = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app must be compatible with assistive technologies to be used by people with disabilities, reaching a bigger pool of users and promoting equality. The app should work with screen readers, that convert text into speech for visually impaired users and support keyboard navigation for users who cannot use a touchscreen. For example, TalkBack was tested and works with the application."
+      text: "ShareTheMeal & Bright Sky Apps - Both must be compatible with assistive technologies to be used by people with disabilities, reaching a bigger pool of users and promoting equality. The app should work with screen readers, that convert text into speech for visually impaired users and support keyboard navigation for users who cannot use a touchscreen. For example, TalkBack was tested and works with both applications."
     },
   ],
 };
@@ -577,7 +583,7 @@ export const Disability = {
   ],
   requirement: [
     {
-      text: "While the ShareTheMeal app doesn’t have an option for voice commands, assistive technologies can be used. Features like resizable text or modification of the position of components in the application are not present."
+      text: "ShareTheMeal & Bright Sky Apps - Both apps don’t have an option for voice commands, but assistive technologies can be used. Features like resizable text or modification of the position of components in the application are not present."
     },
   ],
 };
@@ -596,7 +602,10 @@ export const Culture = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app includes cultural values of compassion and empathy by highlighting the act of donating meals to those in need."
+      text: "ShareTheMeal App - Includes cultural values of compassion and empathy by highlighting the act of donating meals to those in need."
+    },
+    {
+      text: "Bright Sky App - Integrates cultural awareness by giving resources and support about different types of domestic abuse. This information ensures that users can access the help specific to their situation."
     },
   ],
 };
@@ -614,7 +623,10 @@ export const Norm = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app users are expected to contribute to meal donations and spread awareness about hunger."
+      text: "ShareTheMeal App - Users are expected to contribute to meal donations and spread awareness about hunger."
+    },
+    {
+      text: "Bright Sky App - Is an application for real problems related to domestic abuse. Even if the app doesn't explicitly communicate it, the users are expected to respect the gravity of the issues discussed and use it in a responsible manner."
     },
   ],
 };
@@ -632,7 +644,10 @@ export const Value = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app users should value values that prioritize compassion, empathy, and the importance of helping those in need."
+      text: "ShareTheMeal App - Users should value values that prioritize compassion, empathy, and the importance of helping those in need."
+    },
+    {
+      text: "Bright Sky App - Prioritizes values of safety, support, privacy, and empowerment. With the hidden mode feature, it gives a layer of privacy. The information and resources available all contribute to safety, support, and empowerment, giving the user the knowledge they may lack and the means to act."
     },
   ],
 };
@@ -650,7 +665,10 @@ export const Action = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, one action is the donation process to reduce global hunger. This process involves selecting the amount to donate and confirming the donation. Other actions can be sharing on social media to spread awareness."
+      text: "ShareTheMeal App - One action is the donation process to reduce global hunger. This process involves selecting the amount to donate and confirming the donation. Other actions can be sharing on social media to spread awareness."
+    },
+    {
+      text: "Bright Sky App - The process of reporting abuse is an action that users can complete. Users can clearly click the visible buttons to get immediate help or find the many contacts that offer different support depending on the type of abuse."
     },
   ],
 };
@@ -670,6 +688,9 @@ export const Ritual = {
     {
       text: "A fitness app that has daily check-ins or streaks encourages consistent usage and user retention."
     },
+    {
+      text: "ShareTheMeal & Bright Sky Apps - Could send notifications to encourage the user to open and use the app. For the Bright Sky app, it's necessary to consider the hidden mode. If a user has that mode activated, he could receive disguised notifications (e.g., if the hidden mode is a game, then the notification is about the game)."
+    },
   ],
 };
 
@@ -686,7 +707,10 @@ export const Custom = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app users regularly sharing their meal donations on social media through the app could become a custom that promotes the app’s goal and increases its visibility. Subscribing to a monthly donation could also become a custom that aligns with the app’s goals of providing consistent support for reducing global hunger."
+      text: "ShareTheMeal App - Users regularly sharing their meal donations on social media through the app could become a custom that promotes the app’s goal and increases its visibility. Subscribing to a monthly donation could also become a custom that aligns with the app’s goals of providing consistent support for reducing global hunger."
+    },
+    {
+      text: "Bright Sky App - Has a journal feature that allows users to register any abuse they have suffered. This is important since they can later be used as proof of the abuse. The user could develop the custom of updating the journal regularly."
     },
   ],
 };
@@ -704,7 +728,10 @@ export const SocialEnvironment = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app creates an online environment where users can interact with the cause and see their impact on the world."
+      text: "ShareTheMeal App - Creates an online environment where users can interact with the cause and see their impact on the world."
+    },
+    {
+      text: "Bright Sky App - Creates an online environment where users interact with the resources design towards their needs."
     },
   ],
 };
@@ -722,7 +749,10 @@ export const SocialInteraction = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, users interact in the app by making donations and sharing on social media about the cause, encouraging others to join and donate."
+      text: "ShareTheMeal App - Users interact in the app by making donations and sharing on social media about the cause, encouraging others to join and donate."
+    },
+    {
+      text: "Bright Sky App - Users experience social interactions by answering questionnaires and contacting help services."
     },
   ],
 };
@@ -741,7 +771,10 @@ export const Security = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app has an infrastructure based on security standards. To ensure that the payment information is safe and secure, everything is processed by Braintree/Paypal. Other than that, the app doesn’t have any additional data. Donations that were made by mistake will be returned immediately."
+      text: "ShareTheMeal App - Has an infrastructure based on security standards. To ensure that the payment information is safe and secure, everything is processed by Braintree/Paypal. Other than that, the app doesn’t have any additional data. Donations that were made by mistake will be returned immediately."
+    },
+    {
+      text: "Bright Sky App - Does not gather personal data on the user (e.g., email), only on the device and other IDs. The data is encrypted in transit however, the app does not offer any way to eliminate the data."
     },
   ],
 };
@@ -759,7 +792,10 @@ export const SecurityRequirement = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app should implement a secure authentication mechanism to ensure that user accounts are protected against unauthorized access. Only authorized users can access sensitive information and perform actions like donating meals."
+      text: "ShareTheMeal App - Should implement a secure authentication mechanism to ensure that user accounts are protected against unauthorized access. Only authorized users can access sensitive information and perform actions like donating meals."
+    },
+    {
+      text: "Bright Sky App - Should implement secure authentication mechanisms, (e.g., MFA) so that only authorized users can access their accounts. This requirement is critical to maintaining confidentiality and preventing others who may find the app and open it, which could happen even in hidden mode."
     },
   ],
 };
@@ -777,7 +813,10 @@ export const SecurityMechanism = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app uses HTTPS to secure a channel from the app to the server. The payment information is secure because it’s processed by Braintree, a globally trusted PayPal payments company. Every communication is point-to-point encrypted, SHA-256 with RSA encryption."
+      text: "ShareTheMeal App - Uses HTTPS to secure a channel from the app to the server. The payment information is secure because it’s processed by Braintree, a globally trusted PayPal payments company. Every communication is point-to-point encrypted, SHA-256 with RSA encryption."
+    },
+    {
+      text: "Bright Sky App - Encrypts data in transit, however, it doesn't specify what mechanism uses."
     },
   ],
 };
@@ -795,7 +834,10 @@ export const SecurityRisk = {
   ],
   requirement: [
     {
-      text: "A ShareTheMeal app's potential security risk is the possibility of unauthorized access to user accounts. This risk is evaluated based on the importance of user data (personal and payment information) and the likelihood of unauthorized access occurring. One solution that would help mitigate the risk is the implementation of multi-factor authentication (MFA) and monitor login attempts for suspicious activities."
+      text: "ShareTheMeal App - A potential security risk is the possibility of unauthorized access to user accounts. This risk is evaluated based on the importance of user data (personal and payment information) and the likelihood of unauthorized access occurring. One solution that would help mitigate the risk is the implementation of multi-factor authentication (MFA) and monitor login attempts for suspicious activities."
+    },
+    {
+      text: "Bright Sky App - A potential security risk is the lack of a feature for users to delete their device-related data. This could lead to concerns about data retention and user privacy. To address this risk the app should provide a way to delete a user's data."
     },
   ],
 };
@@ -813,7 +855,10 @@ export const Threat = {
   ],
   requirement: [
     {
-      text: "A potential threat to the ShareTheMeal app is data breaches due to insecure APIs. If the app APIs are not secured, attackers could exploit vulnerabilities to gain unauthorized access to sensitive user data, including personal and payment information. To prevent this, the app should employ API security measures such as API keys, OAuth, and HTTPS."
+      text: "ShareTheMeal App - A potential threat is data breaches due to insecure APIs. If the app APIs are not secured, attackers could exploit vulnerabilities to gain unauthorized access to sensitive user data (e.g., personal and payment information). To prevent this, the app should employ API security measures such as API keys, OAuth, and HTTPS."
+    },
+    {
+      text: "Bright Sky App - A potential threat could be unauthorized access to device identifiers. The app could use encryption (e.g., HTTPS) to secure data transmission."
     },
   ],
 };
@@ -828,7 +873,10 @@ export const Attack = {
   ],
   requirement: [
     {
-      text: "Man-in-the-Middle (MitM) is a known attack that occurs when an attacker intercepts communication between the app and the user, capturing sensitive information, like login credentials or payment details. The ShareTheMeal app is protected against this attack because it uses HTTPS to secure a channel from the app to the server and point-to-point encryption."
+      text: "ShareTheMeal App - Is protected against MitM attack because it uses HTTPS to secure a channel from the app to the server and point-to-point encryption. Man-in-the-Middle (MitM) is a known attack that occurs when an attacker intercepts communication between the app and the user, capturing sensitive information, like login credentials or payment details."
+    },
+    {
+      text: "Bright Sky App - Might not have a lot of data collected, but it could still be the target of an attack, like MitM, to get device identifiers. The app should implement secure communications using HTTPS or other methods."
     },
   ],
 };
@@ -843,7 +891,10 @@ export const Harm = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, harm could be done regarding the money donated and the user’s personal and payment information."
+      text: "ShareTheMeal App - Harm could be done regarding the money donated and the user’s personal and payment information."
+    },
+    {
+      text: "Bright Sky App - Harm could involve unauthorized access to device identifiers or misuse of collected data."
     },
   ],
 };
@@ -858,7 +909,7 @@ export const Vulnerability = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app could have vulnerabilities if it uses outdated software components. Older versions of libraries or frameworks have known vulnerabilities and attackers could exploit these weaknesses to compromise the app's security."
+      text: "ShareTheMeal & Bright Sky Apps - Could have vulnerabilities if they use outdated software components. Older versions of libraries or frameworks have known vulnerabilities, and attackers could exploit these weaknesses to compromise the app's security."
     },
   ],
 };
@@ -873,7 +924,10 @@ export const Asset = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app assets are the user’s personal and payment information."
+      text: "ShareTheMeal App - Assets are the user’s personal and payment information."
+    },
+    {
+      text: "Bright Sky App - The main assets are the device identifiers and diagnostic logs."
     },
   ],
 };
@@ -891,8 +945,11 @@ export const Resource = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app has many resources in the form of functionalities that enable the donors to donate the money quantity they want. This app allows donors to choose from various initiatives or countries to donate to, helping alleviate the hunger of the people who need it the most, depending on their needs these receive food or money (if the market has lots of food), this way improving their circumstances and quality of life."
+      text: "ShareTheMeal App - Has many resources in the form of functionalities that enable donors to donate the money quantity they want. This app allows donors to choose from various initiatives or countries to donate to, helping alleviate the hunger of the people who need it the most, depending on their needs these receive food or money (if the market has lots of food), this way improving their circumstances and quality of life."
     },
+    {
+      text: "Bright Sky App - Offers many resources, such as functionalities for reporting abuse, accessing support contacts, and questionnaires. These functionalities must be accessible to all users, including users with disabilities, to support their needs and ensure equal access."
+    }
   ],
 };
 
@@ -906,8 +963,11 @@ export const Privacy = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app must ensure that user data, including personal and payment information, is kept confidential and protected from unauthorized access."
+      text: "ShareTheMeal App - Must ensure that user data, including personal and payment information, is kept confidential and protected from unauthorized access."
     },
+    {
+      text: "Bright Sky App - Clearly states its privacy policy, for example, they don't share personal information with third parties except pseudonymized information for statistical purposes."
+    }
   ],
 };
 
@@ -921,8 +981,11 @@ export const PrivacyMechanism = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app allows the user to choose who can see his profile, when he donated, and how much was donated. Additionally, the user can choose how their data is handled and who can track the data. This privacy mechanism gives users control over their personal information. The app should also implement a two-factor authentication to add another layer of security."
+      text: "ShareTheMeal App - Allows the user to choose who can see his profile, when he donated, and how much was donated. Additionally, the user can choose how their data is handled and who can track the data. This privacy mechanism gives users control over their personal information. The app should also implement a two-factor authentication to add another layer of security."
     },
+    {
+      text: "Bright Sky App - Gives users the ability to request that their data be eliminated. This mechanism allows users control over their privacy by ensuring that their data can be removed from the system when they want."
+    }
   ],
 };
 
@@ -936,7 +999,7 @@ export const Constraint = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, a privacy constraint could be the requirement that all user data must be encrypted to ensure compliance with privacy policies and to protect user confidentiality."
+      text: "ShareTheMeal & Bright Sky Apps - A privacy constraint could be the requirement that all user data must be encrypted to ensure compliance with privacy policies and to protect user confidentiality."
     },
   ],
 };
@@ -951,8 +1014,11 @@ export const Context = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, the context is the app that allows donations. Includes all the features and functionalities within the app that handle user data, financial transactions, and personal information."
+      text: "ShareTheMeal App - The context is the app that allows donations. Includes all the features and functionalities within the app that handle user data, financial transactions, and personal information."
     },
+    {
+      text: "Bright Sky App - The context is the app that gives support and information to users who are involved in any way in an abusive relationship, or simply people worried that someone they know is experiencing abuse. Includes all features and functionalities that allow for this app to work."
+    }
   ],
 };
 
@@ -966,8 +1032,11 @@ export const PersonalInformation = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, the personal information relates to a user’s name, address, credit card information, email, and donation amounts."
+      text: "ShareTheMeal App - The personal information relates to a user’s name, address, credit card information, email, and donation amounts."
     },
+    {
+      text: "Bright Sky App - A user's personal information is the device IDs and interaction logs. These can be used to identify the device and know a user's activity patterns."
+    }
   ],
 };
 
@@ -981,8 +1050,11 @@ export const OwnerController = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, the World Food Programme (WFP) is the owner/controller of the user data."
+      text: "ShareTheMeal App - The World Food Programme (WFP) is the owner/controller of the user data."
     },
+    {
+      text: "Bright Sky App - Developed by Hestia, and supported by the Vodafone Foundation and Thames Valley Partnership. Hestia is the owner/controller of the user data."
+    }
   ],
 };
 
@@ -996,11 +1068,13 @@ export const ThirdParty = {
   ],
   requirement: [
     {
-      text: "In the ShareTheMeal app, a third party is the payment service provider, Braintree/Paypal, that processes donations."
+      text: "ShareTheMeal App - A third party is the payment service provider, Braintree/Paypal, that processes donations."
     },
+    {
+      text: "Bright Sky App - There are no third parties."
+    },  
   ],
 };
-
 
 export const Trust = {
   id: '56',
@@ -1012,8 +1086,11 @@ export const Trust = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal is WFP’s fundraising app, the world's largest humanitarian agency. That alone makes people trust the app. The existing protections to guarantee security when using the app also help to build trust."
+      text: "ShareTheMeal App - Is WFP’s fundraising app, the world's largest humanitarian agency. That alone makes people trust the app. The existing protections to guarantee security when using the app also help to build trust."
     },
+    {
+      text: "Bright Sky App - Being developed by Hestia, gives users reassurance of the legitimacy of the app. This is because Hestia is a well-known charity organization."
+    }
   ],
 };
 
@@ -1030,8 +1107,11 @@ export const Accountability = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app users are responsible for the information they provide regarding payment. There are also features in place that shows users information about their donations, tracking contributions. On the other hand, the app must donate where the user wants to, any deviance from that will break the user’s intentions and the app could be held accountable for their action of taking advantage of the user’s money."
+      text: "ShareTheMeal App - Users are responsible for the information they provide regarding payment. There are also features in place that shows users information about their donations, tracking contributions. On the other hand, the app must donate where the user wants to, any deviance from that will break the user’s intentions and the app could be held accountable for their action of taking advantage of the user’s money."
     },
+    {
+      text: "Bright Sky App - Users must only report true events, any attempt to use the application as a prank would be unethical. Users are responsible for reporting abuse accurately and providing the needed information."
+    }
   ],
 };
 
@@ -1045,8 +1125,11 @@ export const Transparency = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app provides clear visibility of their data so that donors know that their money is being spent where they claim."
+      text: "ShareTheMeal App - Provides clear visibility of their data so that donors know that their money is being spent where they claim."
     },
+    {
+      text: "Bright Sky App - Informs users clearly on how the app works and its policy regarding user data when using the app. It tells users the information collected, and which actions a user makes that are recorded."
+    }
   ],
 };
 
@@ -1063,8 +1146,11 @@ export const Honesty = {
   ],
   requirement: [
     {
-      text: "The ShareTheMeal app promotes honesty and builds credibility by showing a truthful representation of the results of the operation to users."
+      text: "ShareTheMeal App - Promotes honesty and builds credibility by showing a truthful representation of the results of the operation to users."
     },
+    {
+      text: "Bright Sky App - Demonstrates honesty by clarifying to the user exactly what the app does and how it does it, informing about its features. It should also avoid exaggerations about the effectiveness of the app in aiding in abuse cases."
+    }
   ],
 };
 

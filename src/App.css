@@ -42,4 +42,6 @@
   margin-left: 20%;
   margin-right: 20%;
   border-radius: 20px;
+  max-height: 40vh;
+  overflow-y: auto;
 }

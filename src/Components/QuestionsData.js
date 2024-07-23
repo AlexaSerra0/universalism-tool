@@ -454,7 +454,7 @@ export const Accessibility = [
   },
   {
     concept: 'Accessibility',
-    question: "Does the system provide alternative ways to interact with the content for users who rely on assistive technologies?",
+    question: "Does the system provide alternative ways to interact with the features for users who rely on assistive technologies?",
   },
 ];
 

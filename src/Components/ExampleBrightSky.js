@@ -11,7 +11,7 @@ function ExampleBrightSky() {
             </header>
             <div className='Box Text'>
                 <div>
-                    ShareTheMeal is a fundraising application by the United Nations World Food Programme (WFP) whose goal is to fight global hunger. It allows users to donate small amounts of money to various causes all around the world by simply using their phones. It's designed for quick and easy use, allowing everyone to make an impact for this cause.
+                    Bright Sky is an application created by the charity Hestia. Its main goal is to support those impacted by domestic abuse, providing a lot of resources to help these individuals understand their situation better and how to address the abuse. This app was designed to be user-friendly and discreet, offering a hidden mode that disguises the app as another application as to not cause suspicion in the abuser or simply for privacy. This way, Bright Sky helps those in need. In this tool, the the requirements examples were made about Bright Sky PT.
                 </div>
                 <div style={{paddingTop: '2%'}}>
                     <Link to={"https://www.hestia.org/brightsky"} target="_blank">Click here to learn more about BrightSky.</Link>
