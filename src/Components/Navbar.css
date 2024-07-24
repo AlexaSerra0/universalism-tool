@@ -1,11 +1,20 @@
+.headerNav {
+   position: relative;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-color: transparent;
+   z-index: 100;
+  }
+
 .nav {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   position: relative;
-   height: var(--header-height);
-   padding: 2rem;
    background: linear-gradient(180deg, #345DA7, #4BB4DE);
+   height: 3.5rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
 }
 
 .nav-text{

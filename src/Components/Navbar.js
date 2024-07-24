@@ -4,14 +4,16 @@ import "./Navbar.css";
 
 function Navbar() {
     return (
-        <nav className="nav">
-            <NavLink to="/" className="nav-text nav-logo">
-                 Universalism Tool
-            </NavLink>
-            <NavLink to="/" className="nav-text nav-home">
-                 Home
-            </NavLink>
-        </nav>
+        <header className="headerNav">
+            <nav className="nav container">
+                <NavLink to="/" className="nav-text nav-logo">
+                    Universalism Tool
+                </NavLink>
+                <NavLink to="/" className="nav-text nav-home">
+                    Home
+                </NavLink>
+            </nav>
+        </header>
     );
 }
 

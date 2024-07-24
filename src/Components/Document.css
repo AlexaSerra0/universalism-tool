@@ -4,12 +4,12 @@
     align-items: center;
     padding: 20px;
     font-family: Arial, sans-serif;
-    padding-top: 2rem;
+    margin-top: 2%;
     text-align: center;
 }
 
 .Heading{
-    padding-bottom: 1rem;
+    margin-bottom: 3%;
     color: #283D5A;
     font-size: 3rem;
     font-weight: bold;

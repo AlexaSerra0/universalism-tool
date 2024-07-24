@@ -7,9 +7,8 @@ function Instructions() {
             <header className='Title'>
                 Instructions
             </header>
-            <div className='Box Text' style={{textAlign: 'center'}}>
+            <div className='Box Text' style={{textAlign: 'left'}}>
                 <div>
-                <div >
                      The first step to use this tool is clicking the "START" button on the home page. You will be redirected to the tool page.
                 </div>
                 <div style={{paddingTop: '1rem'}}>
@@ -41,7 +40,6 @@ function Instructions() {
                 </div>
                 <div style={{paddingTop: '1rem'}}>
                     That is all you need to know to use this tool!
-                </div>
                 </div>
             </div>
         </div>

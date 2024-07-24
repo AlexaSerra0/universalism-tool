@@ -36,6 +36,11 @@ const Document = () => {
         setParticipants([...participants, '']);
     };
 
+    const removeParticipant = (index) => {
+        const newParticipants = participants.filter((_, i) => i !== index);
+        setParticipants(newParticipants);
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
         exportToWord(documentName, author, participants, selectedConcepts, selectedQuestions);
@@ -78,7 +83,7 @@ const Document = () => {
                     />
                 </div>
                 {participants.map((participant, index) => (
-                    <div key={index} className='formGroup'>
+                    <div key={index} className='formGroup' style={{display: 'flex'}}>
                         <input
                             className='input'
                             type="text"
@@ -88,9 +93,19 @@ const Document = () => {
                             onChange={(event) => handleParticipantChange(index, event)}
                             required
                         />
+                         {participants.length > 1 && (
+                            <button
+                                type="button"
+                                className='Button classicBtn'
+                                style={{marginLeft: '1rem'}}
+                                onClick={() => removeParticipant(index)}
+                            >
+                                X
+                            </button>
+                        )}
                     </div>
                 ))}
-                <button type="button" className='Button classicBtn' onClick={addParticipant}>ADD NEW PARTICIPANT +</button>
+                <button type="button" className='Button classicBtn' onClick={addParticipant} style={{marginTop: '1%'}}>ADD NEW PARTICIPANT +</button>
                 <button type="submit" className='Button SubmitButton'>CREATE DOCUMENT</button>
             </div>
         </form>
