@@ -37,6 +37,7 @@ function Tool() {
   //const [dataGoals, setDataGoals] = useState(null);
   const [section, setSection] = useState('All');
   const [selectedConcepts, setSelectedConcepts] = useState([]);
+  const [documentId, setDocumentId] = useState(null);
 
   const { nodes: initialNodes, edges: initialEdges } = createNodesAndEdges(section);
   const [nodes, setNodes] = useNodesState(initialNodes);
@@ -59,8 +60,13 @@ function Tool() {
 
   useEffect(() => {
     setCenter(0, 0, { zoom: 1, duration: 800 });
+
     const concepts = JSON.parse(localStorage.getItem('selectedConcepts')) || [];
     setSelectedConcepts(concepts);
+
+    const id = JSON.parse(localStorage.getItem('documentId')) || null;
+    setDocumentId(id);
+    
   }, [setCenter]);
 
   const handleAddToDocument = (concept) => {
@@ -77,6 +83,10 @@ function Tool() {
   const handleNextClick = () => {
     if (selectedConcepts.length > 0) {
       localStorage.setItem('selectedConcepts', JSON.stringify(selectedConcepts));
+
+      if(!documentId)
+        localStorage.setItem('documentId', JSON.stringify(Date.now()));
+
       navigate("/questions");
     }
   };

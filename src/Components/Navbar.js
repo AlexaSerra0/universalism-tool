@@ -6,12 +6,17 @@ function Navbar() {
     return (
         <header className="headerNav">
             <nav className="nav container">
-                <NavLink to="/" className="nav-text nav-logo">
+                <div className="nav-text nav-logo">
                     Universalism Tool
-                </NavLink>
+                </div>
+                <div>
                 <NavLink to="/" className="nav-text nav-home">
                     Home
                 </NavLink>
+                <NavLink to="/documents" className="nav-text nav-home" style={{paddingLeft:'1rem'}}>
+                    Documents
+                </NavLink>
+                </div>
             </nav>
         </header>
     );

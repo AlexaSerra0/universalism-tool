@@ -14,25 +14,27 @@ import ExampleShareTheMeal from "./Components/ExampleShareTheMeal";
 import ExampleBrightSky from "./Components/ExampleBrightSky";
 import Questions from "./Components/Questions";
 import Document from "./Components/Document";
- 
+import DocumentsList from "./Components/DocumentList";
+
 function App() {
-  return (
-      <Router>
-        <Navbar/>
-        <main>
-          <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/information" element={<Information />} />
-              <Route path="/instructions" element={<Instructions />} />
-              <Route path="/tool" element={<Tool />} />
-              <Route path="/example_ShareTheMeal" element={<ExampleShareTheMeal />} />
-              <Route path="/example_BrightSky" element={<ExampleBrightSky />} />
-              <Route path="/questions" element={<Questions />} />
-              <Route path="/document" element={<Document />} />
-          </Routes>
-        </main>
-      </Router>
-  );
+    return (
+        <Router>
+            <Navbar/>
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/information" element={<Information />} />
+                    <Route path="/instructions" element={<Instructions />} />
+                    <Route path="/tool" element={<Tool />} />
+                    <Route path="/example_ShareTheMeal" element={<ExampleShareTheMeal />} />
+                    <Route path="/example_BrightSky" element={<ExampleBrightSky />} />
+                    <Route path="/questions" element={<Questions />} />
+                    <Route path="/document" element={<Document />} />
+                    <Route path="/documents" element={<DocumentsList />} />
+                </Routes>
+            </main>
+        </Router>
+    );
 }
 
 export default App;

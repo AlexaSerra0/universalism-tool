@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { exportToWord } from './ExportToWord';  // Assuming you saved the above function in a file named `exportToWord.js`
 import "./Document.css";
 
 const Document = () => {
+    const [documentId, setDocumentId] = useState(null);
     const [documentName, setDocumentName] = useState('');
     const [author, setAuthor] = useState('');
     const [participants, setParticipants] = useState(['']);
@@ -13,17 +13,20 @@ const Document = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        const id = JSON.parse(localStorage.getItem('documentId')) || null;
+        setDocumentId(id);
+        const storedDocumentName = JSON.parse(localStorage.getItem('documentName')) || '';
+        setDocumentName(storedDocumentName);
+        const storedAuthor = JSON.parse(localStorage.getItem('author')) || '';
+        setAuthor(storedAuthor);
+        const storedParticipants = JSON.parse(localStorage.getItem('participants')) || [''];
+        setParticipants(storedParticipants);
         const concepts = JSON.parse(localStorage.getItem('selectedConcepts')) || [];
         setSelectedConcepts(concepts);
         const questions = JSON.parse(localStorage.getItem('selectedQuestions')) || [];
         setSelectedQuestions(questions);
 
-        const documentName = JSON.parse(localStorage.getItem('documentName')) || [];
-        setDocumentName(documentName);
-        const author = JSON.parse(localStorage.getItem('author')) || [];
-        setAuthor(author);
-        const participants = JSON.parse(localStorage.getItem('participants')) || [''];
-        setParticipants(participants);
+        console.log()
     }, []);
 
     const handleParticipantChange = (index, event) => {
@@ -43,8 +46,35 @@ const Document = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        exportToWord(documentName, author, participants, selectedConcepts, selectedQuestions);
+        
+        const documentDetails = {
+            id: documentId,
+            documentName,
+            author,
+            participants,
+            selectedConcepts,
+            selectedQuestions
+        };
+
+        const storedDocuments = JSON.parse(localStorage.getItem('documents')) || [];
+        const documentIndex = storedDocuments.findIndex(doc => doc.id === documentId);
+        if(documentIndex != -1) {
+            storedDocuments[documentIndex] = documentDetails;
+        } else {
+            storedDocuments.push(documentDetails);
+        }
+        localStorage.setItem('documents', JSON.stringify(storedDocuments));
+
+        navigate("/documents");
     };
+
+    const clearLocalStorage = () => {
+        const documents = localStorage.getItem('documents');
+        localStorage.clear();
+        if (documents) {
+            localStorage.setItem('documents', documents);
+        }
+      };
 
     const handlePreviousClick = () => {
       localStorage.setItem('documentName', JSON.stringify(documentName));
@@ -106,7 +136,7 @@ const Document = () => {
                     </div>
                 ))}
                 <button type="button" className='Button classicBtn' onClick={addParticipant} style={{marginTop: '1%'}}>ADD NEW PARTICIPANT +</button>
-                <button type="submit" className='Button SubmitButton'>CREATE DOCUMENT</button>
+                <button type="submit" className='Button SubmitButton'>SAVE DOCUMENT</button>
             </div>
         </form>
     );
