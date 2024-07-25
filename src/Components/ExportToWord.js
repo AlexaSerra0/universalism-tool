@@ -46,10 +46,6 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
         });
     };
 
-    const filteredConcepts = selectedConcepts.filter(concept => 
-        selectedQuestions.some(question => question.concept === concept.concept)
-    );
-
     const doc = new Document({
         sections: [
             {
@@ -108,7 +104,7 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                         heading: HeadingLevel.HEADING_1,
                         spacing: { before: 400, after: 200 },
                     }),
-                    ...filteredConcepts.map((concept, index) => [
+                    ...selectedConcepts.map((concept, index) => [
                          new Paragraph({
                             children: [
                                 new TextRun({
@@ -168,7 +164,7 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                             selectedQuestions.filter((q) => q.concept === concept.concept)
                         ),
                         new Paragraph({}),
-                        ...(index < filteredConcepts.length - 1 ? [
+                        ...(index < selectedConcepts.length - 1 ? [
                             new Paragraph({ 
                                 children: [new PageBreak()] 
                             })] : []),

@@ -18,7 +18,7 @@ const DocumentsList = () => {
         localStorage.setItem('documentName', JSON.stringify(document.documentName));
         localStorage.setItem('author', JSON.stringify(document.author));
         localStorage.setItem('participants', JSON.stringify(document.participants));
-        localStorage.setItem('selectedConcepts', JSON.stringify(document.selectedConcepts));
+        localStorage.setItem('selectedConcepts', JSON.stringify(document.concepts));
         localStorage.setItem('selectedQuestions', JSON.stringify(document.selectedQuestions));
 
         navigate(`/document`);
@@ -31,7 +31,7 @@ const DocumentsList = () => {
     };
 
     const handleExport = (document) => {
-        exportToWord(document.documentName, document.author, document.participants, document.selectedConcepts, document.selectedQuestions);
+        exportToWord(document.documentName, document.author, document.participants, document.concepts, document.selectedQuestions);
     };
 
     const handleCreateNew = () => {
@@ -55,9 +55,10 @@ const DocumentsList = () => {
                 <div key={doc.id} className="DocumentCard">
                     <p>Name: {doc.documentName}</p>
                     <p>Author: {doc.author}</p>
-                    <p>Characteristics: {doc.selectedConcepts.map(concept => concept.concept).join(', ')}</p>
+                    <p>Characteristics: {doc.concepts.map(concept => concept.concept).join(', ')}</p>
                     <p>Participants: {doc.participants.join(', ')}</p>
-                    <button className='Button darkBtn' onClick={() => handleExport(doc)}> Export</button>
+                    <button className='Button darkBtn'
+                            onClick={() => handleExport(doc)}> Export</button>
                     <button className='Button darkBtn'
                             onClick={() => handleEdit(doc)}
                             style={{marginLeft: '0.5rem'}}>Edit</button>

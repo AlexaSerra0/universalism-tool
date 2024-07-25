@@ -36,7 +36,10 @@ function Instructions() {
                     On the document page, you give your document a name and name the author of the document along with the participants. You can add as many participants as you want by clicking the “ADD NEW PARTICIPANT +” button.
                 </div>
                 <div style={{paddingTop: '1rem'}}>
-                    To finish, click the “CREATE DOCUMENT” button to save your document on your device. The file is in a docx format.
+                    To finish, click the "SAVE DOCUMENT” button to save your document. You will go to the documents page where you can see all the documents you have created.
+                </div>
+                <div style={{paddingTop: '1rem'}}>
+                    In the list of documents, you can choose to edit, delete, or export your document, the file is in a docx format.
                 </div>
                 <div style={{paddingTop: '1rem'}}>
                     That is all you need to know to use this tool!

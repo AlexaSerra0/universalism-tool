@@ -35,8 +35,8 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
               <td>
                 {hasValidData(dataConcept) ? (
                   dataConcept.description.map((description, index) => (
-                    index === 0 ? <div>{description.text}</div> : 
-                    <div style={{paddingTop: "0.5rem"}}>{description.text}</div>
+                    index === 0 ? <div key={index}>{description.text}</div> : 
+                    <div key={index} style={{paddingTop: "0.5rem"}}>{description.text}</div>
                   ))
                 ) : (
                   <div>No description available</div>

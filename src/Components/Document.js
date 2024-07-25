@@ -25,8 +25,6 @@ const Document = () => {
         setSelectedConcepts(concepts);
         const questions = JSON.parse(localStorage.getItem('selectedQuestions')) || [];
         setSelectedQuestions(questions);
-
-        console.log()
     }, []);
 
     const handleParticipantChange = (index, event) => {
@@ -46,25 +44,29 @@ const Document = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        
+
+        const concepts = selectedConcepts.filter(concept => 
+            selectedQuestions.some(question => question.concept === concept.concept)
+        );
+
         const documentDetails = {
             id: documentId,
             documentName,
             author,
             participants,
-            selectedConcepts,
+            concepts,
             selectedQuestions
         };
 
         const storedDocuments = JSON.parse(localStorage.getItem('documents')) || [];
         const documentIndex = storedDocuments.findIndex(doc => doc.id === documentId);
-        if(documentIndex != -1) {
+        if(documentIndex !== -1) {
             storedDocuments[documentIndex] = documentDetails;
         } else {
             storedDocuments.push(documentDetails);
         }
         localStorage.setItem('documents', JSON.stringify(storedDocuments));
-
+        clearLocalStorage();
         navigate("/documents");
     };
 
