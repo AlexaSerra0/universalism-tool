@@ -137,33 +137,39 @@ const exportToWord = (documentName, author, participants, selectedConcepts, sele
                                 spacing: { before: 100, after: 100 },
                             }),
                         ),
-                        new Paragraph({}),
-                        new Paragraph({
-                            children: [
-                                new TextRun({
-                                    text: `Requirement Example: `,
-                                    bold: true,
-                                    size: 24,
-                                }),
-                            ],
-                            spacing: { before: 100, after: 100 },
-                        }),
-                        ...concept.requirement.map((requirement) => 
+                        ...selectedQuestions.filter((q) => q.concept === concept.concept).map((q) => [
+                            new Paragraph({size: 26,}),
+                            new Paragraph({
+                                children: [
+                                    new TextRun({
+                                        text: `Question: `,
+                                        bold: true,
+                                        size: 24,
+                                    }),
+                                ],
+                                spacing: { before: 100, after: 100 },
+                            }),
                             new Paragraph({
                                 children: [
                                         new TextRun({
-                                        text: requirement.text,
+                                        text: q.question,
                                         size: 24,
                                     })
                                 ],
                                 spacing: { before: 100, after: 100 },
                             }),
-                        ),
-                        new Paragraph({}),
-                        createTable(
-                            selectedQuestions.filter((q) => q.concept === concept.concept)
-                        ),
-                        new Paragraph({}),
+                            ...participants.map((participant, i) => new Paragraph({
+                                children: [
+                                    new TextRun({
+                                        text: `Answer ${participant}: `,
+                                        size: 24,
+                                    }),
+                                    new Paragraph({ }),
+                                   
+                                ],
+                                spacing: { before: 200, after: 100 },
+                            })),
+                        ]).flat(),
                         ...(index < selectedConcepts.length - 1 ? [
                             new Paragraph({ 
                                 children: [new PageBreak()] 

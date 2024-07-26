@@ -121,7 +121,7 @@ const Document = () => {
                             type="text"
                             id={`participant${index + 1}`}
                             value={participant}
-                            placeholder={`Participant ${index + 1} *`}
+                            placeholder={`Participant *`}
                             onChange={(event) => handleParticipantChange(index, event)}
                             required
                         />
