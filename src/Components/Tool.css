@@ -8,22 +8,6 @@
     justify-content: center;
 }
 
-.FirstRow {
-    padding-top: 1rem;
-    padding-left: 2rem;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-}
-
-.SecondRow {
-    padding-top: 0.4rem;
-    padding-left: 2rem;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-}
-
 .SelectBar{
     padding-top: 2rem;
     padding-bottom: 2rem;

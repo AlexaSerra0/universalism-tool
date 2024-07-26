@@ -19,7 +19,6 @@ import { createNodesAndEdges } from './DiagramComponents/utils';
 
 //import { Table } from './DiagramComponents/Table.js';
 //import ConceptsData from './DiagramComponents/ConceptsData.js';
-import { Link } from 'react-router-dom';
 import { Table } from './DiagramComponents/SecondTable.js';
 import ConceptsData from './DiagramComponents/SecondConceptsData.js';
 
@@ -101,12 +100,6 @@ function Tool() {
 
   return (
     <div className='Tool'>
-      <div className='FirstRow'>
-        <Link to={"/example_ShareTheMeal"}>Case Example: ShareTheMeal</Link>
-      </div>
-      <div className='SecondRow'>
-        <Link to={"/example_BrightSky"}>Case Example: Bright Sky</Link>
-      </div>
       <div className='SelectBar'>
         <div className='SelectText'>
           {clickedNodeId == null ? (

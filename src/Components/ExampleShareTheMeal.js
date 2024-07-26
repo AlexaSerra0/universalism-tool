@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 function ExampleShareTheMeal() {
     return (
         <div className="App gradient_background">
-            <Link style={{display: 'flex', alignItems: 'left', justifyContent: 'left', paddingLeft: '4rem'}} to={"/tool"}>Return to Tool</Link>
+            <Link style={{display: 'flex', alignItems: 'left', justifyContent: 'left', paddingLeft: '4rem'}}
+                to={"/questions"}>Return to Questions</Link>
             <header className='Title'>
                ShareTheMeal
             </header>

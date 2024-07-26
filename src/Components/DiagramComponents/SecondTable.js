@@ -10,8 +10,7 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
 
   const hasValidData = (dataConcept) => {
     return dataConcept && (
-      (Array.isArray(dataConcept.description) && dataConcept.description.length > 0) ||
-      (Array.isArray(dataConcept.requirement) && dataConcept.requirement.length > 0)
+      (Array.isArray(dataConcept.description) && dataConcept.description.length > 0)
     );
   };
 
@@ -42,19 +41,6 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
                   <div>No description available</div>
                 )}
               </td>
-          </tr>
-          {/* Requirement Examples */}
-          <tr>
-            <td>Requirement Examples</td>
-            <td>
-              {hasValidData(dataConcept) ? (
-                dataConcept.requirement.map((requirement, index) => (
-                  <div key={index} className="requirement-text">{requirement.text}</div>
-                ))
-              ) : (
-                <div>No requirement examples available</div>
-              )}
-            </td>
           </tr>
         </tbody>
       </table>

@@ -10,14 +10,6 @@ export const Universalism = {
       text: "In software systems, universalism is reflected in a system’s design and features that promote inclusivity, accessibility, and social justice."
     }
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - The app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. The app is accessible to people with disabilities and provides multilingual support."
-    },
-    {
-      text: "Bright Sky App - The app's goal is to give support and information to people who experience domestic abuse or those who are concerned about someone else, this goal aligns with the value of social justice. The app provides multilingual support to some languages and is accessible to people with disabilities."
-    }
-  ],
 };
 
 export const UniversalismRequirement = {

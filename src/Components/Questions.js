@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import "./Questions.css";
 import QuestionsData from './QuestionsData.js';
+import { Link } from 'react-router-dom';
+
 
 const Questions = () => {
   const navigate = useNavigate();
@@ -94,20 +96,38 @@ const Questions = () => {
         ))}
       </div>
       <div className="content">
-        <div className='BtnBar'>
-          <Button design={'Button classicBtn'} onClick={handlePreviousClick}>Previous</Button>
-          <Button design={'Button classicBtn'} onClick={handleNextClick} disabled={selectedQuestions.length === 0}>Next</Button>
+        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+          <div className='BtnBar'>
+            <Button design={'Button classicBtn'} onClick={handlePreviousClick}>Previous</Button>
+            <Button design={'Button classicBtn'} onClick={handleNextClick} disabled={selectedQuestions.length === 0}>Next</Button>
+          </div>
+          <div style={{marginBottom: '5%', marginTop: '2%'}}>
+            <div className='FirstRow'>
+              <Link to={"/example_ShareTheMeal"}>Case Example: ShareTheMeal</Link>
+            </div>
+            <div className='SecondRow'>
+              <Link to={"/example_BrightSky"}>Case Example: Bright Sky</Link>
+            </div>
+          </div>
         </div>
-        <div className="questionsContainer">
+        <div>
           {selectedConcept && QuestionsData[removeSpaces(selectedConcept)] && QuestionsData[removeSpaces(selectedConcept)].map((question, index) => (
-            <div key={`question${index}`} className="question">
-              <input
-                type="checkbox"
-                id={`question${index}`}
-                onChange={() => handleQuestionChange(question)}
-                checked={selectedQuestions.some(q => q.question === question.question)}
-              />
-              <label htmlFor={`question${index}`}>{question.question}</label>
+            <div key={`question${index}`} className="question" >
+              <div style={{display: 'flex', alignItems: 'center'}}>
+                <input
+                  type="checkbox"
+                  id={`question${index}`}
+                  onChange={() => handleQuestionChange(question)}
+                  checked={selectedQuestions.some(q => q.question === question.question)}
+                  style={{cursor: 'pointer'}}
+                />
+                <label htmlFor={`question${index}`}>{question.question}</label>
+              </div>
+                {question.requirement && Array.isArray(question.requirement) && question.requirement.map((req, reqIndex) => (
+                  <div key={`requirement${reqIndex}`} className='requirement'>
+                    {req.text}
+                  </div>
+                ))}
             </div>
           ))}
         </div>

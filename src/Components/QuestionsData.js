@@ -3,14 +3,38 @@ export const Universalism = [
 {
   concept: 'Universalism',
   question: "Does the system’s goal align with social justice and equality principles?",
+  requirement: [
+    {
+      text: "ShareTheMeal App - The app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. The app is accessible to people with disabilities and provides multilingual support."
+    },
+    {
+      text: "Bright Sky App - The app's goal is to give support and information to people who experience domestic abuse or those who are concerned about someone else, this goal aligns with the value of social justice. The app provides multilingual support to some languages and is accessible to people with disabilities."
+    }
+  ],
 },
 {
   concept: 'Universalism',
   question: "Are the system’s features designed to promote inclusivity and accessibility for all users?",
+  requirement: [
+    {
+      text: "ShareTheMeal App - The app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. The app is accessible to people with disabilities and provides multilingual support."
+    },
+    {
+      text: "Bright Sky App - The app's goal is to give support and information to people who experience domestic abuse or those who are concerned about someone else, this goal aligns with the value of social justice. The app provides multilingual support to some languages and is accessible to people with disabilities."
+    }
+  ],
 },
 {
   concept: 'Universalism',
   question: "Does the system consider environmental protection and sustainability in its operations?",
+  requirement: [
+    {
+      text: "ShareTheMeal App - The app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. The app is accessible to people with disabilities and provides multilingual support."
+    },
+    {
+      text: "Bright Sky App - The app's goal is to give support and information to people who experience domestic abuse or those who are concerned about someone else, this goal aligns with the value of social justice. The app provides multilingual support to some languages and is accessible to people with disabilities."
+    }
+  ],
 },
 ];
 
