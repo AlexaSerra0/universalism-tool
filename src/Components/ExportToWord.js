@@ -3,49 +3,6 @@ from 'docx';
 import { saveAs } from 'file-saver';
 
 const exportToWord = (documentName, author, participants, selectedConcepts, selectedQuestions) => {
-    const createTable = (questions) => {
-        return new Table({
-            rows: [
-                new TableRow({
-                    children: [
-                        new TableCell({
-                            children: [new Paragraph({
-                                children: [new TextRun({ text: "Questions", size: 24, bold: true })],
-                                spacing: { before: 100, after: 100 },
-                            })],
-                            width: { size: 50, type: WidthType.PERCENTAGE },
-                            
-                        }),
-                        new TableCell({
-                            children: [new Paragraph({
-                                children: [new TextRun({ text: "Remind Participants", size: 24, bold: true })],
-                                spacing: { before: 100, after: 100 },
-                            })],
-                            width: { size: 50, type: WidthType.PERCENTAGE },
-                        }),
-                    ],
-                }),
-                ...questions.map((q) => {
-                    return new TableRow({
-                        children: [
-                            new TableCell({
-                                children: [new Paragraph({
-                                    children: [new TextRun({ text: q.question, size: 24})],
-                                    spacing: { before: 100, after: 100 },
-                                })],
-                            }),
-                            new TableCell({
-                                children: [new Paragraph({ text: "", size: 24 })],
-                                spacing: { before: 100, after: 100 },
-                            }),
-                        ],
-                    });
-                }),
-            ],
-            width: { size: 100, type: WidthType.PERCENTAGE },
-        });
-    };
-
     const doc = new Document({
         sections: [
             {

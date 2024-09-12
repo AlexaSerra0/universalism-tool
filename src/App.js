@@ -22,15 +22,15 @@ function App() {
             <Navbar/>
             <main>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/information" element={<Information />} />
-                    <Route path="/instructions" element={<Instructions />} />
-                    <Route path="/tool" element={<Tool />} />
-                    <Route path="/example_ShareTheMeal" element={<ExampleShareTheMeal />} />
-                    <Route path="/example_BrightSky" element={<ExampleBrightSky />} />
-                    <Route path="/questions" element={<Questions />} />
-                    <Route path="/document" element={<Document />} />
-                    <Route path="/documents" element={<DocumentsList />} />
+                    <Route path="/universalism-tool/" element={<Home />} />
+                    <Route path="/universalism-tool/information" element={<Information />} />
+                    <Route path="/universalism-tool/instructions" element={<Instructions />} />
+                    <Route path="/universalism-tool/tool" element={<Tool />} />
+                    <Route path="/universalism-tool/example_ShareTheMeal" element={<ExampleShareTheMeal />} />
+                    <Route path="/universalism-tool/example_BrightSky" element={<ExampleBrightSky />} />
+                    <Route path="/universalism-tool/questions" element={<Questions />} />
+                    <Route path="/universalism-tool/document" element={<Document />} />
+                    <Route path="/universalism-tool/documents" element={<DocumentsList />} />
                 </Routes>
             </main>
         </Router>

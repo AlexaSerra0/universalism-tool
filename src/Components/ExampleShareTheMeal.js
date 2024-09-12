@@ -6,7 +6,7 @@ function ExampleShareTheMeal() {
     return (
         <div className="App gradient_background">
             <Link style={{display: 'flex', alignItems: 'left', justifyContent: 'left', paddingLeft: '4rem'}}
-                to={"/questions"}>Return to Questions</Link>
+                to={"/universalism-tool/questions"}>Return to Questions</Link>
             <header className='Title'>
                ShareTheMeal
             </header>

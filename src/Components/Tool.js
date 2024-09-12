@@ -86,7 +86,7 @@ function Tool() {
       if(!documentId)
         localStorage.setItem('documentId', JSON.stringify(Date.now()));
 
-      navigate("/questions");
+      navigate("/universalism-tool/questions");
     }
   };
 
