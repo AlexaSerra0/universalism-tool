@@ -20,7 +20,7 @@ function App() {
         <Router>
             <Navbar/>
             <main>
-                <Routes basename="/universalism-tool">
+                <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/information" element={<Information />} />
                     <Route path="/instructions" element={<Instructions />} />
