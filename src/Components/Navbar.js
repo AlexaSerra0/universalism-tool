@@ -10,10 +10,10 @@ function Navbar() {
                     Universalism Tool
                 </div>
                 <div>
-                <NavLink to="/universalism-tool/" className="nav-text nav-home">
+                <NavLink to="/" className="nav-text nav-home">
                     Home
                 </NavLink>
-                <NavLink to="/universalism-tool/documents" className="nav-text nav-home" style={{paddingLeft:'1rem'}}>
+                <NavLink to="/documents" className="nav-text nav-home" style={{paddingLeft:'1rem'}}>
                     Documents
                 </NavLink>
                 </div>

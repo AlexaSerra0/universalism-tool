@@ -21,7 +21,7 @@ const DocumentsList = () => {
         localStorage.setItem('selectedConcepts', JSON.stringify(document.concepts));
         localStorage.setItem('selectedQuestions', JSON.stringify(document.selectedQuestions));
 
-        navigate(`/universalism-tool/document`);
+        navigate(`/document`);
     };
 
     const handleDelete = (id) => {
@@ -36,7 +36,7 @@ const DocumentsList = () => {
 
     const handleCreateNew = () => {
         clearLocalStorage();
-        navigate("/universalism-tool/tool");
+        navigate("/tool");
     };
 
     const clearLocalStorage = () => {

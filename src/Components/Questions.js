@@ -64,12 +64,12 @@ const Questions = () => {
 
   const handleNextClick = () => {
     localStorage.setItem('selectedQuestions', JSON.stringify(selectedQuestions));
-    navigate("/universalism-tool/document");
+    navigate("/document");
   };
 
   const handlePreviousClick = () => {
     localStorage.setItem('selectedQuestions', JSON.stringify(selectedQuestions));
-    navigate("/universalism-tool/tool");
+    navigate("/tool");
   };
 
   const getSelectedCount = (concept) => {

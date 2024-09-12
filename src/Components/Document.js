@@ -67,7 +67,7 @@ const Document = () => {
         }
         localStorage.setItem('documents', JSON.stringify(storedDocuments));
         clearLocalStorage();
-        navigate("/universalism-tool/documents");
+        navigate("/documents");
     };
 
     const clearLocalStorage = () => {
@@ -82,7 +82,7 @@ const Document = () => {
       localStorage.setItem('documentName', JSON.stringify(documentName));
       localStorage.setItem('author', JSON.stringify(author));
       localStorage.setItem('participants', JSON.stringify(participants));
-      navigate("/universalism-tool/questions");
+      navigate("/questions");
     };
 
     return (

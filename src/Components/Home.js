@@ -7,14 +7,14 @@ function Home() {
 
     const navigate = useNavigate();
     const infoPage = () => {
-        navigate("/universalism-tool/information");
+        navigate("/information");
     }
     const instructionsPage = () => {
-      navigate("/universalism-tool/instructions");
+      navigate("/instructions");
     }
     const toolPage = () => {
       clearLocalStorage();
-      navigate("/universalism-tool/tool");
+      navigate("/tool");
     }
     
     const clearLocalStorage = () => {
