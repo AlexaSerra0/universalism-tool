@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/universalism-tool/static/css/main.c538ef18.css",
-    "main.js": "/universalism-tool/static/js/main.0cff542c.js",
+    "main.js": "/universalism-tool/static/js/main.b5e3de98.js",
     "static/js/453.7ddc06dd.chunk.js": "/universalism-tool/static/js/453.7ddc06dd.chunk.js",
     "index.html": "/universalism-tool/index.html",
     "main.c538ef18.css.map": "/universalism-tool/static/css/main.c538ef18.css.map",
-    "main.0cff542c.js.map": "/universalism-tool/static/js/main.0cff542c.js.map",
+    "main.b5e3de98.js.map": "/universalism-tool/static/js/main.b5e3de98.js.map",
     "453.7ddc06dd.chunk.js.map": "/universalism-tool/static/js/453.7ddc06dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c538ef18.css",
-    "static/js/main.0cff542c.js"
+    "static/js/main.b5e3de98.js"
   ]
 }
