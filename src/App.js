@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
@@ -20,7 +20,7 @@ function App() {
         <Router>
             <Navbar/>
             <main>
-                <Routes>
+                <Routes basename="/universalism-tool">
                     <Route path="/" element={<Home />} />
                     <Route path="/information" element={<Information />} />
                     <Route path="/instructions" element={<Instructions />} />

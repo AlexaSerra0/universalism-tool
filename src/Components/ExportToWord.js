@@ -1,4 +1,4 @@
-import {Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType, AlignmentType, HeadingLevel, PageBreak} 
+import {Document, Packer, Paragraph, TextRun, AlignmentType, HeadingLevel, PageBreak} 
 from 'docx';
 import { saveAs } from 'file-saver';
 

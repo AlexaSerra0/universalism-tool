@@ -72,6 +72,10 @@ const Questions = () => {
     navigate("/tool");
   };
 
+  const handleExampleClick = () => {
+    localStorage.setItem('selectedQuestions', JSON.stringify(selectedQuestions));
+  };
+
   const getSelectedCount = (concept) => {
     return selectedQuestions.filter(q => q.concept === concept).length;
   };
@@ -103,7 +107,7 @@ const Questions = () => {
           </div>
           <div style={{marginBottom: '5%', marginTop: '2%'}}>
             <div className='FirstRow'>
-              <Link to={"/example_ShareTheMeal"}>Case Example: ShareTheMeal</Link>
+              <Link to={"/example_ShareTheMeal"} onClick={handleExampleClick}>Case Example: ShareTheMeal</Link>
             </div>
           </div>
         </div>
