@@ -11,7 +11,6 @@ import Instructions from "./Components/Instructions";
 import Navbar from "./Components/Navbar";
 import Tool from "./Components/Tool";
 import ExampleShareTheMeal from "./Components/ExampleShareTheMeal";
-import ExampleBrightSky from "./Components/ExampleBrightSky";
 import Questions from "./Components/Questions";
 import Document from "./Components/Document";
 import DocumentsList from "./Components/DocumentList";
@@ -27,7 +26,6 @@ function App() {
                     <Route path="/universalism-tool/instructions" element={<Instructions />} />
                     <Route path="/universalism-tool/tool" element={<Tool />} />
                     <Route path="/universalism-tool/example_ShareTheMeal" element={<ExampleShareTheMeal />} />
-                    <Route path="/universalism-tool/example_BrightSky" element={<ExampleBrightSky />} />
                     <Route path="/universalism-tool/questions" element={<Questions />} />
                     <Route path="/universalism-tool/document" element={<Document />} />
                     <Route path="/universalism-tool/documents" element={<DocumentsList />} />
