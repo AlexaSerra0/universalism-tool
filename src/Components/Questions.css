@@ -45,13 +45,13 @@
   justify-content: right;
 }
 
-.SecondRow {
-  padding-top: 0.5rem;
+/* .SecondRow {
+  padding-block: 12rem;
   padding-right: 2rem;
   display: flex;
   align-items: right;
   justify-content: right;
-}
+} */
 
 .concept.active {
   background-color: #e0e0e0;

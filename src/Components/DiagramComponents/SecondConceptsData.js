@@ -30,6 +30,45 @@ export const UniversalismRequirement = {
   ],
 };
 
+//Software System Section
+export const SoftwareSystem = {
+  id: '7',
+  concept: 'Software System',
+  description: [
+    {
+      text: "A software system is a group of programs that work together to execute specific tasks on a computer, consisting of everything from code to user interfaces. Humans interact with software systems that intend to satisfy Universalism requirements based on inclusivity, accessibility, and usability for different users."
+    },
+  ],
+  requirement: [
+    {
+      text: "ShareTheMeal App - Is the software system. It includes the components necessary for running the app. The software system's purpose is to facilitate the donation process and manage the distribution of food aid. The app must maintain compatibility and interoperability with external systems (e.g., payment gateways). If the network fails, the user should still be able to use the app in some way, so there should be offline features so that users can, for example, view their donation history."
+    },
+    {
+      text: "Bright Sky App - Should be capable of handling peak loads during high-traffic periods when many users seek help simultaneously. In case of network failures, the app should offer offline alternative modes so that users can still access essential features (e.g., information about abuse)."
+    }
+  ],
+};
+
+//Human Section
+export const Human = {
+  id: '8',
+  concept: 'Human',
+  description: [
+    {
+      text: "Human is the individual who is involved and interacts with the Software."
+    },
+  ],
+  requirement: [
+    {
+      text: "ShareTheMeal App - Is open to every user who wants to donate. The app is intuitive, users only need to download the app, navigate its interface, and make donations to contribute to the fight against global hunger. The app receives feedback from users by Google Play or email."
+    },
+    {
+      text: "Bright Sky App - Is open to every user who needs help, providing a simple interface that is intuitive and user-friendly. The hidden mode feature could confuse users, but when first using the app, it gives a tutorial to help users understand how to use the hidden mode."
+    },
+  ],
+};
+
+//Equality Section
 export const Equality = {
   id: '3',
   concept: 'Equality',
@@ -40,14 +79,6 @@ export const Equality = {
     {
       text: "In software systems, this means that the same access and opportunities are available to all users, without discrimination. This may include applications that do not favor anyone based on gender, race, and other characteristics. Another example is promoting fairness in the workplace through policies and practices."
     },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - The people who benefit from the app all receive equal treatment: “Unless otherwise stated, funds raised will be divided equally and allocated to the countries mentioned in the fundraising goal (e.g. 200,000 meals for Kenya and 200,000 meals for Ethiopia)”. The app does not consider the user’s personal characteristics or circumstances, it allows equal access to the features. Anyone able can donate. The process of donating is simple, facilitating the process and avoiding stress."
-    },
-    {
-      text: "Bright Sky App - Ensures that every user has access to all features (e.g., emergency contact tools, legal advice resources, mental health support services) without restrictions."
-    }
   ],
 };
 
@@ -114,45 +145,6 @@ export const Wisdom = {
   ],
 };
 
-//Software System Section
-export const SoftwareSystem = {
-  id: '7',
-  concept: 'Software System',
-  description: [
-    {
-      text: "A software system is a group of programs that work together to execute specific tasks on a computer, consisting of everything from code to user interfaces. Humans interact with software systems that intend to satisfy Universalism requirements based on inclusivity, accessibility, and usability for different users."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Is the software system. It includes the components necessary for running the app. The software system's purpose is to facilitate the donation process and manage the distribution of food aid. The app must maintain compatibility and interoperability with external systems (e.g., payment gateways). If the network fails, the user should still be able to use the app in some way, so there should be offline features so that users can, for example, view their donation history."
-    },
-    {
-      text: "Bright Sky App - Should be capable of handling peak loads during high-traffic periods when many users seek help simultaneously. In case of network failures, the app should offer offline alternative modes so that users can still access essential features (e.g., information about abuse)."
-    }
-  ],
-};
-
-//Human Section
-export const Human = {
-  id: '8',
-  concept: 'Human',
-  description: [
-    {
-      text: "Human is the individual who is involved and interacts with the Software."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Is open to every user who wants to donate. The app is intuitive, users only need to download the app, navigate its interface, and make donations to contribute to the fight against global hunger. The app receives feedback from users by Google Play or email."
-    },
-    {
-      text: "Bright Sky App - Is open to every user who needs help, providing a simple interface that is intuitive and user-friendly. The hidden mode feature could confuse users, but when first using the app, it gives a tutorial to help users understand how to use the hidden mode."
-    },
-  ],
-};
-
-//Equality Section
 export const SocialSustainability = {
   id: '9',
   concept: 'Social Sustainability',

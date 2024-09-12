@@ -5,11 +5,8 @@ export const Universalism = [
   question: "Does the system’s goal align with social justice and equality principles?",
   requirement: [
     {
-      text: "ShareTheMeal App - The app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. The app is accessible to people with disabilities and provides multilingual support."
+      text: "The ShareTheMeal apps mission must contribute to social justice and equality, which is true because the goal is to fight global hunger."
     },
-    {
-      text: "Bright Sky App - The app's goal is to give support and information to people who experience domestic abuse or those who are concerned about someone else, this goal aligns with the value of social justice. The app provides multilingual support to some languages and is accessible to people with disabilities."
-    }
   ],
 },
 {
@@ -17,11 +14,8 @@ export const Universalism = [
   question: "Are the system’s features designed to promote inclusivity and accessibility for all users?",
   requirement: [
     {
-      text: "ShareTheMeal App - The app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. The app is accessible to people with disabilities and provides multilingual support."
+      text: "The ShareTheMeal app must consider compatibility and include accessibility features to support users with disabilities (e.g., screen readers, adjustable text sizes, etc.)."
     },
-    {
-      text: "Bright Sky App - The app's goal is to give support and information to people who experience domestic abuse or those who are concerned about someone else, this goal aligns with the value of social justice. The app provides multilingual support to some languages and is accessible to people with disabilities."
-    }
   ],
 },
 {
@@ -29,11 +23,8 @@ export const Universalism = [
   question: "Does the system consider environmental protection and sustainability in its operations?",
   requirement: [
     {
-      text: "ShareTheMeal App - The app’s goal of fighting global hunger relates to equality and promotes social justice worldwide. The app is accessible to people with disabilities and provides multilingual support."
+      text: "The ShareTheMeal app must consider the environmental impact of its operations and promote sustainability when possible."
     },
-    {
-      text: "Bright Sky App - The app's goal is to give support and information to people who experience domestic abuse or those who are concerned about someone else, this goal aligns with the value of social justice. The app provides multilingual support to some languages and is accessible to people with disabilities."
-    }
   ],
 },
 ];
@@ -61,20 +52,31 @@ export const Equality = [
 {
   concept: 'Equality',
   question: "Does the system provide equal access to all features and resources for every type of user?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow every feature to be available for all users (e.g., donation, creation of challenges)."
+    },
+  ],
 },
 {
   concept: 'Equality',
   question: "Does the system ensure that all users are treated fairly and without discrimination?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must not consider the user’s personal characteristics (e.g., gender, race)."
+    },
+  ],
 },
 {
   concept: 'Equality',
   question: "Can all users operate the system functionalities regardless of their diverse needs and circumstances?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include accessibility features to support users with disabilities (e.g., screen readers)."
+    },
+  ],
 },
-{
-  concept: 'Equality',
-  question: "Are there measures that prevent discrimination or bias based on certain factors, such as gender, race, ethnicity, or other characteristics?",
-},
-  ];
+];
 
 export const SocialJustice = [
 {
