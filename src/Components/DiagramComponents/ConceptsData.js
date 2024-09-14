@@ -7,7 +7,7 @@ export const Universalism = {
       text: "Universalism is one of the ten basic values defined by the Theory of Universal Values developed by Schwartz, and it is characterized by diverse goals and motivations. The motivational goal of universalism is understanding, appreciation, tolerance, and protection for the welfare of all people and nature. The Universalism value is divided into the following sub-values: broadminded, social justice, equality, a world at peace, a world of beauty, unity with nature, wisdom, protecting the environment, and inner harmony."
     },
     {
-      text: "In software systems, universalism is reflected in a system’s design and features that promote inclusivity, accessibility, and social justice."
+      text: "In software systems, for a system to adhere to universalism values, it has to ensure that its design and features are inclusive, accessible, equitable and respects the environment."
     }
   ],
 };
@@ -17,73 +17,49 @@ export const UniversalismRequirement = {
   concept: 'Universalism Requirement',
   description: [
     {
-      text: "This concept represents the elicited requirements needed towards the development and implementation of a system that aligns with the Universalism values."
+      text: "This concept represents the elicited requirements needed for the development and implementation of a system that aligns with the Universalism values."
     },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - The requirements could include support for multiple languages to promote inclusivity and accessibility features for users with disabilities."
-    },
-    {
-      text: "Bright Sky App - A requirement could be the educational resources about the different domestic abuse."
-    }
   ],
 };
 
 //Software System Section
 export const SoftwareSystem = {
-  id: '7',
+  id: '3',
   concept: 'Software System',
   description: [
     {
-      text: "A software system is a group of programs that work together to execute specific tasks on a computer, consisting of everything from code to user interfaces. Humans interact with software systems that intend to satisfy Universalism requirements based on inclusivity, accessibility, and usability for different users."
+      text: "A software system is developed to serve a purpose. Humans interact with software systems that intend to satisfy Universalism requirements based on inclusivity, accessibility, and usability for different users."
     },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Is the software system. It includes the components necessary for running the app. The software system's purpose is to facilitate the donation process and manage the distribution of food aid. The app must maintain compatibility and interoperability with external systems (e.g., payment gateways). If the network fails, the user should still be able to use the app in some way, so there should be offline features so that users can, for example, view their donation history."
-    },
-    {
-      text: "Bright Sky App - Should be capable of handling peak loads during high-traffic periods when many users seek help simultaneously. In case of network failures, the app should offer offline alternative modes so that users can still access essential features (e.g., information about abuse)."
-    }
   ],
 };
 
 //Human Section
 export const Human = {
-  id: '8',
+  id: '4',
   concept: 'Human',
   description: [
     {
-      text: "Human is the individual who is involved and interacts with the Software."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Is open to every user who wants to donate. The app is intuitive, users only need to download the app, navigate its interface, and make donations to contribute to the fight against global hunger. The app receives feedback from users by Google Play or email."
-    },
-    {
-      text: "Bright Sky App - Is open to every user who needs help, providing a simple interface that is intuitive and user-friendly. The hidden mode feature could confuse users, but when first using the app, it gives a tutorial to help users understand how to use the hidden mode."
+      text: "Human refers to the individual who is involved and interacts with the software."
     },
   ],
 };
 
 //Equality Section
 export const Equality = {
-  id: '3',
+  id: '5',
   concept: 'Equality',
   description: [
     {
       text: "Equality is one of the sub-values of Universalism. It’s defined as the right of different groups of people to have a similar social position and receive the same treatment."
     },
     {
-      text: "In software systems, this means that the same access and opportunities are available to all users, without discrimination. This may include applications that do not favor anyone based on gender, race, and other characteristics. Another example is promoting fairness in the workplace through policies and practices."
+      text: "In software systems, equality presents itself when all users have the same access and opportunities, without discrimination. This includes applications that do not favor gender, race, or other user characteristics. Equality also promotes fairness in the workplace through policies and practices."
     },
   ],
 };
 
 export const SocialJustice = {
-  id: '4',
+  id: '6',
   concept: 'Social Justice',
   description: [
     {
@@ -93,18 +69,10 @@ export const SocialJustice = {
       text: "In software systems, social justice involves designing and implementing functionalities that promote fairness, equality, and accessibility for all users. It includes ensuring that the benefits and opportunities provided by the software are accessible to diverse populations, regardless of their background or circumstances."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Social justice could be demonstrated through an equitable distribution of donated funds to various communities in need. For example, the funds donated could be distributed proportionately based on the needs of each region, instead of equally."
-    },
-    {
-      text: "Bright Sky App - Supports social justice through its features that provide users with comprehensive information on different types of domestic abuse, including practical examples. The app has interactive elements (e.g., risk assessment questionnaires) to help users evaluate the dangers in their relationships. It presents digital safety tips to protect users from online vulnerabilities and provides informative content on topics such as violence, consent, harassment, and how to leave an abusive relationship. The app also connects users with national support services."
-    }
-  ],
 };
 
 export const Broadminded = {
-  id: '5',
+  id: '555',
   concept: 'Broadminded',
   description: [
     {
@@ -125,7 +93,7 @@ export const Broadminded = {
 };
 
 export const Wisdom = {
-  id: '6',
+  id: '655',
   concept: 'Wisdom',
   description: [
     {
@@ -1128,15 +1096,38 @@ export const Honesty = {
       text: "Honesty is when there is a truthful representation of software, particularly about the software’s capabilities, limitations, and any possible problems."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Promotes honesty and builds credibility by showing a truthful representation of the results of the operation to users."
-    },
-    {
-      text: "Bright Sky App - Demonstrates honesty by clarifying to the user exactly what the app does and how it does it, informing about its features. It should also avoid exaggerations about the effectiveness of the app in aiding in abuse cases."
-    }
-  ],
 };
+
+export const Gender = {
+  id: '5900',
+  concept: 'Gender',
+  description: [
+    {
+      text: "Gender test decriptionnnnn."
+    },
+  ],
+  relatedConcepts: ['5901', '5902'],
+}
+
+export const GSecondaryConcept1Test = {
+  id: '5901',
+  concept: 'GSecondaryConcept1Test',
+  description: [
+    {
+      text: "GSecondaryConcept1Test test decriptionnnnn."
+    },
+  ],
+}
+
+export const GSecondaryConcept2Test = {
+  id: '5902',
+  concept: 'GSecondaryConcept2Test',
+  description: [
+    {
+      text: "GSecondaryConcept2Test test decriptionnnnn."
+    },
+  ],
+}
 
 const ConceptsData = {
   //Universalism Section
@@ -1204,6 +1195,10 @@ const ConceptsData = {
   Accountability,
   Transparency,
   Honesty,
+
+  Gender,
+  GSecondaryConcept1Test,
+  GSecondaryConcept2Test,
 };
 
 export default ConceptsData;

@@ -1,7 +1,8 @@
 import React from "react";
 import './TableStyle.css';
+import "../Buttons.css";
 
-export const Table = ({ dataConcept, onAddToDocument }) => {
+export const Table = ({ dataConcept, onAddToDocument}) => {
   const handleButtonClick = () => {
     if (dataConcept) {
       onAddToDocument(dataConcept);
@@ -14,6 +15,10 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
     );
   };
 
+  const hasRelatedConcepts = (dataConcept) => {
+    return dataConcept && Array.isArray(dataConcept.relatedConcepts) && dataConcept.relatedConcepts.length > 0;
+  };
+
   return (
     <div className="visual-design-table">
       <table>
@@ -22,7 +27,7 @@ export const Table = ({ dataConcept, onAddToDocument }) => {
             <th colSpan="4">
               <div className="header">
                 {!hasValidData(dataConcept) ? (<div>No content</div>) : <div className="title">{dataConcept.concept}</div>}
-                {!hasValidData(dataConcept) ? (<div>No content</div>) : <button className="add-to-document" onClick={handleButtonClick}>ADD TO DOCUMENT</button>}  
+                {hasValidData(dataConcept) && !hasRelatedConcepts(dataConcept) && (<button className="add-to-document" onClick={handleButtonClick}>ADD TO DOCUMENT</button>)} 
               </div>
             </th>
           </tr>

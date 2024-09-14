@@ -2,28 +2,28 @@
 export const Universalism = [
 {
   concept: 'Universalism',
-  question: "Does the system’s goal align with social justice and equality principles?",
+  question: "Does the system's goal promote equality and social justice?",
   requirement: [
     {
-      text: "The ShareTheMeal apps mission must contribute to social justice and equality, which is true because the goal is to fight global hunger."
+      text: "The ShareTheMeal app's mission must promote social justice and equality, which is true because the goal is to fight global hunger."
     },
   ],
 },
 {
   concept: 'Universalism',
-  question: "Are the system’s features designed to promote inclusivity and accessibility for all users?",
+  question: "Are the system's features inclusive and accessible for every user?",
   requirement: [
     {
-      text: "The ShareTheMeal app must consider compatibility and include accessibility features to support users with disabilities (e.g., screen readers, adjustable text sizes, etc.)."
+      text: "The ShareTheMeal app must consider compatibility with different devices and have accessible features for users with disabilities (e.g., screen readers, adjustable text sizes)."
     },
   ],
 },
 {
   concept: 'Universalism',
-  question: "Does the system consider environmental protection and sustainability in its operations?",
+  question: "Do the system's operations consider sustainability and environmental protection?",
   requirement: [
     {
-      text: "The ShareTheMeal app must consider the environmental impact of its operations and promote sustainability when possible."
+      text: "The ShareTheMeal app must evaluate its operations' environmental impact and encourage sustainability."
     },
   ],
 },
@@ -32,47 +32,130 @@ export const Universalism = [
 export const UniversalismRequirement = [
 {
   concept: 'Universalism Requirement',
-  question: "Are there requirements to improve the system's accessibility to users with disabilities?",
+  question: "Are there requirements related to improving the system's accessibility?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must provide users with voice control options and high-contrast modes."
+    },
+  ],
 },
 {
   concept: 'Universalism Requirement',
-  question: "Does the system include requirements for supporting multiple languages and cultural contexts?",
+  question: "Are there requirements to ensure the system supports multiple languages and diverse cultural contexts?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must support multiple languages and adapt to cultural contexts to accommodate diverse users (e.g., avoid potentially offensive content in certain cultures)."
+    },
+  ],
 },
 {
   concept: 'Universalism Requirement',
-  question: "Does the system provide educational resources to promote understanding of different cultures and global issues?",
+  question: "Does the system have educational resources for users to learn about culture and global issues?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must educate users on the culture and problems of the causes to which users can donate. Which it does by giving an overview of each crisis."
+    },
+  ],
 },
 {
   concept: 'Universalism Requirement',
-  question: "Are there feedback mechanisms for users to suggest improvements related to inclusivity and social justice?",
+  question: "Are there feedback features so users can suggest app improvements concerning social justice and inclusiveness?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must incorporate a feedback feature for users to give their opinions of the app. This app does this by providing an email address and receiving reviews on the app stores."
+    },
+  ],
 },
 ];
 
+//Software System Section
+export const SoftwareSystem = [
+{
+  concept: 'Software System',
+  question: "Can the system handle peak loads during high-traffic periods?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must maintain responsiveness when the traffic is heavy so users can always donate. Load balancers are the solution since they improve the app's performance."
+    },
+  ],
+},
+{
+  concept: 'Software System',
+  question: "Are there performance benchmarks and metrics to evaluate the system's efficiency?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must be evaluated by performance benchmarks and metrics to optimize its effectiveness. Benchmarks must be regularly run to ensure that recent changes to the app don't cause issues."
+    },
+  ],
+},
+{
+  concept: 'Software System',
+  question: "Does the system provide offline modes that permit users to utilize the app in case of network failures?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have offline features so users can keep using important features if internet connectivity is lost. These features can be the conclusion of donation processes when connectivity is restored and accessing previously viewed content."
+    },
+  ],
+},
+];
+
+//Human Section
+export const Human = [
+{
+  concept: 'Human',
+  question: "Are users’ interactions with the system intuitive and user-friendly?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app's design must have clear layouts to make navigation easy and actions evident to the users."
+    },
+  ],
+},
+{
+  concept: 'Human',
+  question: "Are there features to help users with difficulty using the system?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include tutorials and guides for users who have limited experience with technology and accessibility features for users with disabilities (e.g., voice control)."
+    },
+  ],
+},
+{
+  concept: 'Human',
+  question: "Are there mechanisms to obtain feedback and use it to improve the system?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have feedback mechanisms for users to suggest app improvements. These must be evaluated and, if useful, incorporated into the app. This app receives feedback via an email address and reviews on the app stores."
+    },
+  ],
+},
+];
+
+//Equality Section
 export const Equality = [
 {
   concept: 'Equality',
-  question: "Does the system provide equal access to all features and resources for every type of user?",
+  question: "Does the system give every user equal access to all features and resources?",
   requirement: [
     {
-      text: "The ShareTheMeal app must allow every feature to be available for all users (e.g., donation, creation of challenges)."
+      text: "The ShareTheMeal app's features must be available for all users (e.g., donation, creation of challenges)."
     },
   ],
 },
 {
   concept: 'Equality',
-  question: "Does the system ensure that all users are treated fairly and without discrimination?",
+  question: "Does the system guarantee fair treatment for every user?",
   requirement: [
     {
-      text: "The ShareTheMeal app must not consider the user’s personal characteristics (e.g., gender, race)."
+      text: "The ShareTheMeal app must not consider a user's personal characteristics in its operations (e.g., gender, race)."
     },
   ],
 },
 {
   concept: 'Equality',
-  question: "Can all users operate the system functionalities regardless of their diverse needs and circumstances?",
+  question: "Can all users utilize the system's features regardless of their different needs and circumstances?",
   requirement: [
     {
-      text: "The ShareTheMeal app must include accessibility features to support users with disabilities (e.g., screen readers)."
+      text: "The ShareTheMeal app must have accessibility features to support users' disabilities (e.g., screen readers)."
     },
   ],
 },
@@ -119,43 +202,6 @@ export const Wisdom = [
 },
 ];
 
-//Software System Section
-export const SoftwareSystem = [
-{
-  concept: 'Software System',
-  question: "Can the system handle peak loads and maintain responsiveness during high-traffic periods?",
-},
-{
-  concept: 'Software System',
-  question: "Are there performance benchmarks and metrics used to evaluate system efficiency?",
-},
-{
-  concept: 'Software System',
-  question: "What strategies are used to maintain compatibility and interoperability with external systems?",
-},
-{
-  concept: 'Software System',
-  question: "In case of network failure, does the system provide offline capabilities or alternative modes of operation to ensure continued functionality and user accessibility?",
-},
-];
-
-//Human Section
-export const Human = [
-{
-  concept: 'Human',
-  question: "Does the system ensure that user interactions are intuitive and user-friendly?",
-},
-{
-  concept: 'Human',
-  question: "Are there features that help users who have difficulties in using the system?",
-},
-{
-  concept: 'Human',
-  question: "Are there mechanisms to gather user feedback and incorporate it into improving the system's functionalities?",
-},
-];
-
-//Equality Section
 export const SocialSustainability = [
 {
   concept: 'Social Sustainability',
@@ -976,6 +1022,29 @@ export const Honesty = [
 },
 ];
 
+
+export const GSecondaryConcept1Test = [
+  {
+    concept: 'GSecondaryConcept1Test',
+    question: "GSecondaryConcept1Test Does the application treat errors or limitations transparently to maintain honesty?",
+  },
+  {
+    concept: 'GSecondaryConcept1Test',
+    question: "GSecondaryConcept1Test Are users informed of any limitations that may affect the system's performance?",
+  },
+]
+
+export const GSecondaryConcept2Test = [
+  {
+    concept: 'GSecondaryConcept2Test',
+    question: "GSecondaryConcept2Test Does the application treat errors or limitations transparently to maintain honesty?",
+  },
+  {
+    concept: 'GSecondaryConcept2Test',
+    question: "GSecondaryConcept2Test Are users informed of any limitations that may affect the system's performance?",
+  },
+]
+
 const QuestionsData = {
   //Universalism Section
   Universalism,
@@ -1042,6 +1111,9 @@ const QuestionsData = {
   Accountability,
   Transparency,
   Honesty,
+
+  GSecondaryConcept1Test,
+  GSecondaryConcept2Test
 };
 
 export default QuestionsData;

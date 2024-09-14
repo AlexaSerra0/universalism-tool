@@ -16,11 +16,8 @@ import DiagramNode from './DiagramComponents/DiagramNode.js';
 import FloatingEdge from './DiagramComponents/FloatingEdge';
 import FloatingConnectionLine from './DiagramComponents/FloatingConnectionLine';
 import { createNodesAndEdges } from './DiagramComponents/utils';
-
-//import { Table } from './DiagramComponents/Table.js';
-//import ConceptsData from './DiagramComponents/ConceptsData.js';
-import { Table } from './DiagramComponents/SecondTable.js';
-import ConceptsData from './DiagramComponents/SecondConceptsData.js';
+import { Table } from './DiagramComponents/Table.js';
+import ConceptsData from './DiagramComponents/ConceptsData.js';
 
 const nodeTypes = { diagramNode: DiagramNode };
 const edgeTypes = {
@@ -52,7 +49,6 @@ function Tool() {
     } else {
       setDataConcept(ConceptsData[node.id]);
     }
-    //setDataGoals(ConceptsData[`${node.id}Goals`]);
   }, []);
 
   const { setCenter } = useReactFlow();
@@ -98,6 +94,24 @@ function Tool() {
     setEdges(newEdges);
   };
 
+  const getConceptById = (id) => {
+    return Object.values(ConceptsData).find(concept => concept.id === id);
+  };
+
+  const hasRelatedConcepts = (dataConcept) => {
+    return dataConcept && Array.isArray(dataConcept.relatedConcepts) && dataConcept.relatedConcepts.length > 0;
+  };
+
+  const handleRelatedConceptClick = (relatedConceptId) => {
+    const relatedConcept = getConceptById(relatedConceptId);
+    if (relatedConcept) {
+      setDataConcept(relatedConcept); // Update the dataConcept with the new related concept
+      setClickedNodeId(relatedConceptId); // Optionally update the clickedNodeId if needed
+    } else {
+      console.warn(`No concept found for ID: ${relatedConceptId}`);
+    }
+  };
+
   return (
     <div className='Tool'>
       <div className='SelectBar'>
@@ -138,8 +152,22 @@ function Tool() {
         </div>
       </div>
       {isOpen && (<div className="BigTittle">Characteristics</div>)}
-      {/* {isOpen && (<Table dataConcept={dataConcept} dataGoals={dataGoals} /> )} */}
-      {isOpen && (<Table dataConcept={dataConcept} onAddToDocument={handleAddToDocument}/>)}
+      {isOpen && (<Table dataConcept={dataConcept} onAddToDocument={handleAddToDocument} />)}
+      {hasRelatedConcepts(dataConcept) && (<div className='Subtitle'>Related Concepts:</div>)}
+      <div style={{paddingBottom: '1rem', display: 'flex', justifyContent: 'space-around',}}>
+      {hasRelatedConcepts(dataConcept) && dataConcept.relatedConcepts.map((relatedConceptId) => {
+        const relatedConcept = getConceptById(relatedConceptId);
+        return (
+          <Button
+            design={'Button classicBtn'}
+            key={relatedConceptId}
+            onClick={() => handleRelatedConceptClick(relatedConceptId)}
+          >
+            {relatedConcept ? relatedConcept.concept : 'Unknown Concept'}
+          </Button>
+        );
+      })}
+      </div>
     </div>
   );
 }
