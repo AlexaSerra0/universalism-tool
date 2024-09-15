@@ -66,50 +66,34 @@ export const SocialJustice = {
       text: "Social Justice is one of the sub-values of Universalism. It’s defined as the idea that all people should have the same rights and opportunities and that a country's wealth and resources should benefit everyone in that country."
     },
     {
-      text: "In software systems, social justice involves designing and implementing functionalities that promote fairness, equality, and accessibility for all users. It includes ensuring that the benefits and opportunities provided by the software are accessible to diverse populations, regardless of their background or circumstances."
+      text: "In software systems, social justice involves implementing functionalities that promote fairness, equality, and accessibility for all users, regardless of their background or circumstances."
     },
   ],
 };
 
 export const Broadminded = {
-  id: '555',
+  id: '7',
   concept: 'Broadminded',
   description: [
     {
       text: "Broadminded is one of the sub-values of Universalism. It’s defined as someone willing to accept many different types of behavior, beliefs, or choices in other people."
     },
     {
-      text: "In software systems, broadmindedness involves designing interfaces and functionalities that are flexible and inclusive of various user preferences. It includes the promotion of a culture of acceptance within the system, ensuring that diverse perspectives are respected and valued."
+      text: "In software systems, broadmindedness influences the interfaces' design to become more flexible and inclusive, recognizing user preferences and enabling an acceptance culture where diverse perspectives are respected and valued."
     },
-  ],
-  requirement: [
-    {
-      text: "Example of a Social Media Platform - Broadmindedness could be implemented by allowing users to customize their news feeds based on their interests and preferences, like languages, cultural topics, or hobbies."
-    },
-    {
-      text: "Bright Sky App - Allows users to select the type of support they need (e.g., assistance with abusive relationships, sexual assault, stalking)."
-    }
   ],
 };
 
 export const Wisdom = {
-  id: '655',
+  id: '8',
   concept: 'Wisdom',
   description: [
     {
       text: "Wisdom is one of the sub-values of Universalism. It’s defined as the ability to use your knowledge and experience to make good decisions and judgments."
     },
     {
-      text: "In software systems, this means using user feedback and additional data sources so that the system can make decisions. Automated systems need supervision from humans to ensure that everything is working correctly and for any sensible decision that the own system can’t make."
+      text: "In software systems, wisdom implies the usage of user feedback and additional data sources to allow the system to make decisions. These automated systems require human supervision to ensure everything is working correctly and for sensible choices that the system can't make."
     },
-  ],
-  requirement: [
-    {
-      text: "Example of an E-Commerce Platform - Wisdom can be implemented by using machine learning algorithms to analyze user preferences and behaviors to personalize product recommendations."
-    },
-    {
-      text: "Bright Sky App - Has a feedback mechanism where users can submit their opinions and also provide an email for the user to contact to give a more detailed opinion. This feedback should be considered to improve the app’s features."
-    }
   ],
 };
 
@@ -124,60 +108,36 @@ export const SocialSustainability = {
       text: "Social Sustainability has two important themes required for the physical and psychological survival of individuals: basic needs and equity."
     },
     {
-      text: "In software systems, Social Sustainability is directed towards the promotion of equality, ensuring that every individual who interacts with and benefits from the software has equitable access to its resources and opportunities."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Ensures equal access to food resources for current and future generations. The app's goal of fighting hunger aligns with social sustainability when accessing essential resources (e.g., food, and money) is equal for everyone."
-    },
-    {
-      text: "Bright Sky App - Gives equal access to support services to users who are involved or are aware of cases of domestic abuse. Every user has access to its resources regardless of their background or personal characteristics. These actions promote social sustainability."
-    },
-  ],
-};
-
-export const SocialCohesion = {
-  id: '10',
-  concept: 'Social Cohesion',
-  description: [
-    {
-      text: "Social Cohesion is a concept that is defined differently by the academic and policy communities, but in general, both say that the emphasis is on cooperation and inclusion. Social cohesion refers to the unity in a society, this means the absence of social conflicts based on certain factors (wealth, ethnicity, and gender) and the presence of strong social bonds (civic engagement and responsive democracy). It involves shared values, reducing disparities in wealth and income, and promoting a sense of belonging and cooperation among members."
-    },
-    {
-      text: "The characteristics of Social Cohesion are the strength of networks, participation, identification, and tolerance. It’s the level of empowerment and accountability."
-    },
-    {
-      text: "Social Cohesion in software systems promotes cooperation between users, avoiding conflicts. The goal is a community online that is inclusive and supportive, making users feel safe and connected."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Users unite to fight global hunger, cooperating towards a common goal, and promoting empathy in users."
-    },
-    {
-      text: "Bright Sky App - Creates an environment that is supportive and inclusive, encouraging users to connect with national support lines in order to get help. The hope is to reduce social conflicts related to domestic abuse with the app's use."
+      text: "In software systems, social sustainability advocates for equality to ensure that everyone interacting with or benefiting from the system obtains equitable access to its resources and opportunities."
     },
   ],
 };
 
 export const NeedsSatisfaction = {
-  id: '11',
+  id: '10',
   concept: 'Needs Satisfaction',
   description: [
     {
-      text: "Needs Satisfaction concerns the satisfaction of basic human needs. It measures the level of resources and opportunities available to the community as a whole. The characteristics of Needs Satisfaction are objective satisfaction of basic needs and subjective satisfaction of basic needs."
+      text: "Needs Satisfaction concerns the satisfaction of basic human needs. It measures the level of resources and opportunities available to the community as a whole.” The characteristics of Needs Satisfaction are objective satisfaction of basic needs and subjective satisfaction of basic needs."
     },
     {
-      text: "Needs Satisfaction in software systems measures the level of resources and opportunities the software provides to the entire community of users."
+      text: "In software systems, needs satisfaction measures the level of resources and opportunities the software provides to the entire community of users."
     },
   ],
-  requirement: [
+};
+
+export const SocialCohesion = {
+  id: '11',
+  concept: 'Social Cohesion',
+  description: [
     {
-      text: "ShareTheMeal App - Addresses the starvation existing in different communities so that their essential needs are met. This happens when giving users a way to donate so that the necessary resources reach those in need."
+      text: "Social Cohesion is defined differently by the academic and policy communities, but, in general, both say that the emphasis is on cooperation and inclusion. Social cohesion refers to the unity in a society, this means the absence of social conflicts based on certain factors (wealth, ethnicity, and gender) and the presence of strong social bonds (civic engagement and responsive democracy). It involves shared values, reducing disparities in wealth and income, and promoting a sense of belonging and cooperation among members."
     },
     {
-      text: "Bright Sky App - Advocates for individuals' safety needs. The app was created to combat domestic abuse, employing functionalities to further the cause (e.g., questionnaires, and practical examples)."
+      text: "The characteristics of Social Cohesion are the strength of networks, participation, identification, and tolerance. It’s the level of empowerment and accountability."
+    },
+    {
+      text: "In software systems, social cohesion translates into an online community that is inclusive and supportive, where there is cooperation between users and avoiding conflicts."
     },
   ],
 };
@@ -1098,7 +1058,7 @@ export const Honesty = {
   ],
 };
 
-export const Gender = {
+/* export const Gender = {
   id: '5900',
   concept: 'Gender',
   description: [
@@ -1127,24 +1087,25 @@ export const GSecondaryConcept2Test = {
       text: "GSecondaryConcept2Test test decriptionnnnn."
     },
   ],
-}
+} */
 
 const ConceptsData = {
   //Universalism Section
   Universalism,
   UniversalismRequirement,
-  Equality,
-  SocialJustice,
-  Broadminded,
-  Wisdom,
   //Software System Section
   SoftwareSystem,
   //Human Section
   Human,
   //Equality Section
+  Equality,
+  SocialJustice,
+  Broadminded,
+  Wisdom,
   SocialSustainability,
-  SocialCohesion,
   NeedsSatisfaction,
+  SocialCohesion,
+
   Community,
   SocialEquality,
   Fairness,
@@ -1196,9 +1157,9 @@ const ConceptsData = {
   Transparency,
   Honesty,
 
-  Gender,
-  GSecondaryConcept1Test,
-  GSecondaryConcept2Test,
+  //Gender,
+  //GSecondaryConcept1Test,
+  //GSecondaryConcept2Test,
 };
 
 export default ConceptsData;

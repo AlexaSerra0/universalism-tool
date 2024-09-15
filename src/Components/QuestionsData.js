@@ -164,41 +164,81 @@ export const Equality = [
 export const SocialJustice = [
 {
   concept: 'Social Justice',
-  question: "Does the system ensure that all users, regardless of background or circumstances, have equal access to its benefits and resources?",
+  question: "Does the system offer all users equal access to benefits and resources, regardless of users' background?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app's features must be unrestricted to all users regardless of users' location and other factors."
+    },
+  ],
 },
 {
   concept: 'Social Justice',
-  question: "Are there functionalities in the system that promote fairness and inclusivity, specifically for disregarded communities?",
+  question: "Do the system's functionalities promote fairness and inclusivity, specifically for disregarded communities?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app's functionalities must promote fairness through target campaigns for specific communities and the proportional distribution of resources based on the needs of communities."
+    },
+  ],
 },
 {
   concept: 'Social Justice',
-  question: "Are there specific procedures in the system that aim for an equitable environment for all users?",
+  question: "Does the system contain procedures to maintain an equitable environment for all users?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must implement procedures and policies that address user complaints about unfair treatment. These must be frequently updated."
+    },
+  ],
 },
 ];
 
 export const Broadminded = [
 {
   concept: 'Broadminded',
-  question: "Does the system design accommodate a wide range of user behaviors and preferences?",
+  question: "Does the system's design accommodate a wide variety of users' preferences?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must present multiple ways to donate or participate in challenges (e.g., create group challenges where teams compete to see who can get the most funds) so users have more flexibility in using the app."
+    },
+  ],
 },
 {
   concept: 'Broadminded',
-  question: "Does the system promote openness and acceptance among users?",
+  question: "Does the system facilitate openness and acceptance among users?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must incorporate a forum or feedback feature so users can freely share their personal experiences and points of view."
+    },
+  ],
 },
 {
   concept: 'Broadminded',
-  question: "Are there features to support diverse beliefs and choices within the user community?",
+  question: "Do the system's features support diverse users' beliefs?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must give users the option of choosing the cause or region they wish to support. The app does this because there are different donation causes available."
+    },
+  ],
 },
 ];
 
 export const Wisdom = [
 {
   concept: 'Wisdom',
-  question: "Does the system use user feedback and external data sources to improve decision-making processes?",
+  question: "Does the system use user feedback and external sources to improve decision processes?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must analyze donation patterns, user feedback, social media comments, and information about regional needs to revise fundraising strategies and efficiently distribute resources."
+    },
+  ],
 },
 {
   concept: 'Wisdom',
-  question: "Are automated decisions supervised and validated by individuals?",
+  question: "Are automated decisions supervised and validated by people?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app's automated mechanisms (e.g., funds allocations, fundraising strategies) must be evaluated and approved by somebody before execution."
+    },
+  ],
 },
 ];
 
@@ -206,48 +246,80 @@ export const SocialSustainability = [
 {
   concept: 'Social Sustainability',
   question: "Does the system address the needs of disadvantaged communities?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have targeted fundraising campaigns so users are aware of donation causes with little progress. The app does this by showing, at the top, the donations that need the most attention."
+    },
+  ],
 },
 {
   concept: 'Social Sustainability',
-  question: "Does the system support initiatives or features that promote long-term social well-being and resource accessibility?",
+  question: "Does the system support initiatives that promote long-term social welfare?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must foster long-term social benefits by implementing collaborations with non-governmental organizations to support sustainable development goals in communities."
+    },
+  ],
 },
 {
   concept: 'Social Sustainability',
-  question: "Are there regular evaluations to ensure that the system continues to align with social sustainability principles?",
+  question: "Are there routine evaluations to ensure the system's alignment with social sustainability principles?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must perform annual reviews to evaluate its efficacy in promoting social sustainability."
+    },
+  ],
 },
 ];
-  
-export const SocialCohesion = [
-{
-  concept: 'Social Cohesion',
-  question: "Does the system promote cooperative and inclusive behavior among users?",
-},
-{
-  concept: 'Social Cohesion',
-  question: "Are there features that encourage users to engage with and support each other?",
-},
-{
-  concept: 'Social Cohesion',
-  question: "Does the system have mechanisms to prevent and address conflicts or discriminatory behavior?",
-},
-{
-  concept: 'Social Cohesion',
-  question: "Are there initiatives or features that build a sense of community and shared purpose among users?",
-},
-];
-  
+ 
 export const NeedsSatisfaction = [
 {
   concept: 'Needs Satisfaction',
-  question: "Does the system provide resources and opportunities that address the basic needs of its users?",
+  question: "Do the system's resources and opportunities address users' basic needs?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app's features must address users' basic needs (e.g., easy access to donation options, transparency regarding the distribution of funds). It must also confirm that the donations meet the needs of the beneficiaries; it’s not always food donations, other resources are given (e.g., money, resilience programs)."
+    },
+  ],
 },
 {
   concept: 'Needs Satisfaction',
-  question: "Are there mechanisms that evaluate and improve the satisfaction of users' basic needs over time?",
+  question: "Are there mechanisms to evaluate and improve satisfaction with users' basic needs?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must implement accessibility and efficiency surveys to determine user satisfaction. There could be a dedicated feature to receive feedback on whether resources are adequate."
+    },
+  ],
+},
+];
+
+export const SocialCohesion = [
+{
+  concept: 'Social Cohesion',
+  question: "Does the system form a sense of shared goals and cooperation between users?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must possess features that foster unity (e.g., reports of the impacts of all users' donations, sharing real stories from beneficiaries) and interactions among users, which exist as collaborative challenges that can be public or only for people the user chooses to share with."
+    },
+  ],
 },
 {
-  concept: 'Needs Satisfaction',
-  question: "Does the system facilitate access to essential services for its users?",
+  concept: 'Social Cohesion',
+  question: "Are the system's features encouraging users to talk and support each other?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include features that allow users to communicate (e.g., forum, communication system)."
+    },
+  ],
+},
+{
+  concept: 'Social Cohesion',
+  question: "Does the system have features that address conflicts and cases of discrimination?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have a reporting feature for users to flag inappropriate messages. After that, someone has to look into those allegations and act appropriately to them. If the allegation is true then the perpetrator will face the consequences (e.g., banned) otherwise the one that raised the accusation will face consequences (first a warning and if the problem persists after three allegations he will be banned)."
+    },
+  ],
 },
 ];
 
@@ -255,14 +327,29 @@ export const Community = [
 {
   concept: 'Community',
   question: "Does the system facilitate the interactions between the users in the community?",
+  requirement: [
+    {
+      text: "."
+    },
+  ],
 },
 {
   concept: 'Community',
   question: "Are there features that encourage collaboration and communication of users?",
+  requirement: [
+    {
+      text: "."
+    },
+  ],
 },
 {
   concept: 'Community',
   question: "Does the system provide opportunities for all users to work towards the same goals??",
+  requirement: [
+    {
+      text: "."
+    },
+  ],
 },
 ];
  
