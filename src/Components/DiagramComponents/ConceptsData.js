@@ -150,15 +150,7 @@ export const Community = {
       text: "Community is the people living in one particular area or people who are considered as a unit because of their common interests, social group, or nationality."
     },
     {
-      text: "In software systems, the community is the users connected through a digital platform, sharing common interests, goals, or characteristics. It includes both the users of the software and potentially the broader community affected or engaged by the software objectives."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - The community includes the users of the app and the global community affected by hunger. The app connects individuals worldwide to address food issues."
-    },
-    {
-      text: "Bright Sky App - The community is created by the users of the app and the support services that the app helps users connect with. Informing the users of all types of domestic abuse makes it easier for the user to know the support he needs."
+      text: "In software systems, community involves users united by a digital platform where they share common interests and goals. It includes the users of the system and the people affected by the system's objectives."
     },
   ],
 };
@@ -174,15 +166,7 @@ export const SocialEquality = {
       text: "It measures the level of equality in the way resources and opportunities are distributed in a community. The characteristics are access to services, facilities, and opportunities. It’s the level of institutional stability and flexibility."
     },
     {
-      text: "In software systems, social equality ensures that all users and stakeholders have equal access to and benefit from the software's services, leveling the field so that every user can use the software for their personal or professional growth."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Ensures that all individuals, regardless of their background or circumstances, have equal access to food and money assistance provided by the app. It also allows everyone who wants, to have permission to access and use the app."
-    },
-    {
-      text: "Bright Sky App - Supports all users regardless of their personal characteristics. Everyone seeking help with domestic abuse receives the same support."
+      text: "In software systems, social equality ensures every user has equal access and benefits from the system's services, leveling the playing field so every user can use the system for personal or professional growth."
     },
   ],
 };
@@ -195,15 +179,7 @@ export const Fairness = {
       text: "Fairness relates to how organizations should enable fairness between their employees, making sure that every employee receives equal treatment and opportunities. An example of this is employees with the same job description having the same vacation days and salary."
     },
     {
-      text: "In software systems, fairness involves designing systems that ensure equal access and opportunities for all users, regardless of their background or personal characteristics. This includes ensuring that algorithms are free from bias, providing equal access to features and resources, and implementing policies that promote equitable treatment for all users."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Should make sure that all employees are treated fairly, providing equal opportunities for advancement and fair compensation for their work. The donations collected should also be distributed equally to support programs in various communities based on need, with no favoritism. The people should be selected to receive money fairly, without considering race or gender. All these factors promote fairness in the distribution of resources."
-    },
-    {
-      text: "Bright Sky App - There shouldn't be any bias in the resources available.  For example, the questionnaires and practical examples must be fair for every type of user."
+      text: "In software systems, fairness concerns systems designed to secure equal access and opportunities for all users. This includes algorithms that must be free from bias to give equal access to features and policies that promote equitable treatment for all users."
     },
   ],
 };
@@ -216,15 +192,7 @@ export const HumanRight = {
       text: "Human Rights refer to the existing regulations that pertain to the fundamental rights and freedoms that all employees are entitled to, such as safety in the workplace."
     },
     {
-      text: "The system must permit an employee to have rest days and not allow their time to be micromanaged. The software can’t allow employees to be monitored, timing the time spent in the bathroom or smoke breaks. The software must also be protected so that the employee’s personal data is kept safe."
-    },
-  ],
-  requirement: [
-    {
-      text: "Example of a Workplace Management System - Ensuring human rights involves features that guarantee employees' rest days are respected and that personal data is secure. The system should avoid invasive monitoring practices and support employees' rights to a safe and respectful working environment."
-    },
-    {
-      text: "ShareTheMeal & Bright Sky Apps - Both defend human rights by protecting the users' data."
+      text: "In software systems, the system must permit employees to have rest days and not allow their time to be micromanaged. The system must be protected so that employee’s personal data is kept safe."
     },
   ],
 };
@@ -237,12 +205,7 @@ export const FairSalary  = {
       text: "Fair Salary is about providing employees a fair compensation depending on their contributions and responsibilities in an organization. They should be judged based on their skill and experience. The salary must reflect these aspects."
     },
     {
-      text: "A software system can’t allow unfair salaries, a person can’t receive more or less than someone else who does the same work just because of gender, for example."
-    },
-  ],
-  requirement: [
-    {
-      text: "Example of an Employee Management System - Fair salary practices could be implemented by using algorithms that ensure employees with the same job role, experience, and performance receive the same pay, irrespective of gender or race. The system should flag inconsistencies for review and adjustment."
+      text: "In software systems, the system can’t allow unfair salaries. A person can’t receive more or less than someone else who does the same work just because of gender, for example."
     },
   ],
 };
@@ -252,18 +215,10 @@ export const Discrimination = {
   concept: 'Discrimination',
   description: [
     {
-      text: "Discrimination is the unfair treatment of any person or group based on race, gender, religion, or other characteristics. Basically, any actions that may cause harassment or exclusion of individuals in an organization will have a negative impact on fairness."
+      text: "Discrimination is the unfair treatment of any person or group based on race, gender, religion, or other characteristics. Any action that may cause harassment or exclusion of individuals in an organization will harm fairness."
     },
     {
-      text: "In software systems, it involves practices and algorithms that do not discriminate (this can occur when the training data is biased itself). It also involves an environment that promotes respect and inclusion (be it in the workplace or online)."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Neither donors nor beneficiaries suffer discrimination, since everyone can use the app and individual characteristics have no impact on who and how much they receive."
-    },
-    {
-      text: "Bright Sky App - Does not discriminate based on any user characteristics and even provides additional support and information for the LGBTQ+ community that is more vulnerable to domestic abuse."
+      text: "In software systems, the practices and algorithms can't discriminate. It can occur in algorithms when the training data is biased. The environment must also promote respect and inclusion, whether in the workplace or online."
     },
   ],
 };
@@ -279,12 +234,7 @@ export const FairTreatment = {
       text: "Concerning software, fair treatment may involve systems that reduce personal liability for people in stressful situations, like forgiving mistakes in taxing moments. This may involve the creation of features that prioritize safety and ease stress and promote equal treatment for individuals operating within the system."
     },
     {
-      text: "Fair treatment promotes a culture of respect, trust, and inclusion while at the same time considering safety and equal treatment within the organization and software systems."
-    },
-  ],
-  requirement: [
-    {
-      text: "Example of an Employee Management System - Fair treatment can be promoted by ensuring that performance evaluations are based on objective criteria and that feedback is consistent and unbiased. Features like anonymous reporting of unfair treatment and stress-relief support tools can help maintain a fair and respectful workplace."
+      text: "Fair treatment promotes respect, trust, and inclusion while at the same time considers safety and equal treatment within the organization and systems."
     },
   ],
 };
@@ -297,14 +247,6 @@ export const SocioculturalEquity = {
       text: "Socio-cultural Equity means that the characteristics of the individuals should not be a factor when considering who should be allowed to use the software services. Different community members should be allowed to access the system considering the various technologies available and the different abilities, promoting inclusivity in terms of usability and access."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Development and implementation should consider the different possible users of the app so that everyone can access it. This way, the app is more user-friendly and has a bigger impact. By reaching a bigger pool of users, more donations can be made, and more people can receive the help they need."
-    },
-    {
-      text: "Bright Sky App - Design must consider different technologies and multiple languages. This is important to ensure that all users can use the app."
-    },
-  ],
 };
 
 export const Compatibility = {
@@ -312,15 +254,7 @@ export const Compatibility = {
   concept: 'Compatibility',
   description: [
     {
-      text: "Compatibility refers to the ability of a software system to be available in different devices, operating systems (OS), hardware components, and networks. It also relates to the ability of these elements to work together."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Needs an internet connection to work, without it, it’s not possible to view information or make donations. It can be used on an internet browser or by downloading the app from Google Play or App Store. This means that the operation systems available is iOS and Android."
-    },
-    {
-      text: "Bright Sky App - Needs internet connection to work. It’s also compatible with Android and iOS and reaches users through different platforms (e.g., tablets, smartphones)."
+      text: "Compatibility refers to the availability of a software system in different devices, operating systems (OS), hardware components, and networks. It also relates to the ability of these elements to work together."
     },
   ],
 };
@@ -333,11 +267,6 @@ export const Device = {
       text: "Device includes desktops, tablets, mobile, tablets, and other electronic devices."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal & Bright Sky Apps - Should be designed to provide a consistent and user-friendly experience across different devices, including smartphones, tablets, and desktops, ensuring functionality and usability on all platforms."
-    },
-  ],
 };
 
 export const OperatingSystem = {
@@ -345,12 +274,7 @@ export const OperatingSystem = {
   concept: 'Operating System',
   description: [
     {
-      text: "Operating System includes Android, iOS, Mac, and Windows."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal & Bright Sky Apps - Must be compatible with the latest versions of Android and iOS operating systems, as well as provide support for several previous versions to ensure broader accessibility."
+      text: "Operating system includes Android, iOS, Mac, and Windows."
     },
   ],
 };
@@ -363,11 +287,6 @@ export const Hardware = {
       text: "Hardware includes processors, memory, graphics cards, and other components."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal & Bright Sky Apps - should be optimized to run efficiently on devices with varying hardware capabilities, from high-end smartphones with powerful processors to budget devices with limited memory and processing power."
-    },
-  ],
 };
 
 export const Network = {
@@ -378,11 +297,6 @@ export const Network = {
       text: "Network includes wired or wireless networks, LANs, WANs, or the internet."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal & Bright Sky Apps - Must function properly over both Wi-Fi and cellular networks to ensure users can donate, in the case of the ShareTheMeal app, and access information regardless of their connection type."
-    },
-  ],
 };
 
 export const Education = {
@@ -390,20 +304,11 @@ export const Education = {
   concept: 'Education',
   description: [
     {
-      text: "Education is defined as the process of teaching or learning, especially in a school or college, or the knowledge that you get from this. Everyone should be permitted to learn if they want to, regardless of circumstances, like economic, or personal characteristics, such as gender."
+      text: "Education is defined as the process of teaching or learning, especially in a school or college, or the knowledge that you get from this. Everyone should be entitled to learn if they want to, regardless of circumstances, such as economic, or personal characteristics, such as gender."
     },
     {
-      text: "Education in software systems is the process of teaching or learning through the software, this way users gain skills, and knowledge, by interacting with educational software."
+      text: "In software systems, educational systems help users gain skills and knowledge by interacting with it."
     },
-  ],
-  requirement: [
-    {
-      text: "Example of a Language Learning App - Users must have access to diverse learning materials, including text, audio, and interactive exercises. The app should support multiple languages and provide features for pronunciation practice and vocabulary building."
-    },
-    {
-      text: "Bright Sky App - Educates the user on the different domestic abuse, giving practical examples to understand the information better. The app is accessible since it supports multiple languages."
-    },
-    
   ],
 };
 
@@ -415,15 +320,7 @@ export const Knowledge = {
       text: "Knowledge is the understanding of or information about a subject that you get by experience or study, either known by one person or by people generally."
     },
     {
-      text: "In software systems, knowledge is giving users information that improves their understanding of the system's purpose, functionality, or the subject matter it deals with. It includes delivering clear explanations, insights, or data that users can utilize to make informed decisions or actions in the software."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Users who don’t have much knowledge on where exactly food problems exist can be informed on the app, since it explains clearly everything a person needs to know: the cause a user can donate to, the goal of the app, how the app works, etc."
-    },
-    {
-      text: "Bright Sky App - Is well structured to provide clear and comprehensive information about domestic abuse. At the beginning of the app, a short tutorial is presented to best introduce the user to the app, in particular the hidden mode."
+      text: "In software systems, knowledge implies giving users information that improves their understanding of the system's purpose, functionality, or subject matter. It means delivering clear explanations, insights, or data that users can utilize to make informed decisions or actions in the system."
     },
   ],
 };
@@ -436,18 +333,10 @@ export const GenderEquity = {
       text: "Gender Equity is defined as the provision of fairness and justice in the distribution of benefits and responsibilities between women and men. It’s the process of being fair to men and women. To ensure fairness, measures must often be put in place to compensate for the historical and social disadvantages that prevent women and men from operating on a level playing field. Equity is a mean. Equality is the result."
     },
     {
-      text: "In this model, we expand this concept to include all gender identities, advocating for equity regardless of gender, such as women, men, non-binary individuals, transgender individuals, and other gender minorities."
+      text: "In this model, we expand this concept to include all genders, advocating for equity regardless of gender, such as women, men, non-binary individuals, transgender individuals, and other gender minorities."
     },
     {
-      text: "In software systems, it entails ensuring that all users, regardless of their gender identity, have equal access to and benefit from the software’s functionalities, without any form of discrimination based on gender."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Does not differentiate the donor’s gender, there is no differentiation in how the application works. Beneficiaries' gender also has no impact when receiving donations."
-    },
-    {
-      text: "Bright Sky App - Does not distinguish users' gender identities, everyone is free to receive the support needed since domestic abuse can happen to anyone."
+      text: "In software systems, gender equity indicates that all users, regardless of gender, have equal access to and benefit from the system's functionalities."
     },
   ],
 };
@@ -460,14 +349,6 @@ export const Accessibility = {
       text: "Accessibility refers to the ability of a software system to be usable by individuals with different abilities, for example, individuals with disabilities who must rely on assistive technologies."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Should be designed to be usable by people with various abilities. The app’s interface and features should consider accessibility principles. One of them is having alternative text for images, the app does not need the images to function, and each has a title. Another is color contrast for readability, the app has a good pallet with sufficient contrast."
-    },
-    {
-      text: "Bright Sky App - Must be designed with users with various abilities in mind. It means implementing features such as high color contrast for readability, and compatibility with assistive technologies to ensure inclusivity."
-    },
-  ],
 };
 
 export const AssistiveTechnology = {
@@ -478,11 +359,6 @@ export const AssistiveTechnology = {
       text: "Assistive Technology describes tools used by people with disabilities to accomplish tasks. In a web context, it relates to hardware or software used to increase, maintain, or improve functional capabilities of individuals with disabilities. Examples of assistive technology are screen readers, keyboard navigation, and voice recognition software."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal & Bright Sky Apps - Both must be compatible with assistive technologies to be used by people with disabilities, reaching a bigger pool of users and promoting equality. The app should work with screen readers, that convert text into speech for visually impaired users and support keyboard navigation for users who cannot use a touchscreen. For example, TalkBack was tested and works with both applications."
-    },
-  ],
 };
 
 export const Disability = {
@@ -491,11 +367,6 @@ export const Disability = {
   description: [
     {
       text: "Disability is an illness, injury, or condition that makes it difficult for someone to do some things that other people do, and that is usually permanent or lasts for a long time. There are many types of disabilities, they can be Physical, Neurological, Cognitive, Auditory, Visual, and Speech related. Software systems must accommodate users with different disabilities."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal & Bright Sky Apps - Both apps don’t have an option for voice commands, but assistive technologies can be used. Features like resizable text or modification of the position of components in the application are not present."
     },
   ],
 };
@@ -509,15 +380,7 @@ export const Culture = {
       text: "Culture is the customary beliefs, social forms, and material traits of a racial, religious, or social group. It can also be the integrated pattern of human knowledge, belief, and behavior that depends upon the capacity for learning and transmitting knowledge to succeeding generations."
     },
     {
-      text: "In software systems, culture is the behaviors, beliefs, and values that define how users interact with the software. It includes user expectations, community norms, and the user experience influenced by these factors. Culture determines how software is designed and perceived by the users."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Includes cultural values of compassion and empathy by highlighting the act of donating meals to those in need."
-    },
-    {
-      text: "Bright Sky App - Integrates cultural awareness by giving resources and support about different types of domestic abuse. This information ensures that users can access the help specific to their situation."
+      text: "In software systems, culture is the behaviors, beliefs, and values that define the way users interact with the system. It includes user expectations, community norms, and the user experience influenced by these factors. Culture determines how software is designed and perceived by the users."
     },
   ],
 };
@@ -530,15 +393,7 @@ export const Norm = {
       text: "In a social group G, a norm is a kind of behavior A that all members of G do in a certain context C. Furthermore, it is also mutually believed that all members of G should do A in C. That is to say, a norm is an expected behavior from a certain group of people in a certain context, for example, it is expected of people who find a lost item to return it to the police. In an online environment, most people possess the norm to be respectful while communicating."
     },
     {
-      text: "In software systems, it includes the creation of clear expectations for behavior that the users must follow. The norms must be transmitted to the users, and they must be respected in the community."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Users are expected to contribute to meal donations and spread awareness about hunger."
-    },
-    {
-      text: "Bright Sky App - Is an application for real problems related to domestic abuse. Even if the app doesn't explicitly communicate it, the users are expected to respect the gravity of the issues discussed and use it in a responsible manner."
+      text: "In software systems, norm implies establishing behavior expectations that users must follow. The system must communicate the norms to the users, who must respect them in the community."
     },
   ],
 };
@@ -551,15 +406,7 @@ export const Value = {
       text: "Values are beliefs, connected to emotions, and they are ordered in terms of importance. Values are abstract goals, this differentiates them from norms and attitudes, and they serve as standards of criteria."
     },
     {
-      text: "In software systems, values are the main goals on which the design and functionality of the software are based. These values impact the features and user interface to ensure they align with the users' needs and values. For example, a software system may prioritize user privacy, accessibility, or transparency based on its values."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Users should value values that prioritize compassion, empathy, and the importance of helping those in need."
-    },
-    {
-      text: "Bright Sky App - Prioritizes values of safety, support, privacy, and empowerment. With the hidden mode feature, it gives a layer of privacy. The information and resources available all contribute to safety, support, and empowerment, giving the user the knowledge they may lack and the means to act."
+      text: "In software systems, values are the main goals that influence the system's design and functionalities. These values impact the features and interface to align with users' needs and values. For example, a system may prioritize user privacy, accessibility, or transparency based on its values."
     },
   ],
 };
@@ -572,15 +419,7 @@ export const Action = {
       text: "An Action consists of the process of doing something with the intention of achieving a desired goal."
     },
     {
-      text: "In software systems, an action refers to any user interaction or system process done to achieve a specific goal. This can be tasks like submitting a form, clicking a button, or running a program. Actions must be intuitive, helping users accomplish their goals effectively in the software."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - One action is the donation process to reduce global hunger. This process involves selecting the amount to donate and confirming the donation. Other actions can be sharing on social media to spread awareness."
-    },
-    {
-      text: "Bright Sky App - The process of reporting abuse is an action that users can complete. Users can clearly click the visible buttons to get immediate help or find the many contacts that offer different support depending on the type of abuse."
+      text: "In software systems, an action is any user interaction or system process done to fulfill a goal. This can be tasks like submitting a form, clicking a button, or running a program. Actions must be intuitive, helping users accomplish their goals effectively in the system."
     },
   ],
 };
@@ -593,15 +432,7 @@ export const Ritual = {
       text: "Rituals are a group of activities that are technically superfluous to reach desired ends but that, within a culture, are considered to be socially essential; they are therefore carried out for their own sake."
     },
     {
-      text: "In software systems, rituals could be routine user activities that, while not essential for the app's primary function, enhance the user experience and engagement."
-    },
-  ],
-  requirement: [
-    {
-      text: "A fitness app that has daily check-ins or streaks encourages consistent usage and user retention."
-    },
-    {
-      text: "ShareTheMeal & Bright Sky Apps - Could send notifications to encourage the user to open and use the app. For the Bright Sky app, it's necessary to consider the hidden mode. If a user has that mode activated, he could receive disguised notifications (e.g., if the hidden mode is a game, then the notification is about the game)."
+      text: "In software systems, rituals are routine user activities that, while not indispensable for the app, enhance user experience and engagement."
     },
   ],
 };
@@ -617,14 +448,6 @@ export const Custom = {
       text: "In software systems, customs are established user behaviors and practices that develop over time."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Users regularly sharing their meal donations on social media through the app could become a custom that promotes the app’s goal and increases its visibility. Subscribing to a monthly donation could also become a custom that aligns with the app’s goals of providing consistent support for reducing global hunger."
-    },
-    {
-      text: "Bright Sky App - Has a journal feature that allows users to register any abuse they have suffered. This is important since they can later be used as proof of the abuse. The user could develop the custom of updating the journal regularly."
-    },
-  ],
 };
 
 export const SocialEnvironment = {
@@ -635,15 +458,7 @@ export const SocialEnvironment = {
       text: "Social environment refers to the immediate physical and social setting in which people live or in which something happens or develops. It includes the culture that the individual was educated or lives in, and the people and institutions with whom they interact."
     },
     {
-      text: "In software systems, the social environment is the digital context where users interact with the platform."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Creates an online environment where users can interact with the cause and see their impact on the world."
-    },
-    {
-      text: "Bright Sky App - Creates an online environment where users interact with the resources design towards their needs."
+      text: "In software systems, the social environment is the digital context where users interact with the system."
     },
   ],
 };
@@ -656,20 +471,12 @@ export const SocialInteraction = {
       text: "Social Interaction defines an interaction between individuals. It is a specialization of an action. Social interaction can influence individuals and their beliefs."
     },
     {
-      text: "In software systems, social interaction refers to how users engage with each other using digital platforms. This can be done through activities like messaging, sharing content, and participating in discussions."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Users interact in the app by making donations and sharing on social media about the cause, encouraging others to join and donate."
-    },
-    {
-      text: "Bright Sky App - Users experience social interactions by answering questionnaires and contacting help services."
+      text: "In software systems, social interaction is when users engage with each other using the system. It can happen through messages, content sharing, and participating in discussions on forums."
     },
   ],
 };
 
-//Security
+//SecurityPrivacy
 export const Security = {
   id: '39',
   concept: 'Security',
@@ -678,15 +485,7 @@ export const Security = {
       text: "Security is considered the measures taken to prevent, minimize, and correctly address threats towards valuable assets.  It corresponds to the level of defense that an asset possesses against malicious attackers."
     },
     {
-      text: "In software systems, it implies the implementation of protocols and technologies to protect data, ensure privacy, and maintain system integrity against cyber threats and unauthorized access."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Has an infrastructure based on security standards. To ensure that the payment information is safe and secure, everything is processed by Braintree/Paypal. Other than that, the app doesn’t have any additional data. Donations that were made by mistake will be returned immediately."
-    },
-    {
-      text: "Bright Sky App - Does not gather personal data on the user (e.g., email), only on the device and other IDs. The data is encrypted in transit however, the app does not offer any way to eliminate the data."
+      text: "In software systems, a system requires the implementation of protocols and technology to protect its data and guarantee privacy, keeping the system safe against cyber threats and unauthorized access."
     },
   ],
 };
@@ -702,14 +501,6 @@ export const SecurityRequirement = {
       text: "It specifies the necessary security protocols that must be implemented to protect the system from threats."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Should implement a secure authentication mechanism to ensure that user accounts are protected against unauthorized access. Only authorized users can access sensitive information and perform actions like donating meals."
-    },
-    {
-      text: "Bright Sky App - Should implement secure authentication mechanisms, (e.g., MFA) so that only authorized users can access their accounts. This requirement is critical to maintaining confidentiality and preventing others who may find the app and open it, which could happen even in hidden mode."
-    },
-  ],
 };
 
 export const SecurityMechanism = {
@@ -723,33 +514,20 @@ export const SecurityMechanism = {
       text: "Examples include user IDs, passwords, encryption, firewalls, and antivirus software."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Uses HTTPS to secure a channel from the app to the server. The payment information is secure because it’s processed by Braintree, a globally trusted PayPal payments company. Every communication is point-to-point encrypted, SHA-256 with RSA encryption."
-    },
-    {
-      text: "Bright Sky App - Encrypts data in transit, however, it doesn't specify what mechanism uses."
-    },
-  ],
 };
 
-export const SecurityRisk = {
+export const Risk = {
   id: '42',
-  concept: 'Security Risk',
+  concept: 'Risk',
   description: [
     {
       text: "A Risk is the chance that an action will have an undesirable but known outcome. It occurs when a vulnerability exists in a system that can be exploited."
     },
     {
-      text: "A security risk is the possible damage to an asset, calculated as the “sum (over all relevant threats) of the negative impact of the harm to the asset (i.e., its criticality) multiplied by the likelihood of the harm occurring."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - A potential security risk is the possibility of unauthorized access to user accounts. This risk is evaluated based on the importance of user data (personal and payment information) and the likelihood of unauthorized access occurring. One solution that would help mitigate the risk is the implementation of multi-factor authentication (MFA) and monitor login attempts for suspicious activities."
+      text: "A risk may affect security, concerning the unauthorized access or damage to the system and asset. A security risk is the possible damage to an asset, calculated as the sum (over all relevant threats) of the negative impact of the harm to the asset (i.e., its criticality) multiplied by the likelihood of the harm occurring."
     },
     {
-      text: "Bright Sky App - A potential security risk is the lack of a feature for users to delete their device-related data. This could lead to concerns about data retention and user privacy. To address this risk the app should provide a way to delete a user's data."
+      text: "A risk may impact privacy, concerning the unauthorized access, use, and disclosure of personal information. Privacy mechanisms are connected to risks, since they must manage the risks that a system needs to consider ensuring the end user's privacy."
     },
   ],
 };
@@ -765,14 +543,6 @@ export const Threat = {
       text: "In software systems, a threat is any potential danger that could exploit a vulnerability to harm the system or its users. Threat examples include malware and phishing attacks."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - A potential threat is data breaches due to insecure APIs. If the app APIs are not secured, attackers could exploit vulnerabilities to gain unauthorized access to sensitive user data (e.g., personal and payment information). To prevent this, the app should employ API security measures such as API keys, OAuth, and HTTPS."
-    },
-    {
-      text: "Bright Sky App - A potential threat could be unauthorized access to device identifiers. The app could use encryption (e.g., HTTPS) to secure data transmission."
-    },
-  ],
 };
 
 export const Attack = {
@@ -781,14 +551,6 @@ export const Attack = {
   description: [
     {
       text: "An Attack is an unauthorized action performed by individuals who seek to cause damage to an asset. This may occur by violating the security of a system or bypassing security mechanisms. The attack can be a success or failure."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Is protected against MitM attack because it uses HTTPS to secure a channel from the app to the server and point-to-point encryption. Man-in-the-Middle (MitM) is a known attack that occurs when an attacker intercepts communication between the app and the user, capturing sensitive information, like login credentials or payment details."
-    },
-    {
-      text: "Bright Sky App - Might not have a lot of data collected, but it could still be the target of an attack, like MitM, to get device identifiers. The app should implement secure communications using HTTPS or other methods."
     },
   ],
 };
@@ -801,14 +563,6 @@ export const Harm = {
       text: "Harm relates to a negative impact associated with an asset due to an attack.  It occurs when there is a security violation to an asset and a privacy violation to a user."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Harm could be done regarding the money donated and the user’s personal and payment information."
-    },
-    {
-      text: "Bright Sky App - Harm could involve unauthorized access to device identifiers or misuse of collected data."
-    },
-  ],
 };
 
 export const Vulnerability = {
@@ -819,11 +573,6 @@ export const Vulnerability = {
       text: "A Vulnerability is a weak point in the system that attackers may use to attack and get access to the system, causing harm if successful."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal & Bright Sky Apps - Could have vulnerabilities if they use outdated software components. Older versions of libraries or frameworks have known vulnerabilities, and attackers could exploit these weaknesses to compromise the app's security."
-    },
-  ],
 };
 
 export const Asset = {
@@ -831,15 +580,7 @@ export const Asset = {
   concept: 'Asset',
   description: [
     {
-      text: "An Asset is something valuable, be it humans or resources (such as hardware or software) and should be protected from possible attacks."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Assets are the user’s personal and payment information."
-    },
-    {
-      text: "Bright Sky App - The main assets are the device identifiers and diagnostic logs."
+      text: "An Asset is something valuable, be it humans or resources (such as hardware or software), and should be protected from possible attacks."
     },
   ],
 };
@@ -855,14 +596,6 @@ export const Resource = {
       text: "In software systems, resources involve not only the hardware and software but also the functionalities and services provided by the software that permit stakeholders to access and make use of these services."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Has many resources in the form of functionalities that enable donors to donate the money quantity they want. This app allows donors to choose from various initiatives or countries to donate to, helping alleviate the hunger of the people who need it the most, depending on their needs these receive food or money (if the market has lots of food), this way improving their circumstances and quality of life."
-    },
-    {
-      text: "Bright Sky App - Offers many resources, such as functionalities for reporting abuse, accessing support contacts, and questionnaires. These functionalities must be accessible to all users, including users with disabilities, to support their needs and ensure equal access."
-    }
-  ],
 };
 
 export const Privacy = {
@@ -872,14 +605,6 @@ export const Privacy = {
     {
       text: "Privacy relates to the degree to which unauthorized parties are prevented from obtaining sensitive information."
     },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Must ensure that user data, including personal and payment information, is kept confidential and protected from unauthorized access."
-    },
-    {
-      text: "Bright Sky App - Clearly states its privacy policy, for example, they don't share personal information with third parties except pseudonymized information for statistical purposes."
-    }
   ],
 };
 
@@ -891,14 +616,6 @@ export const PrivacyMechanism = {
       text: "Privacy Mechanism is a concrete technique to be implemented for helping towards the satisfaction of privacy goal. Some mechanisms can be applied to personal information directly. Some examples are anonymity, unlinkability, and authentication."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Allows the user to choose who can see his profile, when he donated, and how much was donated. Additionally, the user can choose how their data is handled and who can track the data. This privacy mechanism gives users control over their personal information. The app should also implement a two-factor authentication to add another layer of security."
-    },
-    {
-      text: "Bright Sky App - Gives users the ability to request that their data be eliminated. This mechanism allows users control over their privacy by ensuring that their data can be removed from the system when they want."
-    }
-  ],
 };
 
 export const Constraint = {
@@ -907,11 +624,6 @@ export const Constraint = {
   description: [
     {
       text: "A privacy Constraint is a design restriction that is used to realize/satisfy a privacy goal, constraints can be either a privacy policy or privacy mechanism."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal & Bright Sky Apps - A privacy constraint could be the requirement that all user data must be encrypted to ensure compliance with privacy policies and to protect user confidentiality."
     },
   ],
 };
@@ -924,14 +636,6 @@ export const Context = {
       text: "The Context refers to the environment, the software system, where the privacy mechanisms are being implemented."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - The context is the app that allows donations. Includes all the features and functionalities within the app that handle user data, financial transactions, and personal information."
-    },
-    {
-      text: "Bright Sky App - The context is the app that gives support and information to users who are involved in any way in an abusive relationship, or simply people worried that someone they know is experiencing abuse. Includes all features and functionalities that allow for this app to work."
-    }
-  ],
 };
 
 export const PersonalInformation = {
@@ -941,14 +645,6 @@ export const PersonalInformation = {
     {
       text: "Personal Information refers to data that identifies or can be used to identify an individual, such as their name, address, phone number, email, or financial details. Personal Information can be Public, Semi-Public, and Private."
     },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - The personal information relates to a user’s name, address, credit card information, email, and donation amounts."
-    },
-    {
-      text: "Bright Sky App - A user's personal information is the device IDs and interaction logs. These can be used to identify the device and know a user's activity patterns."
-    }
   ],
 };
 
@@ -960,14 +656,6 @@ export const OwnerController = {
       text: "An Owner or Controller is the entity that holds and has authority over the information."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - The World Food Programme (WFP) is the owner/controller of the user data."
-    },
-    {
-      text: "Bright Sky App - Developed by Hestia, and supported by the Vodafone Foundation and Thames Valley Partnership. Hestia is the owner/controller of the user data."
-    }
-  ],
 };
 
 export const ThirdParty = {
@@ -978,14 +666,6 @@ export const ThirdParty = {
       text: "A Third Party is an entity separate from the Owner/Controller that has an interest or influence in the information."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - A third party is the payment service provider, Braintree/Paypal, that processes donations."
-    },
-    {
-      text: "Bright Sky App - There are no third parties."
-    },  
-  ],
 };
 
 export const Trust = {
@@ -995,14 +675,6 @@ export const Trust = {
     {
       text: "Trust occurs when an individual believes that the system will do what it is supposed to do and won't misuse the information that it is given."
     },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Is WFP’s fundraising app, the world's largest humanitarian agency. That alone makes people trust the app. The existing protections to guarantee security when using the app also help to build trust."
-    },
-    {
-      text: "Bright Sky App - Being developed by Hestia, gives users reassurance of the legitimacy of the app. This is because Hestia is a well-known charity organization."
-    }
   ],
 };
 
@@ -1017,14 +689,6 @@ export const Accountability = {
       text: "In software systems, accountability ensures that all actions and transactions can be traced back to the initiators. This means monitoring user activities, keeping records of all interactions with the system, and thus ensuring that users cannot deny their actions. Furthermore, it involves making sure the system does its duties correctly and registers its actions to prevent and resolve issues."
     },
   ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Users are responsible for the information they provide regarding payment. There are also features in place that shows users information about their donations, tracking contributions. On the other hand, the app must donate where the user wants to, any deviance from that will break the user’s intentions and the app could be held accountable for their action of taking advantage of the user’s money."
-    },
-    {
-      text: "Bright Sky App - Users must only report true events, any attempt to use the application as a prank would be unethical. Users are responsible for reporting abuse accurately and providing the needed information."
-    }
-  ],
 };
 
 export const Transparency = {
@@ -1032,28 +696,7 @@ export const Transparency = {
   concept: 'Transparency',
   description: [
     {
-      text: "Transparency can be defined as the availability of information about an actor allowing other actors to monitor the workings or performance of this actor. In other words, it’s clear visibility of system operations and knowledge of who and why an owner’s personal information is being used."
-    },
-  ],
-  requirement: [
-    {
-      text: "ShareTheMeal App - Provides clear visibility of their data so that donors know that their money is being spent where they claim."
-    },
-    {
-      text: "Bright Sky App - Informs users clearly on how the app works and its policy regarding user data when using the app. It tells users the information collected, and which actions a user makes that are recorded."
-    }
-  ],
-};
-
-export const Honesty = {
-  id: '59',
-  concept: 'Honesty',
-  description: [
-    {
-      text: "Honesty is an essential component of trust. A computing professional should be transparent and provide full disclosure of all pertinent system limitations and potential problems. Making deliberately false or misleading claims, fabricating, or falsifying data, and other dishonest conduct are violations of the Code."
-    },
-    {
-      text: "Honesty is when there is a truthful representation of software, particularly about the software’s capabilities, limitations, and any possible problems."
+      text: "Transparency can be defined as the availability of information about an actor allowing other actors to monitor the workings or performance of this actor. In other words, it’s clear visibility of system operations and knowledge of who and why an owner’s personal information is collected."
     },
   ],
 };
@@ -1105,7 +748,6 @@ const ConceptsData = {
   SocialSustainability,
   NeedsSatisfaction,
   SocialCohesion,
-
   Community,
   SocialEquality,
   Fairness,
@@ -1134,11 +776,11 @@ const ConceptsData = {
   Custom,
   SocialEnvironment,
   SocialInteraction,
-  //Security Section
+  //SecurityPrivacy Section
   Security,
   SecurityRequirement,
   SecurityMechanism,
-  SecurityRisk,
+  Risk,
   Threat,
   Attack,
   Harm,
@@ -1155,8 +797,8 @@ const ConceptsData = {
   Trust,
   Accountability,
   Transparency,
-  Honesty,
 
+  //Gender Section
   //Gender,
   //GSecondaryConcept1Test,
   //GSecondaryConcept2Test,
