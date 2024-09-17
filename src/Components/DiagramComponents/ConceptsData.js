@@ -636,7 +636,7 @@ export const Context = {
       text: "The Context refers to the environment, the software system, where the privacy mechanisms are being implemented."
     },
   ],
-};
+}; 
 
 export const PersonalInformation = {
   id: '53',
@@ -701,36 +701,458 @@ export const Transparency = {
   ],
 };
 
-/* export const Gender = {
-  id: '5900',
+//Gender
+export const GenderInclusion = {
+  id: '59',
+  concept: 'Gender Inclusion',
+  description: [
+    {
+      text: "Gender inclusion is the notion that all services, opportunities, and establishments are open to all people and that male and female stereotypes do not define societal roles and expectations. In this model, we also expand this concept to include all genders, advocating for equity regardless of gender."
+    },
+    {
+      text: "In software systems, it includes ensuring that all genders are accepted and not discriminated against."
+    },
+  ],
+};
+
+export const SocioculturalContext = {
+  id: '60',
+  concept: 'Sociocultural Context',
+  description: [
+    {
+      text: "The Sociocultural Context relates to the social and cultural environment where individuals (community members) live in and are defined by factors such as age, gender, and race. These factors have an impact on the software development process and the elicited requirements of the future system, affecting the users of the software system."
+    },
+  ],
+};
+
+export const Identity = {
+  id: '61',
+  concept: 'Identity',
+  description: [
+    {
+      text: "Identity refers to a human’s sense of who they are as individuals and as members of social groups. It also refers to an individual’s sense of how others may perceive and label them."
+    },
+    {
+      text: "In software systems, it relates to how users' identities are represented and managed in the application."
+    },
+  ],
+};
+
+export const Gender = {
+  id: '62',
   concept: 'Gender',
   description: [
     {
-      text: "Gender test decriptionnnnn."
+      text: "Gender is conceptualized both as a structural feature of society and as a complex part of an individual’s Identity."
+    },
+    {
+      text: "In software systems, it includes acknowledging and accommodating users' gender respectfully and inclusively."
     },
   ],
-  relatedConcepts: ['5901', '5902'],
-}
+};
 
-export const GSecondaryConcept1Test = {
-  id: '5901',
-  concept: 'GSecondaryConcept1Test',
+export const StructuralGender = {
+  id: '63',
+  concept: 'Structural Gender',
   description: [
     {
-      text: "GSecondaryConcept1Test test decriptionnnnn."
+      text: "Structural Gender represents the normative societal attributes and opportunities based on the perceived Biological Sex of the Human Actor, including Gender Norms and Gender Roles."
+    },
+    {
+      text: "In software systems, structural gender means ensuring that the system's design and features do not reinforce traditional gender-based norms or roles, avoiding assumptions based on conventional gender expectations."
     },
   ],
-}
+};
 
-export const GSecondaryConcept2Test = {
-  id: '5902',
-  concept: 'GSecondaryConcept2Test',
+export const GenderRoles = {
+  id: '64',
+  concept: 'Gender Roles',
   description: [
     {
-      text: "GSecondaryConcept2Test test decriptionnnnn."
+      text: "Gender Role is a culturally and socially determined set of expected behaviors, attitudes, and characteristics based on concepts of masculinity and femininity."
+    },
+    {
+      text: "In software systems, it means creating features and content that don’t reinforce stereotypical gender roles. The system should be flexible and inclusive, allowing users to interact without being constrained by traditional gender expectations."
     },
   ],
-} */
+};
+
+export const GenderNorms = {
+  id: '65',
+  concept: 'Gender Norms',
+  description: [
+    {
+      text: "Gender norms are the accepted ideas of how women and men should be, and how they should act, within a specific society or community; they help to define what is understood as being ‘feminine’ and ‘masculine’ within a particular ‘reference group’."
+    },
+    {
+      text: "In software systems, it means creating a system adaptable to different cultural and societal expectations related to gender. This involves providing adjustable features that align with regional norms."
+    },
+  ],
+};
+
+export const GenderStereotypes = {
+  id: '66',
+  concept: 'Gender Stereotypes',
+  description: [
+    {
+      text: "A Gender Stereotype is defined as a generalized view or preconception about attributes or characteristics, or the roles that are or ought to be possessed by, or performed by, women and men. It may cause harm when a person’s capacity to improve their personal abilities, and consequently pursue their professional careers and/or make choices about their lives, is limited."
+    },
+    {
+      text: "In software systems, it’s important to create a system that avoids reinforcing stereotypes and promotes gender equality. The features and content of the system can’t have biased views."
+    },
+  ],
+};
+
+export const IndividualGender = {
+  id: '67',
+  concept: 'Individual Gender',
+  description: [
+    {
+      text: "Individual Gender is the Human Actor’s self-identified gender."
+    },
+    {
+      text: "In software systems, it includes giving users the option to express their gender so that it aligns with their identity."
+    },
+  ],
+};
+
+export const BiologicalSex = {
+  id: '68',
+  concept: 'Biological Sex',
+  description: [
+    {
+      text: "Biological Sex, or just Sex, refers to the biological characteristics that define humans as female or male. While these sets of biological characteristics are not mutually exclusive, as there are individuals who possess both, they tend to differentiate humans as males and females. It can be categorized as male, female, or intersex."
+    },
+    {
+      text: "In software systems, the system can’t make assumptions or require users to give information about their biological sex unless it’s essential."
+    },
+  ],
+};
+
+export const GenderExpression = {
+  id: '69',
+  concept: 'Gender Expression',
+  description: [
+    {
+      text: "Gender Expression is the manifestation of an individual’s Gender Identity."
+    },
+    {
+      text: "In software systems, users must be allowed to express their gender identity in diverse ways."
+    },
+  ],
+};
+
+export const GenderIdentity = {
+  id: '70',
+  concept: 'Gender Identity',
+  description: [
+    {
+      text: "Gender Identity is an individual’s experience of gender."
+    },
+    {
+      text: "In software systems, the system must provide an inclusive environment where users can identify and express their gender freely."
+    },
+  ],
+};
+
+export const Characteristics = {
+  id: '71',
+  concept: 'Characteristics',
+  description: [
+    {
+      text: "Characteristics are related to humans and represent the individual and social traits of a Human Actor that determine their attitudes towards software technologies, i.e., how users interact and use the software. They are the result of individual experiences and social attributes, opportunities, and relationships."
+    },
+  ],
+};
+
+export const SocialCharacteristics = {
+  id: '72',
+  concept: 'Social Characteristics',
+  description: [
+    {
+      text: "Social Characteristics represent those established in relation to others."
+    },
+    {
+      text: "In software systems, social characteristics affect how users access and interact with the features."
+    },
+  ],
+};
+
+export const Access = {
+  id: '73',
+  concept: 'Access',
+  description: [
+    {
+      text: "Access is about the access to technological resources."
+    },
+  ],
+};
+
+export const Environment = {
+  id: '74',
+  concept: 'Environment',
+  description: [
+    {
+      text: "Environment is the conditions for interacting with the software."
+    },
+  ],
+};
+
+export const Responsibilities = {
+  id: '75',
+  concept: 'Responsibilities',
+  description: [
+    {
+      text: "Responsibilities include time commitment and routine integration."
+    },
+  ],
+  relatedConcepts: ['76', '77'],
+};
+
+export const TimeCommitment = {
+  id: '76',
+  concept: 'Time Commitment',
+  description: [
+    {
+      text: "Time Commitment is the time one has available for using a software."
+    },
+  ],
+};
+
+export const RoutineIntegration = {
+  id: '77',
+  concept: 'Routine Integration',
+  description: [
+    {
+      text: "Routine Integration is the software compatibility with one’s habits, behavior, patterns, and environments."
+    },
+  ],
+};
+
+export const IndividualCharacteristics = {
+  id: '78',
+  concept: 'Individual Characteristics',
+  description: [
+    {
+      text: "Individual Characteristics represent the personal attributes of a Human Actor. These attributes influence how users interact with the system."
+    },
+  ],
+};
+
+export const Beliefs = {
+  id: '79',
+  concept: 'Beliefs',
+  description: [
+    {
+      text: "A belief is viewed as a mental state with properties that can be derived from its representation as a modal operator with possible-worlds semantics. Beliefs include credibility, cost-benefit, self-efficacy, and sense of belonging."
+    },
+  ],
+  relatedConcepts: ['80', '81', '82', '83'],
+};
+
+export const Credibility = {
+  id: '80',
+  concept: 'Credibility',
+  description: [
+    {
+      text: "Credibility is the level of credibility attributed to a software."
+    },
+  ],
+};
+
+export const CostBenefit = {
+  id: '81',
+  concept: 'Cost-benefit',
+  description: [
+    {
+      text: "Cost-benefit is the earned benefit compared to the cost of trying a software."
+    },
+  ],
+};
+
+export const SelfEfficacy = {
+  id: '82',
+  concept: 'Self-efficacy',
+  description: [
+    {
+      text: "Self-efficacy is the belief in the ability to use software in varied situations."
+    },
+  ],
+};
+
+export const SenseofBelonging = {
+  id: '83',
+  concept: 'Sense of Belonging',
+  description: [
+    {
+      text: "Sense of belonging is the feeling of fitting in with an online culture or community."
+    },
+  ],
+};
+
+export const Preferences = {
+  id: '84',
+  concept: 'Preferences',
+  description: [
+    {
+      text: "Preferences involve linguistic and communication styles and visual design."
+    },
+  ],
+  relatedConcepts: ['85', '86'],
+};
+
+export const LinguisticandCommunicationStyle = {
+  id: '85',
+  concept: 'Linguistic and Communication Style',
+  description: [
+    {
+      text: "This is the linguistic and communication styles in an online community, website interface, or software."
+    },
+  ],
+};
+
+export const VisualDesign  = {
+  id: '86',
+  concept: 'Visual Design ',
+  description: [
+    {
+      text: "Visual design refers to the aesthetics of the software interface, including imagery, colorfulness, complexity, and fonts."
+    },
+  ],
+};
+
+export const Motivations = {
+  id: '87',
+  concept: 'Motivations',
+  description: [
+    {
+      text: "Motivations involve willingness to learn, motivation, and tinkering."
+    },
+  ],
+  relatedConcepts: ['88', '89', '90'],
+};
+
+export const WillingnesstoLearn = {
+  id: '88',
+  concept: 'Willingness to Learn',
+  description: [
+    {
+      text: "Willingness to learn is the desire to acquire knowledge about a software."
+    },
+  ],
+};
+
+export const Motivation = {
+  id: '89',
+  concept: 'Motivation',
+  description: [
+    {
+      text: "Motivation represents the reasons behind one’s behaviors towards software."
+    },
+  ],
+};
+
+export const Tinkering = {
+  id: '90',
+  concept: 'Tinkering',
+  description: [
+    {
+      text: "Tinkering is the exploratory behavior when using a software."
+    },
+  ],
+};
+
+export const Perceptions = {
+  id: '91',
+  concept: 'Perceptions',
+  description: [
+    {
+      text: "Perceptions involve perceived risk, perceived financial cost, perceived ease of use, and perceived usefulness."
+    },
+  ],
+  relatedConcepts: ['92', '93', '94', '95'],
+};
+
+export const PersonalRisk = {
+  id: '92',
+  concept: 'Risk',
+  description: [
+    {
+      text: "Risk is the perception of possible outcomes when using a software."
+    },
+  ],
+};
+
+export const FinancialCost = {
+  id: '93',
+  concept: 'Financial Cost',
+  description: [
+    {
+      text: "Financial cost is the perception regarding the financial cost of a software."
+    },
+  ],
+};
+
+export const EaseofUse  = {
+  id: '94',
+  concept: 'Ease of Use',
+  description: [
+    {
+      text: "Ease of use is the perception that using the technology will be effort-free."
+    },
+  ],
+};
+
+export const Usefulness = {
+  id: '95',
+  concept: 'Usefulness',
+  description: [
+    {
+      text: "Usefulness is the perception that using the technology will provide utility."
+    },
+  ],
+};
+
+export const Skills = {
+  id: '96',
+  concept: 'Skills',
+  description: [
+    {
+      text: "Skill involves cue detection, information processing style, and awareness."
+    },
+  ],
+  relatedConcepts: ['97', '98', '99'],
+};
+
+export const CueDetection = {
+  id: '97',
+  concept: 'Cue Detection',
+  description: [
+    {
+      text: "Cue detection in interface design, language, and community norms of a particular software."
+    },
+  ],
+};
+
+export const InformationProcessingStyle  = {
+  id: '98',
+  concept: 'Information Processing Style',
+  description: [
+    {
+      text: "Information processing style refers to strategies for processing new information and solving problems in a software task."
+    },
+  ],
+};
+
+export const Awareness = {
+  id: '99',
+  concept: 'Awareness',
+  description: [
+    {
+      text: "Awareness refers to previous experiences and knowledge about a software."
+    },
+  ],
+};
 
 const ConceptsData = {
   //Universalism Section
@@ -797,11 +1219,48 @@ const ConceptsData = {
   Trust,
   Accountability,
   Transparency,
-
   //Gender Section
-  //Gender,
-  //GSecondaryConcept1Test,
-  //GSecondaryConcept2Test,
+  GenderInclusion,
+  SocioculturalContext,
+  Identity,
+  Gender,
+  StructuralGender,
+  GenderRoles,
+  GenderNorms,
+  GenderStereotypes,
+  IndividualGender,
+  BiologicalSex,
+  GenderExpression,
+  GenderIdentity,
+  Characteristics,
+  SocialCharacteristics,
+  Access,
+  Environment,
+  Responsibilities,
+  TimeCommitment,
+  RoutineIntegration,
+  IndividualCharacteristics,
+  Beliefs,
+  Credibility,
+  CostBenefit,
+  SelfEfficacy,
+  SenseofBelonging,
+  Preferences,
+  LinguisticandCommunicationStyle,
+  VisualDesign,
+  Motivations,
+  WillingnesstoLearn,
+  Motivation,
+  Tinkering,
+  Perceptions,
+  PersonalRisk,
+  FinancialCost,
+  EaseofUse,
+  Usefulness,
+  CueDetection,
+  InformationProcessingStyle,
+  Awareness,
+  Skills,
 };
 
 export default ConceptsData;

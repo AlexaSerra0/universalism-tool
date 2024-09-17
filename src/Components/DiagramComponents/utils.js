@@ -100,7 +100,7 @@ const sectionsConfig = {
       { id: 'GenderStereotypes', data: { label: 'Gender Stereotypes' }, position: { x: 1400, y: 350 } },
       { id: 'Characteristics', data: { label: 'Characteristics' }, position: { x: 1850, y: -100 } },
       { id: 'SocialCharacteristics', data: { label: 'Social Characteristics' }, position: { x: 2250, y: -200 } },
-      { id: 'Responsabilities', data: { label: 'Responsabilities' }, position: { x: 2420, y: -400 } },
+      { id: 'Responsibilities', data: { label: 'Responsibilities' }, position: { x: 2420, y: -400 } },
       { id: 'Environment', data: { label: 'Environment' }, position: { x: 2250, y: -400 } },
       { id: 'Access', data: { label: 'Access' }, position: { x: 2080, y: -400 } },
       { id: 'IndividualCharacteristics', data: { label: 'Individual Characteristics' }, position: { x: 2250, y: 0 } },
@@ -217,7 +217,7 @@ const sectionsConfig = {
       { id: `GenderNorms-GenderRoles`, source: 'GenderNorms', target: `GenderRoles`, type: 'floating' }, 
       { id: `Characteristics-SocialCharacteristics`, source: 'Characteristics', target: `SocialCharacteristics`, type: 'floating' }, 
       { id: `Characteristics-IndividualCharacteristics`, source: 'Characteristics', target: `IndividualCharacteristics`, type: 'floating' }, 
-      { id: `SocialCharacteristics-Responsabilities`, source: 'SocialCharacteristics', target: `Responsabilities`, type: 'floating' }, 
+      { id: `SocialCharacteristics-Responsibilities`, source: 'SocialCharacteristics', target: `Responsibilities`, type: 'floating' }, 
       { id: `SocialCharacteristics-Environment`, source: 'SocialCharacteristics', target: `Environment`, type: 'floating' }, 
       { id: `SocialCharacteristics-Access`, source: 'SocialCharacteristics', target: `Access`, type: 'floating' }, 
       { id: `IndividualCharacteristics-Skills`, source: 'IndividualCharacteristics', target: `Skills`, type: 'floating' }, 
@@ -588,7 +588,7 @@ const sectionsConfig = {
 
       { id: 'Characteristics', data: { label: 'Characteristics' }, position: { x: 650, y: 0 } },
       { id: 'SocialCharacteristics', data: { label: 'Social Characteristics' }, position: { x: 1050, y: -100 } },
-      { id: 'Responsabilities', data: { label: 'Responsabilities' }, position: { x: 1220, y: -300 } },
+      { id: 'Responsibilities', data: { label: 'Responsibilities' }, position: { x: 1220, y: -300 } },
       { id: 'Environment', data: { label: 'Environment' }, position: { x: 1050, y: -300 } },
       { id: 'Access', data: { label: 'Access' }, position: { x: 880, y: -300 } },
       { id: 'IndividualCharacteristics', data: { label: 'Individual Characteristics' }, position: { x: 1050, y: 100 } },
@@ -635,7 +635,7 @@ const sectionsConfig = {
       { id: `Characteristics-SocialCharacteristics`, source: 'Characteristics', target: `SocialCharacteristics`, type: 'floating' }, 
       { id: `Characteristics-IndividualCharacteristics`, source: 'Characteristics', target: `IndividualCharacteristics`, type: 'floating' }, 
       
-      { id: `SocialCharacteristics-Responsabilities`, source: 'SocialCharacteristics', target: `Responsabilities`, type: 'floating' }, 
+      { id: `SocialCharacteristics-Responsibilities`, source: 'SocialCharacteristics', target: `Responsibilities`, type: 'floating' }, 
       { id: `SocialCharacteristics-Environment`, source: 'SocialCharacteristics', target: `Environment`, type: 'floating' }, 
       { id: `SocialCharacteristics-Access`, source: 'SocialCharacteristics', target: `Access`, type: 'floating' }, 
 

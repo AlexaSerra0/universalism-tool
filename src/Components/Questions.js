@@ -49,6 +49,10 @@ const Questions = () => {
       return 'SocioculturalEquity';
     if(inputString === "Owner | Controller")
       return 'OwnerController';
+    if(inputString === "Cost-benefit")
+      return 'CostBenefit';
+    if(inputString === "Self-efficacy")
+      return 'SelfEfficacy';
     return inputString.split(' ').join('');
   }
 

@@ -1780,27 +1780,777 @@ export const Transparency = [
 },
 ];
 
-/* export const GSecondaryConcept1Test = [
-  {
-    concept: 'GSecondaryConcept1Test',
-    question: "GSecondaryConcept1Test Does the application treat errors or limitations transparently to maintain honesty?",
-  },
-  {
-    concept: 'GSecondaryConcept1Test',
-    question: "GSecondaryConcept1Test Are users informed of any limitations that may affect the system's performance?",
-  },
-]
+//Gender
+export const GenderInclusion = [
+{
+  concept: 'Gender Inclusion',
+  question: "Does the system allow the user not to disclose their gender and gender identity?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to skip indicating their gender and gender identity, letting them use the app without providing gender information."
+    },
+  ],
+},
+{
+  concept: 'Gender Inclusion',
+  question: "Are there inclusivity checks to ensure that marketing and user content do not perpetuate gender stereotypes?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must perform periodic reviews and adjust content and design to maintain gender-neutral and inclusive messages."
+    },
+  ],
+},
+];
 
-export const GSecondaryConcept2Test = [
-  {
-    concept: 'GSecondaryConcept2Test',
-    question: "GSecondaryConcept2Test Does the application treat errors or limitations transparently to maintain honesty?",
-  },
-  {
-    concept: 'GSecondaryConcept2Test',
-    question: "GSecondaryConcept2Test Are users informed of any limitations that may affect the system's performance?",
-  },
-] */
+export const SocioculturalContext = [
+{
+  concept: 'Sociocultural Context',
+  question: "Does the system design and functionality account for culturally relevant content?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app's features must adapt to culturally relevant content, such as customizable settings for regional formats (dates, currencies) and culturally appropriate imagery and communication."
+    },
+  ],
+},
+{
+  concept: 'Sociocultural Context',
+  question: "Does the system interface and features consider age needs and preferences?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have content and features appropriate for the user’s age, such as simplified interfaces for older users and interactive elements for younger users."
+    },
+  ],
+},
+];
+
+export const Identity = [
+{
+  concept: 'Identity',
+  question: "Does the system allow users to manage and update their personal information?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have an intuitive interface where users manage and update their personal information (e.g., name, contact information, and other profile attributes). Users must be able to make changes and see them reflected in real-time."
+    },
+  ],
+},
+];
+
+export const Gender = [
+{
+  concept: 'Gender',
+  question: "Does the system offer multiple gender identification options that reflect a wide range of gender identities?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must offer a variety of gender identification options beyond the traditional “male” and “female” (e.g., non-binary, genderqueer, omnigender, and other identities) so that all users can accurately represent themselves."
+    },
+  ],
+},
+{
+  concept: 'Gender',
+  question: "Are there features for users to specify and update their gender?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have a feature that allows users to specify and update their gender in the profile settings at any time, reflecting any changes in their gender."
+    },
+  ],
+},
+{
+  concept: 'Gender',
+  question: "Does the system collect gender data only when necessary and ensure it is confidential and secure?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must only collect gender data if necessary for specific functionalities (e.g., targeted communications, demographic analysis), and the data needs to be protected and confidential."
+    },
+  ],
+},
+];
+
+export const StructuralGender = [
+{
+  concept: 'Structural Gender',
+  question: "Does the system design and content avoid reinforcing traditional gender norms and roles?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must use gender-neutral language and images. The app must use phrases like “donor” instead of gender-specific terms and avoid images that reinforce traditional gender roles (e.g., associating caregiving roles with women only)."
+    },
+  ],
+},
+{
+  concept: 'Structural Gender',
+  question: "Does the system offer features that accommodate diverse gender expressions and identities?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to select from a choice of gender identities and expressions in their profile settings. For example, users must be able to choose from options like “Non-Binary” or “Prefer not to say”, reflected in the communication and display of the app."
+    },
+  ],
+},
+];
+
+export const GenderRoles = [
+{
+  concept: 'Gender Roles',
+  question: "Does the system features and content avoid reinforcing stereotypical gender roles?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app’s promotional materials and content must present people of all genders in diverse roles and activities, avoiding clichés like showing men only in leadership roles and women in supportive roles. The app’s tutorial must use inclusive language and examples that do not enable gender-based stereotypes. For example, the app must use inclusive language like “you can contribute” rather than “you can help as a mother” or “as a father.”"
+    },
+  ],
+},
+{
+  concept: 'Gender Roles',
+  question: "Are there options in the system for users to engage in ways that align with their gender roles as they perceive them?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to filter the content and activities based on their interests without gender-specific limits. For example, users must be able to select challenges and donations that match their interests, ignoring whether these are traditionally associated with a particular gender."
+    },
+  ],
+},
+];
+
+export const GenderNorms = [
+{
+  concept: 'Gender Norms',
+  question: "Does the system accommodate gender norms to ensure inclusivity and respect for diverse cultural expectations?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must adjust the interface to reflect different gender norms depending on the localization. For example, in regions where traditional gender roles are dominant, the app must have content that respects those norms but still provides the option for more progressive settings."
+    },
+  ],
+},
+];
+
+export const GenderStereotypes = [
+{
+  concept: 'Gender Stereotypes',
+  question: "Does the system’s design and features avoid reinforcing negative gender stereotypes?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must use inclusive images throughout the interface. For example, avoid showing only women in nurturing positions or solely men in leadership roles and use images portraying people of all genders in many activities."
+    },
+  ],
+},
+{
+  concept: 'Gender Stereotypes',
+  question: "Are there features to counter gender stereotypes and promote equality?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include diverse role models and success stories from different genders. For example, the app must present equally stories of successful fundraisers from all genders."
+    },
+  ],
+},
+];
+
+export const IndividualGender = [
+{
+  concept: 'Individual Gender',
+  question: "Does the system allow users to express their individual gender?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include an option for users to specify their gender identity in their profile settings other than binary categories (e.g., “Non-Binary”, “Gender Fluid”)."
+    },
+  ],
+},
+{
+  concept: 'Individual Gender',
+  question: "Is there flexibility in how users can represent their gender in the system?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must provide customizable profile settings that allow users to choose their preferred pronouns and gender display options. For example, in the app, users must be able to select pronouns like “They/Them” and have them displayed in their interactions or have the option to hide or show their individual gender."
+    },
+  ],
+},
+];
+
+export const BiologicalSex = [
+{
+  concept: 'Biological Sex',
+  question: "Are the system features limited based on biological sex?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must not require users to give their biological sex to create an account or participate in activities of the app. The system must focus on user preferences and identity rather than physical characteristics."
+    },
+  ],
+},
+{
+  concept: 'Biological Sex',
+  question: "Does the system respect users’ privacy regarding their biological sex?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must ensure that the information about a user’s biological sex is protected and not used for unintended purposes. The app must also allow users to control how and if their information is shared or displayed."
+    },
+  ],
+},
+];
+
+export const GenderExpression = [
+{
+  concept: 'Gender Expression',
+  question: "Does the system allow users to express their gender identity?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to select and display gender expression options like avatar customization and profile settings that reflect users’ style and identity."
+    },
+  ],
+},
+{
+  concept: 'Gender Expression',
+  question: "Does the system support gender expression choices?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include options for users to choose and display their preferred gender pronouns."
+    },
+  ],
+},
+];
+
+export const GenderIdentity = [
+{
+  concept: 'Gender Identity',
+  question: "Does the system support a variety of gender identities?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must offer various gender identity options for users to pick from. If they don’t find an option suitable from the list, then there must be a field where they can enter their gender identity."
+    },
+  ],
+},
+{
+  concept: 'Gender Identity',
+  question: "Can the users update their gender identity when they want?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to update their gender identity information in their profile settings and reflect them in the app."
+    },
+  ],
+},
+];
+
+export const Characteristics = [
+{
+  concept: 'Characteristics',
+  question: "Does the system adapt to various user characteristics to improve usability and experience?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must use adaptive interfaces and features that change based on the user. This implies, for example, having different navigation options for users with varying technological expertise."
+    },
+  ],
+},
+];
+
+export const SocialCharacteristics = [
+{
+  concept: 'Social Characteristics',
+  question: "Does the system consider the user's environment?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must function effectively in different environments, such as varying levels of internet connectivity or device types."
+    },
+  ],
+},
+{
+  concept: 'Social Characteristics',
+  question: "Does the system offer customization based on social contexts or relationships?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to customize their notifications, permitting group updates or receiving personalized messages from friends and family (e.g., donation thank-you message, update on a shared fundraising goal)."
+    },
+  ],
+},
+];
+
+export const Access = [
+{
+  concept: 'Access',
+  question: "Does the system offer alternative methods to access features if the main ones are unavailable?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must provide alternative access methods, such as offline functionality or text-based interfaces, to accommodate users with limited technological access."
+    },
+  ],
+},
+];
+
+export const Environment = [
+{
+  concept: 'Environment',
+  question: "Does the system adapt to different user environments to ensure a stable experience?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include design features that adapt based on the user’s environment, such as brightness, font size, and different display modes, dark and light modes, for distinct lighting conditions to ensure readability and reduce eye strain."
+    },
+  ],
+},
+];
+
+export const TimeCommitment = [
+{
+  concept: 'Time Commitment',
+  question: "Does the system have flexible options for users with varying levels of time commitment?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include options for users with only a few minutes to make quick donations or view brief updates. Users with more time must be able to engage in more detailed activities and explore the app's features."
+    },
+  ],
+},
+{
+  concept: 'Time Commitment',
+  question: "Are there time-saving features for users with limited time?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must provide quick access to essential functions, minimizing the time typically spent on significant tasks (e.g., donations)."
+    },
+  ],
+},
+];
+
+export const RoutineIntegration = [
+{
+  concept: 'Routine Integration',
+  question: "Does the system offer customization options to align with users' daily routines?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to choose how they receive reminders and information (email, SMS, notifications), the frequency, and time. The settings must have options to customize these according to the user's preferences and daily routines."
+    },
+  ],
+},
+{
+  concept: 'Routine Integration',
+  question: "Does the system ensure seamless integration with users' existing tools and processes?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must integrate with users' existing routines by having features like calendar reminders for donation updates or integration with email for notifications. This way, users who periodically check their emails, for example, will be reminded about the app."
+    },
+  ],
+},
+];
+
+export const IndividualCharacteristics = [
+{
+  concept: 'Individual Characteristics',
+  question: "Does the system meet diverse individual traits?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must offer customizable user profiles where individuals can set preferences for interacting with the app (e.g., language options, notification settings, and donation preferences)."
+    },
+  ],
+},
+{
+  concept: 'Individual Characteristics',
+  question: "Does the system adapt its functionality to accommodate varying individual attributes?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include adaptive interfaces that adjust based on user behavior (e.g., offering simplified navigation for less tech-savvy users and advanced features for more experienced users)."
+    },
+  ],
+},
+];
+
+export const Credibility = [
+{
+  concept: 'Credibility',
+  question: "Does the system provide evidence of reliability and trustworthiness?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must show endorsements from well-known organizations (e.g., United Nations World Food Programme)."
+    },
+  ],
+},
+{
+  concept: 'Credibility',
+  question: "Are there user reviews or third-party evaluations available?",
+  requirement: [
+    {
+      text: "he ShareTheMeal app must have a section with verified user reviews, particularly influential users, and certifications from trusted sources."
+    },
+  ],
+},
+];
+
+export const CostBenefit = [
+{
+  concept: 'Cost-benefit',
+  question: "Does the system outline the benefits and any associated costs?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must show how donations are used, including impact reports and transparency in financial transactions."
+    },
+  ],
+},
+{
+  concept: 'Cost-benefit',
+  question: "Does the system provide a good value proposition compared to alternatives?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must compare its benefits with similar apps to demonstrate its unique value (e.g., ease of use, additional features)."
+    },
+  ],
+},
+];
+
+export const SelfEfficacy = [
+{
+  concept: 'Self-efficacy',
+  question: "Does the system provide feedback to the user about its state?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must give real-time feedback on donation transactions (e.g., confirmation messages, progress updates)."
+    },
+  ],
+},
+{
+  concept: 'Self-efficacy',
+  question: "Does the system present clear error messages and instructions for possible solutions if a problem arises?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must, in case a donation fails, show a detailed error message with steps for the user to resolve the issue."
+    },
+  ],
+},
+{
+  concept: 'Self-efficacy',
+  question: "Does the system include tutorial materials that are always available for consultation?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have an accessible help center with tutorials, FAQs, and video guides for new users."
+    },
+  ],
+},
+];
+
+export const SenseofBelonging = [
+{
+  concept: 'Sense of Belonging',
+  question: "Does the system help users feel part of a community or culture?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app's features must allow users to build a sense of community by participating in donations and challenges to reach a common goal."
+    },
+  ],
+},
+{
+  concept: 'Sense of Belonging',
+  question: "Does the system provide social interaction features that enhance users' feelings of inclusion?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must permit users join groups, share updates and interact with other users."
+    },
+  ],
+},
+];
+
+export const LinguisticandCommunicationStyle = [
+{
+  concept: 'Linguistic and Communication Style',
+  question: "Does the system support multiple languages and accommodate various communication styles?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must offer multi-language support and allow users to choose their preferred language for all communications and interface elements."
+    },
+  ],
+},
+{
+  concept: 'Linguistic and Communication Style',
+  question: "Is the language used in the system explicit, friendly, and appropriate for the target audience?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must use simple, user-friendly language and tone in all communications, ensuring accessibility for a large user base."
+    },
+  ],
+},
+];
+
+export const VisualDesign = [
+{
+  concept: 'Visual Design',
+  question: "Does the system provide gender inclusive, rather than gendered or “neutral”, visual design? Are the aesthetic elements of the system inclusive?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must use multiple colors, icons, and images that do not reinforce gender stereotypes. The images should feature diverse individuals engaged in a variety of activities. The app's design can't stereotypically represent a gender."
+    },
+  ],
+},
+{
+  concept: 'Visual Design',
+  question: "Can the visual design be discriminating against any user of any gender identity (e.g., does it include stereotypical masculine elements)?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must avoid visual elements that might be viewed as reinforcing traditional gender roles. It must not use overly strong images that could be seen as masculine or excessively delicate images that could be seen as feminine."
+    },
+  ],
+},
+{
+  concept: 'Visual Design',
+  question: "Are the visual design choices for the system based on gender essentialism stereotypes of women's and men's preferences?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must focus on universal design principles that enhance usability for everyone. For example, it must avoid using traditionally gendered colors (e.g., blue for men, pink for women) and use instead a diverse palette that appeals to all users."
+    },
+  ],
+},
+];
+
+export const WillingnesstoLearn = [
+{
+  concept: 'Willingness to Learn',
+  question: "Does the system provide educational resources and incentives to encourage learning?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must offer interactive tutorials and rewards for users who engage with educational content about the app’s features and causes."
+    },
+  ],
+},
+{
+  concept: 'Willingness to Learn',
+  question: "Are there accessible resources for users to learn about the system’s functions?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include a resource section with easy-to-follow guides and tips for new users."
+    },
+  ],
+},
+];
+
+export const Motivation = [
+{
+  concept: 'Motivation',
+  question: "Does the system offer step-by-step instructions?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have a step-by-step guide for new users to complete their first donation and explore its features."
+    },
+  ],
+},
+{
+  concept: 'Motivation',
+  question: "Does the system present the information organized?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have a structured layout for task, making it easy for users to follow through with their goals."
+    },
+  ],
+},
+{
+  concept: 'Motivation',
+  question: "Does the system provide clear workflow paths for task-oriented users?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include visual progress indicators and straightforward navigation paths for users who prefer to complete tasks efficiently."
+    },
+  ],
+},
+];
+
+export const Tinkering = [
+{
+  concept: 'Tinkering',
+  question: "Does the system offer clear paths/steps for process oriented learning users?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include guided tours or step-by-step walkthroughs for users interested in exploring different features."
+    },
+  ],
+},
+{
+  concept: 'Tinkering',
+  question: "Does the system provide all the information necessary to complete a step in a task?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must ensure that each task or feature has a description and help available directly in the app."
+    },
+  ],
+},
+{
+  concept: 'Tinkering',
+  question: "Does the system provide information about its features in the interface? Can the system make a user feel anxious from the lack of obvious information?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include tooltips, help icons, or feature highlights within the interface to inform users about available options and functions."
+    },
+  ],
+},
+{
+  concept: 'Tinkering',
+  question: "Can the system cause frustration and disengagement in a user who has less willingness to tinker?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must minimize complex or hidden features and provide straightforward navigation to avoid frustrating users who prefer simplicity."
+    },
+  ],
+},
+];
+
+export const PersonalRisk = [
+{
+  concept: 'Risk',
+  question: "Does the system provide support for risk-averse users? Does the system require risk taking for users to successfully find/use/choose certain functionalities of the system?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have features like confirmation dialogs for donations and detailed information about how funds are used to reassure users."
+    },
+  ],
+},
+{
+  concept: 'Risk',
+  question: "Does the system provide options to continue even if a mistake was made?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have an “undo” feature or allow users to modify their donation details if they make errors."
+    },
+  ],
+},
+{
+  concept: 'Risk',
+  question: "Does the system provide options to return to the previous state without affecting the progress if a mistake was made?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to navigate back to previous screens without losing their entered data or progress."
+    },
+  ],
+},
+{
+  concept: 'Risk',
+  question: "Does the system correspond to the user expectations when they risk using it?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must communicate risks and reassurances using secure payment methods and transparent donation processes."
+    },
+  ],
+},
+];
+
+export const FinancialCost = [
+{
+  concept: 'Financial Cost',
+  question: "Does the system indicate any financial costs involved?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must display any associated costs with donations, including transaction fees or optional premium features, to avoid confusion."
+    },
+  ],
+},
+{
+  concept: 'Financial Cost',
+  question: "Are there mechanisms to help users understand the financial implications before committing?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must present a summary of the costs and impacts before users finalize their donation."
+    },
+  ],
+},
+];
+
+export const EaseofUse = [
+{
+  concept: 'Ease of Use',
+  question: "Does the system ensure that using the technology is effort-free?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must have a user-friendly interface with simple navigation, allowing users to make donations with minimal effort."
+    },
+  ],
+},
+{
+  concept: 'Ease of Use',
+  question: "Is there any assistance available if users encounter difficulties?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must offer easy access to customer support and help documentation for users who need assistance."
+    },
+  ],
+},
+];
+
+export const Usefulness = [
+{
+  concept: 'Usefulness',
+  question: "Does the system prove itself to be valuable to users?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must show how donations impact real-world outcomes (e.g., feeding a certain number of people) to enhance the app's usefulness in the eyes of the users."
+    },
+  ],
+},
+{
+  concept: 'Usefulness',
+  question: "Is the technology aligned with users' needs and goals?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must make its features match the diverse needs of users (e.g., various donation options)."
+    },
+  ],
+},
+];
+
+export const CueDetection = [
+{
+  concept: 'Cue Detection',
+  question: "Does the system help users detect and interpret relevant cues in the interface?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must use clear icons, labels, and notifications to help users pinpoint vital actions and information."
+    },
+  ],
+},
+{
+  concept: 'Cue Detection',
+  question: "Are there visual or contextual clues to help the user?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include context-sensitive help or tooltips that provide additional information when users hover over or click on certain elements."
+    },
+  ],
+},
+];
+
+export const InformationProcessingStyle = [
+{
+  concept: 'Information Processing Style',
+  question: "Does the system provide enough information for users to feel confident about their decision?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must provide detailed descriptions for each donation option, ensuring users have all the necessary information to make informed decisions."
+    },
+  ],
+},
+{
+  concept: 'Information Processing Style',
+  question: "Does the system present all and only the information the user needs to complete their task? Is there information that could be perceived as ambiguous?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must avoid filling the interface with irrelevant information and focus on providing only details needed for the current task."
+    },
+  ],
+},
+{
+  concept: 'Information Processing Style',
+  question: "Does the system provide more than one path to achieve the same result?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must allow users to complete donations through different methods (e.g., one-time or recurring donations) and payment options."
+    },
+  ],
+},
+];
+
+export const Awareness = [
+{
+  concept: 'Awareness',
+  question: "Does the system exploit users' previous experiences and knowledge about similar software?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must include features that align with standard practices in donation apps (e.g., easy account setup, straightforward donation processes) to accommodate users familiar with similar apps."
+    },
+  ],
+},
+{
+  concept: 'Awareness',
+  question: "Is there support for users who are unfamiliar with the system’s functionalities?",
+  requirement: [
+    {
+      text: "The ShareTheMeal app must offer tutorials and a help section that introduces new users to the features and functionalities, enhancing their awareness and comfort with the system."
+    },
+  ],
+},
+];
 
 const QuestionsData = {
   //Universalism Section
@@ -1867,10 +2617,42 @@ const QuestionsData = {
   Trust,
   Accountability,
   Transparency,
-
   //Gender Section
-  //GSecondaryConcept1Test,
-  //GSecondaryConcept2Test
+  GenderInclusion,
+  SocioculturalContext,
+  Identity,
+  Gender,
+  StructuralGender,
+  GenderRoles,
+  GenderNorms,
+  GenderStereotypes,
+  IndividualGender,
+  BiologicalSex,
+  GenderExpression,
+  GenderIdentity,
+  Characteristics,
+  SocialCharacteristics,
+  Access,
+  Environment,
+  TimeCommitment,
+  RoutineIntegration,
+  IndividualCharacteristics,
+  Credibility,
+  CostBenefit,
+  SelfEfficacy,
+  SenseofBelonging,
+  LinguisticandCommunicationStyle,
+  VisualDesign,
+  WillingnesstoLearn,
+  Motivation,
+  Tinkering,
+  PersonalRisk,
+  FinancialCost,
+  EaseofUse,
+  Usefulness,
+  CueDetection,
+  InformationProcessingStyle,
+  Awareness,
 };
 
 export default QuestionsData;
